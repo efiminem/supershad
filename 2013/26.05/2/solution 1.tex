@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+\paragraph{Автор} emazhnik
+\paragraph{Решение} Пусть $\{A_j\}_{j=1}^n$ -- столбцы матрицы $A$, а $\{P_k\}$ -- столбцы вида $(1^k, 2^k, \ldots, n^k)^\mathrm{T}$.
+Тогда по условию задачи $A_j = P_2 - 2jP_1 + j^2P_0$. Отсюда следует, что столбцы матрицы $A$ принадлежат подпространству, натянутому на линейно независимые вектора $P_2, P_1, P_0$.
+Значит, $\rank A \leq 3$.
+
+Заметим, что в случае  $n\geq 3$ столбы $A_1, A_2, A_3$ будут линейно независимы. Действительно,
+$$\begin{vmatrix}
+1&-2&1\\
+1&-4&4\\
+1&-6&9
+\end{vmatrix}
+= -4 \neq 0$$
+Поэтому при $n\geq 3$ $\rank A = 3$. В случаях $n=1$ и $n=2$ получим $0$ и $2$ соответственно.
+\end{document}
+
