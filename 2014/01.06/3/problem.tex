@@ -1,8 +1,14 @@
-\documentclass[14pt]{article}
+\documentclass{article}
 \usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
 \usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
 \setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
 \pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
 
 \begin{document}
 Квадратная матрица $A$ размером $9\times 9$ над полем характеристики, отличной от $2$, такова, что $A^2=E$. Найдите ранг матрицы $E-A$, если известно, что ранг матрицы $E+A$ равен $7$.
