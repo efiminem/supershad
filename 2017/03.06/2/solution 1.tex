@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+\paragraph{Автор} emazhnik
+\paragraph{Решение} Пусть $g(x) = f(x) - f(x-1)$. Тогда
+\begin{align*}
+g(1) &= f(1) - f(0), \\
+g(2) &= f(2) - f(1).
+\end{align*}
+
+Заметим, что $g(1) + g(2) = f(2) - f(1) = 0$. Отсюда следует, что функция $g(x)$ меняет знак на отрезке $[1,2]$ (теорема о промежуточном значении непрерывной функции).
+Иными словами, $\exists x_0 \in [1,2]: g(x_0)=0$, откуда следует утверждение задачи.
+\end{document}
+
