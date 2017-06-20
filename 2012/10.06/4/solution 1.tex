@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+\paragraph{Автор} emazhnik
+\paragraph{Решение} $Dx = \int\limits_0^1 x^2 f(x) dx - ( \int\limits_0^1 x f(x) dx )^2 \leq \int\limits_0^1 x f(x) dx - ( \int\limits_0^1 x f(x) dx )^2 = z - z^2 \leq \frac14$.
+Очевидно, что неравенство превращается в равенство в случае, если случайная величина имеет распределение Бернулли с параметром $\frac12$.
+\end{document}
+
