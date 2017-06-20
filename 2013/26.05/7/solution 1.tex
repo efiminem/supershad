@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+\paragraph{Автор} emazhnik
+\paragraph{Решение} В первую очередь докажем, что данный ряд сходится. Нетрудно понять, что $f(n) \leq \log_2 (n+1)$.
+Теперь докажем, что начиная с некоторого $n$ выполняется $\log_2 (n+1)$ < $\sqrt{n}$. Действительно, по правилу Лопиталя получим:
+$$\lim_{n\to \infty} \frac{\log_2 (n+1)}{\sqrt{n}} = \frac{2}{\ln 2} \lim_{n\to \infty} \frac{1}{\sqrt{n}} = 0.$$
+Отсюда получаем, что сходимость ряда $\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)}$ эквивалентна сходимости ряда $\sum\limits_{n=1}^\infty \frac{\sqrt{n}}{n(n+1)}$.
+Этот ряд нетрудно ограничить:
+$$\sum_{n=1}^\infty \frac{\sqrt{n}}{n(n+1)} = \sum_{n=1}^\infty \left( \frac{\sqrt{n}}{n} - \frac{\sqrt{n}}{n+1} \right) = 1 + \sum_{n=2}^\infty \frac{\sqrt{n} - \sqrt{n-1}}{n} < 1 + \sum_{n=2}^\infty \left( \frac{1}{\sqrt{n-1}} - \frac{1}{\sqrt{n}} \right) = 2$$
+(или воспользоваться фактом, что $\sum_{n=1}^\infty \frac{1}{n^{1+\varepsilon}}$ сходится при $\varepsilon > 0$).
+
+Для нахождения суммы ряда заметим, что $f(2n) = f(n)$ и $f(2n+1) = f(n)+1$. Тогда:
+\begin{align*}
+\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} &= \frac12 + \sum\limits_{n=1}^\infty \frac{f(2n)}{2n(2n+1)} + \sum\limits_{n=1}^\infty \frac{f(2n+1)}{(2n+1)(2n+2)} \\
+&= \frac12 + \sum\limits_{n=1}^\infty \frac{f(n)}{2n(2n+1)} + \sum\limits_{n=1}^\infty \frac{f(n)+1}{(2n+1)(2n+2)} \\
+&= \frac12 + \sum\limits_{n=1}^\infty f(n) \left[ \frac{1}{2n(2n+1)} + \frac{1}{(2n+1)(2n+2)} \right] + \sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)} \\
+&= \frac12 + \frac12 \sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} + \sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)}.
+\end{align*}
+Поскольку ряд сходится, мы можем переписать:
+\begin{align*}
+\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} &= 1 + 2\sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)} = 1 + 2\sum_{n=3}^\infty \frac{(-1)^{n+1}}{n} \\
+&= 2\sum_{n=1}^\infty \frac{(-1)^{n+1}}{n} = 2 \left. \sum_{n=1}^\infty \frac{(-1)^{n+1}x^n}{n} \right|_{x=1} = 2\ln (1+x) |_{x=1} = 2\ln 2.
+\end{align*}
+\end{document}
