@@ -70,11 +70,16 @@ $(document).ready(function(){
 <div class="solution" toid = "text1">Решение</div>
 <div class="solution-text" id="text1">
 Пусть <script type="math/tex">k</script> &#8212; количество классификаторов. Тогда все возможные использования классификаторов можно представить в виде булевой матрицы <script type="math/tex">20\times k</script>,
-в которой элемент <script type="math/tex">c_{ij}</script> равен <script type="math/tex">1</script> если для решения <script type="math/tex">i</script>-й задачи классификации используется <script type="math/tex">j</script>-й классификатор.
+в которой элемент <script type="math/tex">c_{ij}</script> равен <script type="math/tex">1</script>, если для решения <script type="math/tex">i</script>-й задачи классификации используется <script type="math/tex">j</script>-й классификатор.
 По условию задачи в каждой строке такой матрицы должно быть ровно <script type="math/tex">5</script> единиц, а любая пара единиц <script type="math/tex">(j_1,j_2)</script> может встречаться только в одной строке.
 Нетрудно понять, что <script type="math/tex">k \geq 21</script>. В самом деле, в каждой строке присутствует <script type="math/tex">\frac{5\cdot 4}{2} = 10</script> уникальных пар классификаторов.
 Значит, число различных пар классификаторов, которые применялись для решения задач, равно <script type="math/tex">10\cdot 20 = 200</script>. С другой стороны, общее число пар классификаторов равно <script type="math/tex">\frac{k(k-1)}{2}</script>.
 Очевидно, должно выполняться условие <script type="math/tex">200 \leq \frac{k(k-1)}{2}</script>. Следовательно, <script type="math/tex">k \geq 21</script>. Приведем пример матрицы <script type="math/tex">21\times 21</script>, у которой любая из подматриц <script type="math/tex">20\times 21</script> удовлетворяет условию задачи: 
+<script type="math/tex; mode=display">
+\begin{pmatrix}
+0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1\\
+0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1&0&0&0&0&0\\
+\end{pmatrix}
 </td></tr>
   <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Существует ли скалярное произведение на пространстве матриц <script type="math/tex">n\times n\; (n>1)</script>, относительно которого матрица из всех
 единиц была бы ортогональна любой верхнетреугольной матрице? </td></tr>
