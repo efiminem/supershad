@@ -111,7 +111,7 @@ function slide(id) {
  if(dist <= 1) {
  dist = 1;
  }
- cont.style.height = currheight + (dist * cont.direction) + 500 + 'px';
+ cont.style.height = currheight + (dist * cont.direction) + 'px';
  cont.style.opacity = currheight / cont.maxh;
  cont.style.filter = 'alpha(opacity=' + (currheight * 100 / cont.maxh) + ')';
  if(currheight < 2 && cont.direction != 1) {
