@@ -75,9 +75,8 @@ $(document).ready(function(){
 Нетрудно понять, что <script type="math/tex">k \geq 21</script>. В самом деле, в каждой строке присутствует <script type="math/tex">\frac{5\cdot 4}{2} = 10</script> уникальных пар классификаторов.
 Значит, число различных пар классификаторов, которые применялись для решения задач, равно <script type="math/tex">10\cdot 20 = 200</script>. С другой стороны, общее число пар классификаторов равно <script type="math/tex">\frac{k(k-1)}{2}</script>.
 Очевидно, должно выполняться условие <script type="math/tex">200 \leq \frac{k(k-1)}{2}</script>. Следовательно, <script type="math/tex">k \geq 21</script>. Приведем пример матрицы <script type="math/tex">21\times 21</script>, у которой любая из подматриц <script type="math/tex">20\times 21</script> удовлетворяет условию задачи: 
-<script type="math/tex">
-
-\begin{smallmatrix}
+<script type="math/tex; mode=display">
+\begin{pmallmatrix}
 0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1\\
 0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&0&0&0&0&1\\
 0&0&0&0&0&0&0&0&1&1&1&1&0&0&0&0&0&0&0&0&1\\
@@ -99,7 +98,7 @@ $(document).ready(function(){
 1&0&0&0&0&0&0&1&0&1&0&0&0&0&1&0&1&0&0&0&0\\
 0&0&0&1&1&0&0&0&0&0&1&0&0&1&0&0&1&0&0&0&0\\
 0&0&1&0&0&1&0&0&0&0&0&1&1&0&0&0&1&0&0&0&0
-\end{smallmatrix}
+\end{psmallmatrix}
 </script>
 </td></tr>
   <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Существует ли скалярное произведение на пространстве матриц <script type="math/tex">n\times n\; (n>1)</script>, относительно которого матрица из всех
