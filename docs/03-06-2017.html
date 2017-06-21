@@ -13,116 +13,20 @@
     <link rel="canonical" href="https://efiminem.github.io/supershad">
     <script type="text/javascript" async
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </script>
-    <style>
-#slider {
- width: 100%;
- color: #66666;
- font-family: Georgia;
- font-size: 18px;
- }
-.header {
+<style>
+.solution {
  cursor: pointer;
  text-decoration: underline;
  }
-.header:hover {
- color: #666666;
- }
-.content {
- overflow: hidden;
- height: 100%;
- width: 100%;
- }
-.text {
- width: 100%;
- border: 1px solid #cccccc;
- border-top: none;
- padding: 15px;
- text-align: left;
- background: #eeeeee;
- font-size: 14px;
- }
 </style>
 <script type="text/javascript">
-var array = new Array();
-var speed = 10;
-var timer = 10;
- 
-// Loop through all the divs in the slider parent div //
-// Calculate seach content divs height and set it to a variable //
-function slider(target,showfirst) {
- var slider = document.getElementById(target);
- var divs = slider.getElementsByTagName('div');
- var divslength = divs.length;
- for(i = 0; i < divslength; i++) {
- var div = divs[i];
- var divid = div.id;
- if(divid.indexOf("header") != -1) {
- div.onclick = new Function("processClick(this)");
- } else if(divid.indexOf("content") != -1) {
- var section = divid.replace('-content','');
- array.push(section);
- div.maxh = div.offsetHeight;
- if(showfirst == 1 && i == 1) {
- div.style.display = 'block';
- } else {
- div.style.display = 'none';
- }
- }
- }
-}
- 
-// Process the click - expand the selected content and collapse the others //
-function processClick(div) {
- var catlength = array.length;
- for(i = 0; i < catlength; i++) {
- var section = array[i];
- var head = document.getElementById(section + '-header');
- var cont = section + '-content';
- var contdiv = document.getElementById(cont);
- clearInterval(contdiv.timer);
- if(head == div && contdiv.style.display == 'none') {
- contdiv.style.height = '0px';
- contdiv.style.display = 'block';
- initSlide(cont,1);
- } else if(contdiv.style.display == 'block') {
- initSlide(cont,-1);
- }
- }
-}
- 
-// Setup the variables and call the slide function //
-function initSlide(id,dir) {
- var cont = document.getElementById(id);
- var maxh = cont.maxh;
- cont.direction = dir;
- cont.timer = setInterval("slide('" + id + "')", timer);
-}
- 
-// Collapse or expand the div by incrementally changing the divs height and opacity //
-function slide(id) {
- var cont = document.getElementById(id);
- var maxh = cont.maxh;
- var currheight = cont.offsetHeight;
- var dist;
- if(cont.direction == 1) {
- dist = (Math.round((maxh - currheight) / speed));
- } else {
- dist = (Math.round(currheight / speed));
- }
- if(dist <= 1) {
- dist = 1;
- }
- cont.style.height = currheight + (dist * cont.direction) + 'px';
- cont.style.opacity = currheight / cont.maxh;
- cont.style.filter = 'alpha(opacity=' + (currheight * 100 / cont.maxh) + ')';
- if(currheight < 2 && cont.direction != 1) {
- cont.style.display = 'none';
- clearInterval(cont.timer);
- } else if(currheight > (maxh - 2) && cont.direction == 1) {
- clearInterval(cont.timer);
- }
-}
+$(document).ready(function(){
+    $(".solution").click(function(){
+        $("#text").slideToggle();
+    });
+});
 </script>
 </head>
 
@@ -159,8 +63,8 @@ function slide(id) {
 симметричная матрица <script type="math/tex">A,</script> для которой <script type="math/tex">y=Ax</script>?</td></tr>
   <tr><td valign="top">2. </td><td>Непрерывная функция <script type="math/tex">f(x)</script> такова, что <script type="math/tex">f(0)=f(2)</script>.
 Докажите, что для какого-то <script type="math/tex">x\in [0;2]</script> имеет место равенство <script type="math/tex">f(x)=f(x-1)</script>.</td></tr><tr><td></td>
-<td style="padding-bottom:20px;"><div id="slider"><div class="header" id="1-header">Решение</div> <div class="content" id="1-content">
- <div class="text" id="1-text">
+<td style="padding-bottom:20px;"><div class="solution">Решение</div>
+ <div id="text">
  Пусть <script type="math/tex">g(x) = f(x) - f(x-1)</script>. Тогда
 <script type="math/tex">\begin{cases}
 g(1) = f(1) - f(0), \\
@@ -168,7 +72,6 @@ g(2) = f(2) - f(1).
 \end{cases}</script>Заметим, что <script type="math/tex">g(1) + g(2) = f(2) - f(1) = 0</script>. Отсюда следует, что функция <script type="math/tex">g(x)</script> меняет знак на отрезке <script type="math/tex">[1,2]</script> (теорема о промежуточном значении непрерывной функции).
 Иными словами, <script type="math/tex">\exists x_0 \in [1,2]: g(x_0)=0</script>, откуда следует утверждение задачи.
  </div>
- </div></div>
  </td></tr>
   <tr><td valign="top">3. </td valign="top"><td style="padding-bottom:20px;">Из равномерного распределения на отрезке <script type="math/tex">[0;1]</script> независимо выбираются две точки <script type="math/tex">x</script> и <script type="math/tex">y</script>.
 При каких <script type="math/tex">a</script> события <script type="math/tex">\max(1-2x,y) < a</script> и <script type="math/tex">\max(1-2y,x) < a</script> независимы?</td></tr>
