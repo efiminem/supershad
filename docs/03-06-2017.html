@@ -19,6 +19,9 @@
  cursor: pointer;
  text-decoration: underline;
  }
+.solution-text {
+ display: none;
+ }
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -63,7 +66,7 @@ $(document).ready(function(){
   <tr><td valign="top">2. </td><td>Непрерывная функция <script type="math/tex">f(x)</script> такова, что <script type="math/tex">f(0)=f(2)</script>.
 Докажите, что для какого-то <script type="math/tex">x\in [0;2]</script> имеет место равенство <script type="math/tex">f(x)=f(x-1)</script>.</td></tr><tr><td></td>
 <td style="padding-bottom:20px;"><div class="solution">Решение</div>
- <div id="text">
+ <div class="solution-text" id="text">
 <p>Пусть <script type="math/tex">g(x) = f(x) - f(x-1)</script>. Тогда
 <script type="math/tex">\begin{cases}
 g(1) = f(1) - f(0), \\
