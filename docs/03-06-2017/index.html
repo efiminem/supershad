@@ -26,7 +26,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
     $(".solution").click(function(){
-        $("#text").slideToggle();
+        var id = $(this).attr('toid');
+        $("#" + str(id)).slideToggle();
     });
 });
 </script>
@@ -67,8 +68,8 @@ $(document).ready(function(){
 симметричная матрица <script type="math/tex">A,</script> для которой <script type="math/tex">y=Ax</script>?</td></tr>
   <tr><td valign="top">2. </td><td>Непрерывная функция <script type="math/tex">f(x)</script> такова, что <script type="math/tex">f(0)=f(2)</script>.
 Докажите, что для какого-то <script type="math/tex">x\in [0;2]</script> имеет место равенство <script type="math/tex">f(x)=f(x-1)</script>.</td></tr><tr><td></td>
-<td style="padding-bottom:20px;"><div class="solution">Решение</div>
- <div class="solution-text" id="text">
+<td style="padding-bottom:20px;"><div class="solution" toid = "text1">Решение</div>
+ <div class="solution-text" id="text1">
 <p>Пусть <script type="math/tex">g(x) = f(x) - f(x-1)</script>. Тогда
 <script type="math/tex">\begin{cases}
 g(1) = f(1) - f(0), \\
@@ -144,18 +145,5 @@ g(2) = f(2) - f(1).
   </div>
 
 </footer>
-<!--<script type="text/x-mathjax-config"> 
-
-        MathJax.Hub.Config({ 
-
-                TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
-
-                "HTML-CSS": {linebreaks: {automatic: true}}, 
-
-                SVG: {linebreaks: {automatic: true}}
-
-        });
-</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">MathJax.Hub.Queue(["Typeset",MathJax.Hub]);-->
-
   </body>
 </html>
