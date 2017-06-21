@@ -76,6 +76,8 @@ $(document).ready(function(){
 Значит, число различных пар классификаторов, которые применялись для решения задач, равно <script type="math/tex">10\cdot 20 = 200</script>. С другой стороны, общее число пар классификаторов равно <script type="math/tex">\frac{k(k-1)}{2}</script>.
 Очевидно, должно выполняться условие <script type="math/tex">200 \leq \frac{k(k-1)}{2}</script>. Следовательно, <script type="math/tex">k \geq 21</script>. Приведем пример матрицы <script type="math/tex">21\times 21</script>, у которой любая из подматриц <script type="math/tex">20\times 21</script> удовлетворяет условию задачи: 
 <script type="math/tex">
+\begingroup\makeatletter\def\f@size{5}\check@mathfonts
+\def\maketag@@@#1{\hbox{\m@th\large\normalfont#1}}%
 \left( \begin{array}{ccccccccccccccccccccc}
 0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1\\
 0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&0&0&0&0&1\\
@@ -98,7 +100,7 @@ $(document).ready(function(){
 1&0&0&0&0&0&0&1&0&1&0&0&0&0&1&0&1&0&0&0&0\\
 0&0&0&1&1&0&0&0&0&0&1&0&0&1&0&0&1&0&0&0&0\\
 0&0&1&0&0&1&0&0&0&0&0&1&1&0&0&0&1&0&0&0&0
-\end{array} \right)
+\end{array} \right) \endgroup
 </script>
 </td></tr>
   <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Существует ли скалярное произведение на пространстве матриц <script type="math/tex">n\times n\; (n>1)</script>, относительно которого матрица из всех
