@@ -84,9 +84,14 @@ g(2) = f(2) - f(1).
   <tr><td valign="top">4. </td valign="top"><td style="padding-bottom:20px;">В компании &laquo;Тындекс&raquo; у каждого сотрудника не менее <script type="math/tex">50</script> знакомых. Оказалось, что есть два сотрудника,
 знакомые друг с другом лишь через <script type="math/tex">9</script> рукопожатий (то есть кратчайшая соединяющая их цепочка из попарно знакомых людей содержит 
 <script type="math/tex">8</script> промежуточных людей). Докажите, что в этой компании хотя бы <script type="math/tex">200</script> сотрудников.</td></tr>
-  <tr><td valign="top">5. </td valign="top"><td style="padding-bottom:20px;">Квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script> имеет различные собственные значения
+  <tr><td valign="top">5. </td valign="top"><td>Квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script> имеет различные собственные значения
 <script type="math/tex">\lambda_1, \ldots, \lambda_n</script>. Найдите все собственные значения (в том числе комплексные) матрицы <script type="math/tex; mode=display">
-\begin{pmatrix}0&-A\\A&0\end{pmatrix}</script> 
+\begin{pmatrix}0&-A\\A&0\end{pmatrix}</script></td></tr><td style="padding-bottom:20px;"><div class="solution" toid = "text1">Решение</div>
+<div class="solution-text" id="text1">
+<script type="math/tex; mode=display">
+\det \begin{pmatrix}\-lambda E&-A\\A&-\lambda E\end{pmatrix} = det(A^2 + \lambda^2 E^2) = \det(A - i \lambda E) \det(A + i \lambda E)
+</script>
+</div> </td></tr>
   <tr><td valign="top">6. </td valign="top"><td style="padding-bottom:20px;">Вы &#8212; воин Света, и сегодня вам нужно победить толпу из <script type="math/tex">n</script> гоблинов, каждый из которых изначально имеет
 <script type="math/tex">h_i</script> единиц жизни <script type="math/tex">(1 \leq i \leq n</script>,<script type="math/tex">\,h_i\in \mathbb{Z}_n</script>,<script type="math/tex">\,0 < h_i < H)</script>.
 Боретесь с гоблинами вы с помощью специального магического посоха. Если ударить таким посохом по гоблину, тот сразу же теряет <script type="math/tex">p</script> единиц жизни, а все остальные гоблины в толпе
