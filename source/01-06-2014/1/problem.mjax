@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">M \subseteq \mathbb{R}</script> &#8212; множество из <script type="math/tex">n</script> элементов. Пусть, далее,
+<script type="math/tex; mode=display">S_M = \left\{ \left. \frac{x+y}{2} \right| x,y \in M, x \neq y \right\}.</script>
+Найдите наименьшую возможную мощность множества <script type="math/tex">S_M</script> (одинаковые элементы множества считаются одним элементом).

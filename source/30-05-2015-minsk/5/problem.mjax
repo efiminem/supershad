@@ -1,0 +1,5 @@
+Рассмотрим клетчатую доску размера <script type="math/tex">N\times M</script>. Раскрасим клетки доски в шахматном порядке в белый и черный цвета, причем 
+левую верхнюю клетку покрасим в белый цвет. Найдите количество способов вырезать из этой доски содержащий не более <script type="math/tex">4</script> черных клеток участок. Резать разрешается только по границам клеток.<br>
+(a) <script type="math/tex">N=8</script> и <script type="math/tex">M=8</script>.<br>
+(b) <script type="math/tex">N=99</script> и <script type="math/tex">M=101</script>.<br>
+(c) Найдите ответ для произвольных натуральных <script type="math/tex">N</script> и <script type="math/tex">M</script>.

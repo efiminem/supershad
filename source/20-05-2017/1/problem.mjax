@@ -1,0 +1,3 @@
+Верно ли, что если матрица <script type="math/tex">A \in \mathrm{Mat}_n (\mathbb{R})</script> симметрична
+и положительно определена, то квадратичная форма <script type="math/tex">q(X) = \mathrm{tr}(X^\mathrm{T} A X)</script> на пространстве <script type="math/tex">\mathrm{Mat}_n (\mathbb{R})</script>
+будет положительно определенной?

@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212; симметричные билинейные функции на двумерном вещественном пространстве, причем <script type="math/tex">A</script> положительно определена,
+а <script type="math/tex">B</script> отрицательно определена. Докажите, что любая непрерывная кривая в пространстве симметричных билинейных функций, соединяющая <script type="math/tex">A</script> и <script type="math/tex">B</script>, содержит функцию с вырожденной матрицей.

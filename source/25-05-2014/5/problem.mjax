@@ -1,0 +1,3 @@
+Зададим числовую последовательность <script type="math/tex">a_n</script> следующим образом. Пусть <script type="math/tex">a_1</script> и <script type="math/tex">a_2</script> &#8212; произвольные натуральные числа. 
+Число <script type="math/tex">a_n</script> получается приписыванием к <script type="math/tex">a_{n-1}</script> числа <script type="math/tex">a_{n-2}</script> справа. Предложите алгоритм, вычисляющий по данным <script type="math/tex">a_1</script> и <script type="math/tex">a_2</script> <script type="math/tex">i</script>-ю цифру числа <script type="math/tex">a_n</script> и оцените его временную сложность. 
+Ограничение по памяти: <script type="math/tex">O(1)</script>.

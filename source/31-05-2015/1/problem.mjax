@@ -1,0 +1,2 @@
+Квадратная матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\mathrm{tr}(AX)=0</script> для любой матрицы <script type="math/tex">X</script>, имеющей нулевой след. Докажите, что матрица <script type="math/tex">A</script> является скалярной 
+(то есть имеет вид <script type="math/tex">\lambda E</script> для некоторого скаляра <script type="math/tex">\lambda</script>).

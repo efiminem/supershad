@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">J \in \mathrm{Mat}_{2n\times 2n} (\mathbb{R})</script> &#8212; кососимметрическая матрица, 
+<script type="math/tex">\beta</script> &#8212; положительное число, а <script type="math/tex">u \in \mathbb{R}^{2n}</script> &#8212; ненулевой вектор. Найдите 
+<script type="math/tex">\mathrm{det}\;(E + \beta u u^{\mathrm{T}} J)</script>.

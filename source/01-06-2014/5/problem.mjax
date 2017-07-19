@@ -1,0 +1,2 @@
+Найдите предел
+<script type="math/tex; mode=display">\lim\limits_{x\to 0+} \frac{1}{\ln \lambda} \int\limits_\lambda^a \frac{\cos x}{x} dx.</script>

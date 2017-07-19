@@ -1,0 +1,2 @@
+Вычислите сумму интегралов:
+<script type="math/tex; mode=display">\int\limits_{\sqrt{\pi/6}}^{\sqrt{\pi/3}} \sin (x^2) dx + \int\limits_{1/2}^{\sqrt{3}/2} \sqrt{\arcsin x} dx.</script>

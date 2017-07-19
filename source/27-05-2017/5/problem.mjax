@@ -1,0 +1,3 @@
+Докажите, что для произвольного <script type="math/tex">a_0 \in (0;2\pi)</script> последовательность, заданная условием
+<script type="math/tex; mode=display">a_{n+1} = \int\limits_0^{a_n} \left( 1 + \frac14 \cos^{2n+1} t \right) dt,</script>
+имеет предел и найдите его.

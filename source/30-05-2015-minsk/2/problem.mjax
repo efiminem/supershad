@@ -1,0 +1,3 @@
+Рассмотрим случайную перестановку <script type="math/tex">P = (p_1,p_2,\ldots,p_n)</script> натуральных чисел от <script type="math/tex">1</script> до <script type="math/tex">n</script>. Пару чисел <script type="math/tex">(i,j)</script> назовем &laquo;обменом&raquo;, 
+если выполняются соотношения <script type="math/tex">p_i=j, p_j=i</script>. Вычислите математическое ожидание количества обменов в перестановке <script type="math/tex">P</script> (перестановка выбирается случайно равновероятно из множества всех перестановок 
+от <script type="math/tex">1</script> до <script type="math/tex">n</script>).

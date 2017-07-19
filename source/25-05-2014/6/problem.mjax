@@ -1,0 +1,2 @@
+Пусть функция <script type="math/tex">f</script> непрерывна и ограничена на промежутке <script type="math/tex">(x_0, +\infty)</script>. Докажите, что для любого числа <script type="math/tex">T</script> 
+существует последовательность <script type="math/tex">\{x_n\}</script>, стремящаяся к <script type="math/tex">+\infty</script> и такая, что <script type="math/tex">f(x_n+T) - f(x_n) \to 0</script> при <script type="math/tex">n \to \infty</script>.

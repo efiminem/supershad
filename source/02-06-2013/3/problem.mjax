@@ -1,0 +1,1 @@
+Имеется множество <script type="math/tex">A=\{1,2,3,\ldots,256\}</script>. Найдите размер максимального по мощности подмножества <script type="math/tex">A' \in A</script>, такого, что <script type="math/tex">A'</script> не содержит элементов <script type="math/tex">x,y</script>, таких, что <script type="math/tex">x=2y</script>.

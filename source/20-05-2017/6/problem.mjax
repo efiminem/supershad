@@ -1,0 +1,2 @@
+Последовательность <script type="math/tex">a_n</script> задана условиями <script type="math/tex">a_1=1, a_{n+1}=\sin (a_n)</script>.
+Сходится ли ряд <script type="math/tex">\sum_{i=1}^\infty a_i</script>?

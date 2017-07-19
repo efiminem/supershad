@@ -1,0 +1,4 @@
+В пространстве <script type="math/tex">\mathbb{R} [x,y]</script> многочленов с действительными коэффициентами от переменных
+<script type="math/tex">x</script> и <script type="math/tex">y</script> действует оператор <script type="math/tex">y \frac{\partial}{\partial x} + x \frac{\partial}{\partial y}</script>.<br>
+(a)  Докажите, что каждое целое число является его собственным значением.<br>
+(b)  Найдите все его собственные значения. Является ли он диагонализуемым?

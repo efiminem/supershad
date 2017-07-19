@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">\xi</script>, <script type="math/tex">\eta</script> и <script type="math/tex">\lambda</script> &#8212;
+независимые случайные величины, равномерно распределенные на отрезке <script type="math/tex">[0;1]</script>, а <script type="math/tex">t</script> &#8212; фиксированное число.
+Найдите <script type="math/tex">P(\xi + \eta) < t\lambda</script>.

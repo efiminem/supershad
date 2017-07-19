@@ -1,0 +1,2 @@
+Докажите, что для любого неотрицательного целого <script type="math/tex">n</script> существуют целые числа <script type="math/tex">x</script>, <script type="math/tex">y</script> и <script type="math/tex">z</script> <script type="math/tex">(0 \leqslant x < y \leqslant z)</script> такие, что 
+выполняется соотношение: <script type="math/tex; mode=display">n = C_x^1 + C_y^2 + C_z^3.</script>

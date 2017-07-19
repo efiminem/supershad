@@ -1,0 +1,1 @@
+Найдите определитель матрицы <script type="math/tex">A=(c_{ij})</script>, где <script type="math/tex">a_{ij} = C_{i+j-2}^{i-1}</script>.

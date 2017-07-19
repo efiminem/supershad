@@ -1,0 +1,2 @@
+Квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">9\times 9</script> над полем характеристики, отличной от <script type="math/tex">2</script>, такова, что <script type="math/tex">A^2=E</script>. 
+Найдите ранг матрицы <script type="math/tex">E-A</script>, если известно, что ранг матрицы <script type="math/tex">E+A</script> равен <script type="math/tex">7</script>.

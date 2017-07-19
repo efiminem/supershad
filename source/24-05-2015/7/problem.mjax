@@ -1,0 +1,2 @@
+Вычислите интеграл
+<script type="math/tex; mode=display">\int\limits_{\frac13}^3 \frac{\textrm{arctg}\, x}{x^2-x+1} dx.</script>

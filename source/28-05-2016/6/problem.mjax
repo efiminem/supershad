@@ -1,0 +1,2 @@
+В ряд расположены <script type="math/tex">m</script> предметов. Случайно выбираются <script type="math/tex">k</script> предметов, <script type="math/tex">k<m</script>. Случайная величина <script type="math/tex">X</script> равна количеству таких предметов <script type="math/tex">i</script>, 
+что <script type="math/tex">i</script> выбран, а все его соседи не выбраны. Найдите математическое ожидание <script type="math/tex">X</script>.

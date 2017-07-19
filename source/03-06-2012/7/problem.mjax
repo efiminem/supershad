@@ -1,0 +1,1 @@
+Пусть <script type="math/tex">A_1, A_2, \ldots, A_n</script> &#8212; конечные множества и <script type="math/tex">a_{ij} = |A_i \cap A_j|</script>. Докажите, что матрица <script type="math/tex">(a_{ij})_{i=1,2,\ldots,n}^{j=1,2,\ldots,n}</script> неотрицательно определена.

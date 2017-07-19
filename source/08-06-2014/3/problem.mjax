@@ -1,0 +1,2 @@
+Найдите предел последовательности <script type="math/tex">(c_n)</script>, определяемой рекуррентным соотношением <script type="math/tex">c_{n+1} = (1-\frac1n)c_n + \beta_n</script>, где 
+<script type="math/tex">(\beta_n)</script> &#8212; любая последовательность со свойством <script type="math/tex">n^2 \beta_n \to 0</script> при <script type="math/tex">n \to \infty</script>.

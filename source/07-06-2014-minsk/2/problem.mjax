@@ -1,0 +1,3 @@
+Найдите минимум и максимум функции
+<script type="math/tex; mode=display">f(x,y) = x^2 + y^2 - 12x + 16y</script>
+на круге <script type="math/tex">x^2 + y^2 \leqslant 5^2</script>.

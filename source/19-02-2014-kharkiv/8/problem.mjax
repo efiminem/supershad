@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">a</script> &#8212; действительное число. Для каждого целого <script type="math/tex">n \geqslant 0</script> обозначим через <script type="math/tex">a_n</script> расстояние от <script type="math/tex">a</script> до ближайшего 
+рационального числа вида <script type="math/tex">\frac{m}{2^n}</script>, где <script type="math/tex">m</script> &#8212; целое. Найдите наибольшую возможную сумму ряда <script type="math/tex">\sum\limits_{n=0}^\infty a_n</script>.

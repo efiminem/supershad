@@ -1,0 +1,2 @@
+Рассмотрим бесконечный двумерный массив <script type="math/tex">\{a_{ij}\}_{i,j=1}^{\infty}</script>, состоящий из натуральных чисел, причем каждое число встречается 
+в массиве ровно <script type="math/tex">8</script> раз. Докажите, что <script type="math/tex">\exists (m,n): a_{mn} > mn</script>.

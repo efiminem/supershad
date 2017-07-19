@@ -1,0 +1,5 @@
+Назовем матрицу <i>вращательной</i>, если при повороте на <script type="math/tex">90^{\circ}</script> вокруг центра она не меняется.<br>
+   (a) Докажите, что для любого набора чисел <script type="math/tex">\lambda_1, \ldots \lambda_k \in \mathbb{R}</script> найдется <script type="math/tex">n \in \mathbb{N}</script>
+и вращательная матрица <script type="math/tex">n\times n</script>, для которой <script type="math/tex">\lambda_1, \ldots, \lambda_k</script> являются собственными значениями.<br>
+   (б) Докажите, что у вращательной матрицы с действительными коэффициентами все собственные векторы <script type="math/tex">v</script> с отличными от нуля действительными собственными значениями
+симметричны (то есть <script type="math/tex">v_i = v_{n-i+1}</script>).

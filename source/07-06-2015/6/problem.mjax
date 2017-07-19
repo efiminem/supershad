@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">f</script> &#8212; дифференцируемая функция, причем <script type="math/tex">f(0)=0</script>
+и <script type="math/tex">0 < f'(x) \leqslant 1</script>. Докажите, что для всех <script type="math/tex">x \geqslant 0</script> имеет место неравенство
+<script type="math/tex; mode=display">\int\limits_0^x f^3 (t) dt \leqslant \left( \int\limits_0^x f(t) dt \right)^2.</script>

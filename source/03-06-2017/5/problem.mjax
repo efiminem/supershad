@@ -1,0 +1,3 @@
+Квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script> имеет различные собственные значения
+<script type="math/tex">\lambda_1, \ldots, \lambda_n</script>. Найдите все собственные значения (в том числе комплексные) матрицы <script type="math/tex; mode=display">
+\begin{pmatrix}0&-A\\A&0\end{pmatrix}</script>

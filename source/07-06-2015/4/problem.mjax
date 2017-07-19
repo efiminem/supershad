@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">X</script> и <script type="math/tex">Y</script> &#8212; квадратные матрицы одинакового размера,
+ причем <script type="math/tex">XY = \lambda X + \mu Y</script> для некоторых <script type="math/tex">\lambda, \mu \neq 0</script>. Докажите, что матрицы <script type="math/tex">X</script>
+и <script type="math/tex">Y</script> коммутируют.

@@ -1,0 +1,2 @@
+Есть неизвестная нам квадратичная форма <script type="math/tex">Q</script> в <script type="math/tex">n</script>-мерном пространстве. Разрешается задавать вопрос вида &laquo;Чему равно <script type="math/tex">Q(v)</script>?&raquo;. 
+Какое минимальное число вопросов надо задать, чтобы определить, является ли форма <script type="math/tex">Q</script> положительно определенной?

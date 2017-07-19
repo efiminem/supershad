@@ -1,0 +1,2 @@
+Последовательность <script type="math/tex">\{a_n\}_{n=0}^\infty</script> определена рекурсивно:
+<script type="math/tex; mode=display">a_0=1, \;\;\;\;\;\;\; a_{n+1} = \frac{a_n}{1 + na_n}.</script>Найдите формулу общего члена последовательности.

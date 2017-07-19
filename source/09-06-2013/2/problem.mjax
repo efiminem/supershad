@@ -1,0 +1,2 @@
+Дано множество <script type="math/tex">A=\{1,2,\ldots,n\}</script>. Среди всех его подмножеств рановероятно выбирается <script type="math/tex">k</script> его подмножеств. 
+Найдите вероятность того, что <script type="math/tex">A_1 \cap A_2 \cap \ldots \cap A_n = \varnothing</script>.

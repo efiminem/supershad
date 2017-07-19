@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">A</script> &#8212; невырожденная вещественная матрица <script type="math/tex">n\times n</script>, все элементы которой положительны. Докажите, что число нулей среди
+элементов матрицы <script type="math/tex">A^{-1}</script> не превосходит <script type="math/tex">n^2-2n</script>.

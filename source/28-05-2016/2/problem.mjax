@@ -1,0 +1,4 @@
+Исследуйте на сходимость ряд
+<script type="math/tex; mode=display">
+\sum_{n=3}^\infty (\ln \ln n)^{-\ln n}.
+</script>

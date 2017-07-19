@@ -1,0 +1,3 @@
+Квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script> строится следующим образом:
+<script type="math/tex; mode=display">a_{ij} = \begin{cases}1,& \textrm{ если }i\textrm{ делит }j,\\0,& \text{ иначе.}\end{cases}</script>
+Вычислите определитель матрицы <script type="math/tex">A</script>.

@@ -1,0 +1,3 @@
+Случайные величины <script type="math/tex">X</script> и <script type="math/tex">Y</script> независимы. Плотность случайной величины <script type="math/tex">X</script> равна
+<script type="math/tex">p_X (t) = \frac{t}{2} \cdot I_{[0;2]} (t)</script> (где <script type="math/tex">I_{[0;2]} (t)</script> &#8212; индикаторная функция отрезка <script type="math/tex">[0;2]</script>), а <script type="math/tex">Y</script> имеет равномерное распределение на отрезке <script type="math/tex">[0;3]</script>.
+Найдите вероятность того, что из отрезков с длинами <script type="math/tex">X</script>,<script type="math/tex">Y</script> и <script type="math/tex">1</script> можно составить треугольник.

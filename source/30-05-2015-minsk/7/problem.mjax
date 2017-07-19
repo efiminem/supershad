@@ -1,0 +1,40 @@
+Рассмотрим четыре реализации одной и той же функции на языке программирования <i>python</i>. Определите, что должна вычислять функция. 
+Какие из реализаций работают корректно?<br>
+(a) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;if n < 0 or k < 0 or k > n: return 0<br>
+&emsp;&emsp;&emsp;&emsp;if n == 0 or k == 0 or n == k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;s = 0<br>
+&emsp;&emsp;&emsp;&emsp;step = k<br>
+&emsp;&emsp;&emsp;&emsp;if n > 47: step = 10<br>
+&emsp;&emsp;&emsp;&emsp;for i in range(n + 1):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;s += solve(n - step, i * solve(step, k - i)<br>
+&emsp;&emsp;&emsp;&emsp;return s<br>
+</code>
+(b) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;A = [ 0 for i in range(n+1) ]<br>
+&emsp;&emsp;&emsp;&emsp;for s in range(16**n)<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tmp = s<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;odd = 0<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;for t in range(n):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if tmp % 2: odd += 1<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tmp = tmp // 16<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A[odd] += 1<br>
+&emsp;&emsp;&emsp;&emsp;return A[k] // 2**(3*n)<br>
+</code> 
+(c) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;if k == 0 or n == k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;return solve(n + 1, k) - solve(n, k - 1)<br>
+</code>
+(d) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;if k == 0 or n == k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;return solve(n, k + 1) * (k + 1) // (n - k)<br>
+</code><br>
+<i>Замечание.</i> Некоторые разъяснения к синтаксису <i>python</i>.<br>
+&#8212; <code>range(x)</code> возвращает массив <code>[0,1,...,x-1]</code><br>
+&#8212; <code>**</code> возведение в степень, например, <code>2**5 == 32</code><br>
+&#8212; <code>%</code> взятие остатка от деления, например, <code>7 % 3 == 1</code><br>
+&#8212; <code>//</code> целочисленное деление, например, <code>7 // 3 == 2</code>

@@ -1,0 +1,2 @@
+Для произвольных положительных <script type="math/tex">n</script> и <script type="math/tex">m</script> вычислите сумму
+<script type="math/tex; mode=display">\sum\limits_{i=0}^n \frac{1}{2^{m+i+1}} C_{m+i}^i + \sum\limits_{i=0}^m \frac{1}{2^{n+i+1}} C_{n+i}^i.</script>

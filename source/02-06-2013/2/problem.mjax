@@ -1,0 +1,1 @@
+Дана матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">a_{ij} = (i-j)^2, i,j=1, \ldots, n</script>. Найдите ранг матрицы <script type="math/tex">A</script>.

@@ -1,0 +1,3 @@
+Найдите предел последовательности 
+<script type="math/tex; mode=display">\lim_{n\to \infty} \int_0^1 e^{\{nx\}} x^{2016} dx,</script>
+где <script type="math/tex">\{t\}</script> означает дробную часть числа <script type="math/tex">t</script> (например, <script type="math/tex">\{ -\frac23 \} = \{ \frac43 \} = \frac13</script>).

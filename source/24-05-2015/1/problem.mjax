@@ -1,0 +1,2 @@
+Найдите предел последовательности <script type="math/tex">(a_n)</script>, для которой <script type="math/tex">a_0=-\frac12</script>,
+<script type="math/tex; mode=display">a_{n+1}=\frac{a^2_n (a_n-3)}{4}.</script>

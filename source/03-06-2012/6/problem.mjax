@@ -1,0 +1,2 @@
+Дан массив из <script type="math/tex">n</script> чисел. Предложите алгоритм, позволяющий за <script type="math/tex">O(n)</script> операций определить, является ли этот массив перестановкой чисел от 
+<script type="math/tex">1</script> до <script type="math/tex">n</script>. Дополнительной памяти не более <script type="math/tex">O(1)</script>.

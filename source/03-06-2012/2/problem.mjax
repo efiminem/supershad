@@ -1,0 +1,2 @@
+Рассмотрим функцию <script type="math/tex">\psi(x) = \sum\limits_{k=1}^\infty \frac{1}{2^{2[\log_2 k]}} x^k</script>, где квадратные скобки означают 
+целую часть числа. Найдите <script type="math/tex">\int\limits_0^1 \psi(x) \psi'(x) dx</script>.

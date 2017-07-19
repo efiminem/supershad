@@ -1,0 +1,2 @@
+Определим последовательность <script type="math/tex">x_n</script> начальными условиями <script type="math/tex">x_1=a</script>, <script type="math/tex">x_2=b</script> и рекуррентной формулой <script type="math/tex">x_{n+1} = \frac12 (x_n + x_{n+1})</script>. 
+Найдите <script type="math/tex">\lim\limits_{n\to \infty} x_n</script>.

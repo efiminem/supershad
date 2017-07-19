@@ -1,0 +1,2 @@
+Требуется отгадать число от <script type="math/tex">1</script> до <script type="math/tex">n</script> <script type="math/tex">(n>10)</script>, задавая лишь вопросы, на которые можно отвечать &laquo;да&raquo; или &laquo;нет&raquo;, при этом отвечающий 
+может один раз солгать. Придумайте алгоритм, гарантированно позволяющий сделать это быстрее, чем за <script type="math/tex">2\lceil \log_2 n \rceil + 1</script> шагов.

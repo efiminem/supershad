@@ -1,0 +1,4 @@
+Пусть <script type="math/tex">X_1, \ldots X_n</script> &#8212; независимые одинаково распределенные случайные величины с
+математическим ожиданием <script type="math/tex">a</script> и дисперсией <script type="math/tex">\sigma^2</script>, принимающие положительные значения. Пусть также 
+<script type="math/tex">m < n</script>. Найдите математическое ожидание отношения:
+<script type="math/tex; mode=display">\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}</script>

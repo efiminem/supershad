@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212;
+ квадратные матрицы одинакового размера. Верно ли, что если <script type="math/tex">ABA=A</script>, то <script type="math/tex">BAB=B</script>?

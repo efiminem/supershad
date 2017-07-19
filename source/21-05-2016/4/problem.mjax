@@ -1,0 +1,1 @@
+Пусть <script type="math/tex">f:\mathbb{R}^2 \to \mathbb{R}</script> &#8212; ограниченная гладкая функция, причем ее среднее значение на любой окружности радиуса <script type="math/tex">1</script> равно значению в центре этой окружности. Докажите, что <script type="math/tex">f</script> постоянна.

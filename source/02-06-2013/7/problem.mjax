@@ -1,0 +1,3 @@
+Найдите сумму ряда:
+<script type="math/tex; mode=display">\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)},</script>
+где <script type="math/tex">f(n)</script> &#8212; количество единиц в двоичном представлении числа <script type="math/tex">n</script>.

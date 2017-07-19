@@ -1,0 +1,4 @@
+Все числа от <script type="math/tex">1</script> до <script type="math/tex">n=2^k - 1</script> записаны неизвестным нам образом
+в полном бинарном дереве высоты <script type="math/tex">k</script>. Будем говорить, что число <script type="math/tex">t</script> лежит между числами <script type="math/tex">i</script> и <script type="math/tex">j</script>
+в этом дереве, если при удалении <script type="math/tex">t</script> из дерева <script type="math/tex">i</script> и <script type="math/tex">j</script> оказываются в разных компонентах. Предложите алгоритм, определяющий, что за число находится в корне дерева за <script type="math/tex">O(n \log n)</script> операций с помощью запросов вида &laquo;Лежит ли <script type="math/tex">t</script> между 
+<script type="math/tex">i</script> и <script type="math/tex">j</script>?&raquo;

@@ -1,0 +1,2 @@
+Дана матрица <script type="math/tex">M</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">m_{ij}=a_i a_j</script> при <script type="math/tex">i\neq j</script> и <script type="math/tex">m_{ii} = {a_i}^2 + k,\; i,j=1,\ldots,n</script>. 
+Найдите определитель матрицы <script type="math/tex">M</script>.

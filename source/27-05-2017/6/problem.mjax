@@ -1,0 +1,5 @@
+Пусть <script type="math/tex">X</script> &#8212; случайная величина, принимающая значения на отрезке <script type="math/tex">[0;1]</script>.
+Пусть также <script type="math/tex">m</script> &#8212; медиана <script type="math/tex">X</script>. Рассмотрим <i>бинаризацию</i> этой величины
+<script type="math/tex; mode=display">\beta (X) = \begin{cases}1,& \textrm{при }X \geqslant m;\\0,& \text{иначе.}\end{cases}</script>
+Верно ли, что дисперсия <script type="math/tex">\beta (X)</script> не меньше дисперсии <script type="math/tex">X</script>? А если <script type="math/tex">X</script> непрерывна?<br>
+Под медианой здесь имеется ввиду число <script type="math/tex">m</script>, для которого <script type="math/tex">P\{X \leqslant m\} = P\{X \geqslant m\}</script>.

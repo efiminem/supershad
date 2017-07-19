@@ -1,0 +1,3 @@
+Трудоемкость алгоритма <script type="math/tex">A</script> описывается следующим соотношением (<script type="math/tex">T(n)</script> &#8212; время решения задачи размерности <script type="math/tex">n</script>):
+<script type="math/tex; mode=display">T(n) \leqslant T(\lfloor \sqrt{n} \rfloor ) + 1,\;\;\; T(1) = C_1 (\textrm{const}).</script>
+Найдите асимптотически как можно бо́льшую функцию, удовлетворяющую этому соотношению. Ответ представьте в <script type="math/tex">O</script>-нотации, докажите, что функция удовлетворяет данному соотношению.

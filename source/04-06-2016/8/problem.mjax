@@ -1,0 +1,4 @@
+а) Докажите, что во множестве отрезков <script type="math/tex">\Lambda = \{ [i,j] | i,j=1,\ldots ,n, i<j \}</script> можно
+выбрать подмножество <script type="math/tex">\Sigma</script>, содержащее <script type="math/tex">O(n \log n)</script> отрезков так, чтобы любой отрезок из <script type="math/tex">\Lambda</script>
+представлялся в виде объединения не более двух отрезков из <script type="math/tex">\Sigma</script>.<br>
+б) Докажите, что эта оценка точна, то есть подможество <script type="math/tex">\Sigma \subseteq \Lambda</script>, удовлетворяющее условиям, должно содержать <script type="math/tex">\Omega (n \log n)</script> отрезков.

@@ -1,0 +1,2 @@
+Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
+Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.

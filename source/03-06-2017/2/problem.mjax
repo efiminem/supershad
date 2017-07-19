@@ -1,0 +1,2 @@
+Непрерывная функция <script type="math/tex">f(x)</script> такова, что <script type="math/tex">f(0)=f(2)</script>.
+Докажите, что для какого-то <script type="math/tex">x\in [0;2]</script> имеет место равенство <script type="math/tex">f(x)=f(x-1)</script>.

@@ -1,0 +1,1 @@
+Рассмотрим случайную перестановку на <script type="math/tex">n</script> элементах. Докажите, что данные <script type="math/tex">k</script> элементов окажутся в одном цикле с вероятностью <script type="math/tex">\frac1k</script>.
