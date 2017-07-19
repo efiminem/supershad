@@ -87,34 +87,36 @@ $(document).ready(function(){
 Какие из реализаций работают корректно?<br>
 (a) <br><code>
 def solve(n, k):<br>
-&emsp;&emsp;if n<0 or k<0 or k>n: return 0<br>
-&emsp;&emsp;if n==0 or k==0 or n==k: return 1<br>
-&emsp;&emsp;s=0<br>
-&emsp;&emsp;step=k<br>
-&emsp;&emsp;if n>47: step=10<br>
-&emsp;&emsp;for i in range(n+1):<br>
-&emsp;&emsp;&emsp;&emsp;s += solve(n-step, i * solve(step, k-i)<br>
-&emsp;&emsp;return s<br>
+&emsp;&emsp;&emsp;&emsp;if n<0 or k<0 or k>n: return 0<br>
+&emsp;&emsp;&emsp;&emsp;if n==0 or k==0 or n==k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;s=0<br>
+&emsp;&emsp;&emsp;&emsp;step=k<br>
+&emsp;&emsp;&emsp;&emsp;if n>47: step=10<br>
+&emsp;&emsp;&emsp;&emsp;for i in range(n+1):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;s += solve(n-step, i * solve(step, k-i)<br>
+&emsp;&emsp;&emsp;&emsp;return s<br>
 </code>
 (b) <br><code>
 def solve(n, k):<br>
-A = [ 0 for i in range(n+1) ]<br>
-for s in range(16**n)<br>
-tmp=s<br>
-odd=0<br>
-for t in range(n):<br>
-if tmp % 2: odd += 1<br>
-tmp = tmp // 16<br>
-A[odd] += 1<br>
-return A[k] // 2**(3*n)<br>
+&emsp;&emsp;&emsp;&emsp;A = [ 0 for i in range(n+1) ]<br>
+&emsp;&emsp;&emsp;&emsp;for s in range(16**n)<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tmp=s<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;odd=0<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;for t in range(n):<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;if tmp % 2: odd += 1<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;tmp = tmp // 16<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A[odd] += 1<br>
+&emsp;&emsp;&emsp;&emsp;return A[k] // 2**(3*n)<br>
 </code> 
-(c) <code>def solve(n, k):<br>
-if k==0 or n==k: return 1<br>
-return solve(n+1, k) - solve(n, k-1)<br>
+(c) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;if k==0 or n==k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;return solve(n+1, k) - solve(n, k-1)<br>
 </code>
-(d) <code>def solve(n, k):<br>
-if k==0 or n==k: return 1<br>
-return solve(n, k+1) * (k+1) // (n-k)<br>
+(d) <br><code>
+def solve(n, k):<br>
+&emsp;&emsp;&emsp;&emsp;if k==0 or n==k: return 1<br>
+&emsp;&emsp;&emsp;&emsp;return solve(n, k+1) * (k+1) // (n-k)<br>
 </code><br>
 <i>Замечание.</i> Некоторые разъяснения к синтаксису python.<br>
 &#8212; <code>range(x)</code> возвращает массив <code>[0,1,...,x-1]</code><br>
