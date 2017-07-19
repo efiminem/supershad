@@ -73,8 +73,8 @@ $(document).ready(function(){
   <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Докажите, что для любого неотрицательного целого <script type="math/tex">n</script> существуют целые числа <script type="math/tex">x</script>, <script type="math/tex">y</script> и <script type="math/tex">z</script> <script type="math/tex">(0 \leq x < y \leq z)</script> такие, что 
 выполняется соотношение: <script type="math/tex; mode=display">n = C_x^1 + C_y^2 + C_z^3.</script></td></tr>
   <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Трудоемкость алгоритма <script type="math/tex">A</script> описывается следующим соотношением (<script type="math/tex">T(n)</script> &#8212; время решения задачи размерности <script type="math/tex">n</script>):
-<script type="math/tex; mode=display">T(n) \leq T(\lround \sqrt{n} \rround ) + 1,\;\;\; T(1) = C_1 (\textrm{const}).</script>
-Найдите асимптотически как можно большую функцию, удовлетворяющую этому соотношению. Ответ представьте в <script type="math/tex">O</script>-нотации, докажите, что функция удовлетворяет данному соотношению.</td></tr>
+<script type="math/tex; mode=display">T(n) \leq T(\lfloor \sqrt{n} \rfloor ) + 1,\;\;\; T(1) = C_1 (\textrm{const}).</script>
+Найдите асимптотически как можно бо́льшую функцию, удовлетворяющую этому соотношению. Ответ представьте в <script type="math/tex">O</script>-нотации, докажите, что функция удовлетворяет данному соотношению.</td></tr>
   <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Рассмотрим клетчатую доску размера <script type="math/tex">N\times M</script>. Раскрасим клетки доски в шахматном порядке в белый и черный цвета, причем 
 левую верхнюю клетку покрасим в белый цвет. Найдите количество способов вырезать из этой доски содержащий не более <script type="math/tex">4</script> черных клеток участок. Резать разрешается только по границам клеток.<br>
 (a) <script type="math/tex">N=8</script> и <script type="math/tex">M=8</script>.<br>
@@ -86,14 +86,14 @@ $(document).ready(function(){
   <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Рассмотрим четыре реализации одной и той же функции на языке программирования python. Определите, что должна вычислять функция. 
 Какие из реализаций работают корректно?<br>
 (a) <code>def solve(n, k):<br>
-if n<0 or k<0 or k>n: return 0<br>
-if n==0 or k==0 or n==k: return 1<br>
-s=0<br>
-step=k<br>
-if n>47: step=10<br>
-for i in range(n+1):<br>
-s += solve(n-step, i * solve(step, k-i)<br>
-return s<br>
+&emsp;if n<0 or k<0 or k>n: return 0<br>
+&emsp;if n==0 or k==0 or n==k: return 1<br>
+&emsp;s=0<br>
+&emsp;step=k<br>
+&emsp;if n>47: step=10<br>
+&emsp;for i in range(n+1):<br>
+&emsp;&emsp;s += solve(n-step, i * solve(step, k-i)<br>
+&emsp;return s<br>
 </code>
 (b) <code>def solve(n, k):<br>
 A = [ 0 for i in range(n+1) ]<br>
