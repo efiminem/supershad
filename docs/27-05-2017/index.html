@@ -72,9 +72,9 @@ $(document).ready(function(){
 Пусть <script type="math/tex">k</script> &#8212; количество классификаторов. Тогда все возможные использования классификаторов можно представить в виде булевой матрицы <script type="math/tex">20\times k</script>,
 в которой элемент <script type="math/tex">c_{ij}</script> равен <script type="math/tex">1</script>, если для решения <script type="math/tex">i</script>-й задачи классификации используется <script type="math/tex">j</script>-й классификатор.
 По условию задачи в каждой строке такой матрицы должно быть ровно <script type="math/tex">5</script> единиц, а любая пара единиц <script type="math/tex">(j_1,j_2)</script> может встречаться только в одной строке.
-Нетрудно понять, что <script type="math/tex">k \geq 21</script>. В самом деле, в каждой строке присутствует <script type="math/tex">\frac{5\cdot 4}{2} = 10</script> уникальных пар классификаторов.
+Нетрудно понять, что <script type="math/tex">k \geqslant 21</script>. В самом деле, в каждой строке присутствует <script type="math/tex">\frac{5\cdot 4}{2} = 10</script> уникальных пар классификаторов.
 Значит, число различных пар классификаторов, которые применялись для решения задач, равно <script type="math/tex">10\cdot 20 = 200</script>. С другой стороны, общее число пар классификаторов равно <script type="math/tex">\frac{k(k-1)}{2}</script>.
-Очевидно, должно выполняться условие <script type="math/tex">200 \leq \frac{k(k-1)}{2}</script>. Следовательно, <script type="math/tex">k \geq 21</script>. Приведем пример матрицы <script type="math/tex">21\times 21</script>, у которой любая из подматриц <script type="math/tex">20\times 21</script> удовлетворяет условию задачи: 
+Очевидно, должно выполняться условие <script type="math/tex">200 \leqslant \frac{k(k-1)}{2}</script>. Следовательно, <script type="math/tex">k \geqslant 21</script>. Приведем пример матрицы <script type="math/tex">21\times 21</script>, у которой любая из подматриц <script type="math/tex">20\times 21</script> удовлетворяет условию задачи: 
 <script type="math/tex; mode=display">
 \begin{matrix}
 0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&1&1&1&1&1\\
@@ -107,15 +107,15 @@ $(document).ready(function(){
   <tr><td valign="top" style="padding-top: 11px;">3. </td><td  style="padding-bottom:20px;">Найдите сумму <script type="math/tex">\sum\limits_{k=0}^\infty (-1)^k \frac{(k+1)^2}{k!}</script>.</td></tr>
   <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Вася поставил учиться две нейронных сети, каждую на своем GPU, и отправился спать. Времена обучения сетей независимы и равномерно
 распределены на отрезке <script type="math/tex">[1;3]</script> (часов). Через время <script type="math/tex">t</script> сервер упал и оказалось, что лишь одна сеть успела доучиться.
-С какой вероятностью <script type="math/tex">t \leq \frac32</script>? Считайте, что время падения сервера тоже равномерно распределено на отрезке <script type="math/tex">[1;3]</script>.</td></tr>
+С какой вероятностью <script type="math/tex">t \leqslant \frac32</script>? Считайте, что время падения сервера тоже равномерно распределено на отрезке <script type="math/tex">[1;3]</script>.</td></tr>
   <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Докажите, что для произвольного <script type="math/tex">a_0 \in (0;2\pi)</script> последовательность, заданная условием
 <script type="math/tex; mode=display">a_{n+1} = \int\limits_0^{a_n} \left( 1 + \frac14 \cos^{2n+1} t \right) dt,</script>
 имеет предел и найдите его.</td></tr>
 <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">X</script> &#8212; случайная величина, принимающая значения на отрезке <script type="math/tex">[0;1]</script>.
 Пусть также <script type="math/tex">m</script> &#8212; медиана <script type="math/tex">X</script>. Рассмотрим <i>бинаризацию</i> этой величины
-<script type="math/tex; mode=display">\beta (X) = \begin{cases}1,& \textrm{при }X \geq m;\\0,& \text{иначе.}\end{cases}</script>
+<script type="math/tex; mode=display">\beta (X) = \begin{cases}1,& \textrm{при }X \geqslant m;\\0,& \text{иначе.}\end{cases}</script>
 Верно ли, что дисперсия <script type="math/tex">\beta (X)</script> не меньше дисперсии <script type="math/tex">X</script>? А если <script type="math/tex">X</script> непрерывна?<br>
-Под медианой здесь имеется ввиду число <script type="math/tex">m</script>, для которого <script type="math/tex">P\{X \leq m\} = P\{X \geq m\}</script>.</td></tr>
+Под медианой здесь имеется ввиду число <script type="math/tex">m</script>, для которого <script type="math/tex">P\{X \leqslant m\} = P\{X \geqslant m\}</script>.</td></tr>
   <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Все числа от <script type="math/tex">1</script> до <script type="math/tex">n=2^k - 1</script> записаны неизвестным нам образом
 в полном бинарном дереве высоты <script type="math/tex">k</script>. Будем говорить, что число <script type="math/tex">t</script> лежит между числами <script type="math/tex">i</script> и <script type="math/tex">j</script>
 в этом дереве, если при удалении <script type="math/tex">t</script> из дерева <script type="math/tex">i</script> и <script type="math/tex">j</script> оказываются в разных компонентах. Предложите алгоритм, определяющий, что за число находится в корне дерева за <script type="math/tex">O(n \log n)</script> операций с помощью запросов вида &laquo;Лежит ли <script type="math/tex">t</script> между 
