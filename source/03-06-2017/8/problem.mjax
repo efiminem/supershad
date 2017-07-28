@@ -1,2 +1,2 @@
 Исследуйте на сходимость (абсолютную и условную) ряд <script type="math/tex">\sum_{k=1}^\infty a_k</script>, где
-  <script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt</script>
+  <script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt</script>.

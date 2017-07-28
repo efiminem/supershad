@@ -1,2 +1,2 @@
-Даны <script type="math/tex">n</script> отрезков <script type="math/tex">[a_1, b_1]</script>. Назовем <i>индексом вложенности отрезка</i> <script type="math/tex">[a_1,b_1]</script> количество отрезков, которые его содержат.
+Даны <script type="math/tex">n</script> отрезков <script type="math/tex">[a_1, b_1]</script>. Назовем <i>индексом вложенности</i> отрезка <script type="math/tex">[a_1,b_1]</script> количество отрезков, которые его содержат.
 Предложите алгоритм, определяющий, есть ли в наборе отрезок с индексом вложенности, превышающим <script type="math/tex">1000</script>. Ограничение по времени &#8212; <script type="math/tex">O(n \log n)</script>, по дополнительной памяти &#8212; <script type="math/tex">O(n)</script>.

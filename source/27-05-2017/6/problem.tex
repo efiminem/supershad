@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Пусть $X$ --- случайная величина, принимающая значения на отрезке $[0;1]$.
+Пусть также $m$ --- медиана $X$. Рассмотрим \textit{бинаризацию} этой величины
+$$\beta (X) = \begin{cases}1,& \textrm{при }X \geqslant m;\\0,& \text{иначе.}\end{cases}$$
+Верно ли, что дисперсия $\beta (X)$ не меньше дисперсии $X$? А если $X$ непрерывна?\\
+Под медианой здесь имеется ввиду число $m$, для которого $P\{X \leqslant m\} = P\{X \geqslant m\}$.
+\end{document}

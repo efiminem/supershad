@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Все числа от $1$ до $n=2^k - 1$ записаны неизвестным нам образом
+в полном бинарном дереве высоты $k$. Будем говорить, что число $t$ лежит между числами $i$ и $j$
+в этом дереве, если при удалении $t$ из дерева $i$ и $j$ оказываются в разных компонентах. Предложите алгоритм, определяющий, что за число находится в корне дерева за $O(n \log n)$ операций с помощью запросов вида <<Лежит ли $t$ между 
+$i$ и $j$?>>.
+\end{document}
