@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+$$\det \begin{pmatrix}-\lambda E&-A\\A&-\lambda E\end{pmatrix} = \det(A^2 + \lambda^2 E^2) = \det(A - i \lambda E) \det(A + i \lambda E) = 0$$
+Видно, что уравнению удовлетворяют $2n$ чисел $\pm i \lambda$ --- они и будут искомыми собственными значениями.
+\end{document}
