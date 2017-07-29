@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,27 +71,18 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>4 июня 2016</center></h4>
-  <table>  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Докажите, что любая квадратная вещественная матрица является суммой двух обратимых.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Может ли непрерывная на всех числовой прямой функция принимать каждое значение (а) дважды? (б) трижды?</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Каждая из случайных величин <script type="math/tex">X</script> и <script type="math/tex">Y</script> принимает два значения,
-причем <script type="math/tex">\mathrm{Cov} (X,Y) = 0</script>. Докажите, что <script type="math/tex">X</script> и <script type="math/tex">Y</script> независимы.</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Все ребра неориентированного ациклического графа покрашены в два цвета: красный и синий. Предложите алгоритм, находящий длину
+  <ol><li>Докажите, что любая квадратная вещественная матрица является суммой двух обратимых.</li><li>Может ли непрерывная на всех числовой прямой функция принимать каждое значение (а) дважды? (б) трижды?</li><li>Каждая из случайных величин <script type="math/tex">X</script> и <script type="math/tex">Y</script> принимает два значения,
+причем <script type="math/tex">\mathrm{Cov} (X,Y) = 0</script>. Докажите, что <script type="math/tex">X</script> и <script type="math/tex">Y</script> независимы.</li><li>Все ребра неориентированного ациклического графа покрашены в два цвета: красный и синий. Предложите алгоритм, находящий длину
 максимального пути, в котором любые два соседних ребра разного цвета. Ограничение по времени &#8212; <script type="math/tex">O(V+E)</script>, где <script type="math/tex">V</script> &#8212; число
-вершин графа, <script type="math/tex">E</script> &#8212; число его ребер. Сколько дополнительной памяти требуется вашему алгоритму?</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">\xi</script>, <script type="math/tex">\eta</script> и <script type="math/tex">\lambda</script> &#8212;
+вершин графа, <script type="math/tex">E</script> &#8212; число его ребер. Сколько дополнительной памяти требуется вашему алгоритму?</li><li>Пусть <script type="math/tex">\xi</script>, <script type="math/tex">\eta</script> и <script type="math/tex">\lambda</script> &#8212;
 независимые случайные величины, равномерно распределенные на отрезке <script type="math/tex">[0;1]</script>, а <script type="math/tex">t</script> &#8212; фиксированное число.
-Найдите <script type="math/tex">P(\xi + \eta) < t\lambda</script>.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">В пространстве многочленов с действительными коэффициентами степени не выше <script type="math/tex">n</script> задана
-квадратичная форма <script type="math/tex">Q(f) = f(1) \cdot f(2)</script>. Найдите ее сигнатуру (число единиц и минус единиц в нормальном виде).</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Найдите предел последовательности 
+Найдите <script type="math/tex">P(\xi + \eta) < t\lambda</script>.</li><li>В пространстве многочленов с действительными коэффициентами степени не выше <script type="math/tex">n</script> задана
+квадратичная форма <script type="math/tex">Q(f) = f(1) \cdot f(2)</script>. Найдите ее сигнатуру (число единиц и минус единиц в нормальном виде).</li><li>Найдите предел последовательности 
 <script type="math/tex; mode=display">\lim_{n\to \infty} \int_0^1 e^{\{nx\}} x^{2016} dx,</script>
-где <script type="math/tex">\{t\}</script> означает дробную часть числа <script type="math/tex">t</script> (например, <script type="math/tex">\{ -\frac23 \} = \{ \frac43 \} = \frac13</script>).</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">а) Докажите, что во множестве отрезков <script type="math/tex">\Lambda = \{ [i,j] | i,j=1,\ldots ,n, i<j \}</script> можно
+где <script type="math/tex">\{t\}</script> означает дробную часть числа <script type="math/tex">t</script> (например, <script type="math/tex">\{ -\frac23 \} = \{ \frac43 \} = \frac13</script>).</li><li>а) Докажите, что во множестве отрезков <script type="math/tex">\Lambda = \{ [i,j] | i,j=1,\ldots ,n, i<j \}</script> можно
 выбрать подмножество <script type="math/tex">\Sigma</script>, содержащее <script type="math/tex">O(n \log n)</script> отрезков так, чтобы любой отрезок из <script type="math/tex">\Lambda</script>
 представлялся в виде объединения не более двух отрезков из <script type="math/tex">\Sigma</script>.<br>
-б) Докажите, что эта оценка точна, то есть подможество <script type="math/tex">\Sigma \subseteq \Lambda</script>, удовлетворяющее условиям, должно содержать <script type="math/tex">\Omega (n \log n)</script> отрезков.</td></tr>
-  </table>
+б) Докажите, что эта оценка точна, то есть подможество <script type="math/tex">\Sigma \subseteq \Lambda</script>, удовлетворяющее условиям, должно содержать <script type="math/tex">\Omega (n \log n)</script> отрезков.</li></ol>
   </article>
 
 </div>

@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,26 +71,14 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>8 июня 2014</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">A</script> &#8212; невырожденная вещественная матрица <script type="math/tex">n\times n</script>, все элементы которой положительны. Докажите, что число нулей среди
-элементов матрицы <script type="math/tex">A^{-1}</script> не превосходит <script type="math/tex">n^2-2n</script>.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Трое игроков по очереди вынимают от <script type="math/tex">1</script> до <script type="math/tex">m</script> <script type="math/tex">(m>1)</script> камней из кучи (количество камней в куче им изначально известно). 
-Игрок, вынувший последний камень, проигрывает. Докажите, что если изначально куча была достаточно велика, то любые два игрока, договорившись, сумеют привести третьего к проигрышу.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Найдите предел последовательности <script type="math/tex">(c_n)</script>, определяемой рекуррентным соотношением <script type="math/tex">c_{n+1} = (1-\frac1n)c_n + \beta_n</script>, где 
-<script type="math/tex">(\beta_n)</script> &#8212; любая последовательность со свойством <script type="math/tex">n^2 \beta_n \to 0</script> при <script type="math/tex">n \to \infty</script>.</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Отрезок <script type="math/tex">[0;1]</script> разбит двумя случайными точками на три части. Найдите математическое ожидание длины меньшей из частей.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Предложите алгоритм, находящий значения <script type="math/tex">P(n+1), P(n+2), \ldots ,P(2n)</script> неизвестного многочлена <script type="math/tex">n</script>-й степени <script type="math/tex">P(x)</script>, если даны его 
-значения <script type="math/tex">P(0)</script>, <script type="math/tex">P(1), \ldots, P(n)</script>. Ограничение по времени &#8212; <script type="math/tex">O(n^2)</script>.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Вычислите интеграл
-<script type="math/tex; mode=display">\int e^{e^x + 2014x} dx.</script></td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Когда студент пришел в аудиторию, на доске было написано число <script type="math/tex">0</script>. В ожидании лекции студент
+  <ol><li>Пусть <script type="math/tex">A</script> &#8212; невырожденная вещественная матрица <script type="math/tex">n\times n</script>, все элементы которой положительны. Докажите, что число нулей среди
+элементов матрицы <script type="math/tex">A^{-1}</script> не превосходит <script type="math/tex">n^2-2n</script>.</li><li>Трое игроков по очереди вынимают от <script type="math/tex">1</script> до <script type="math/tex">m</script> <script type="math/tex">(m>1)</script> камней из кучи (количество камней в куче им изначально известно). Игрок, вынувший последний камень, проигрывает. Докажите, что если изначально куча была достаточно велика, то любые два игрока, договорившись, сумеют привести третьего к проигрышу.</li><li>Найдите предел последовательности <script type="math/tex">(c_n)</script>, определяемой рекуррентным соотношением <script type="math/tex">c_{n+1} = (1-\frac1n)c_n + \beta_n</script>, где 
+<script type="math/tex">(\beta_n)</script> &#8212; любая последовательность со свойством <script type="math/tex">n^2 \beta_n \to 0</script> при <script type="math/tex">n \to \infty</script>.</li><li>Отрезок <script type="math/tex">[0;1]</script> разбит двумя случайными точками на три части. Найдите математическое ожидание длины меньшей из частей.</li><li>Предложите алгоритм, находящий значения <script type="math/tex">P(n+1), P(n+2), \ldots ,P(2n)</script> неизвестного многочлена <script type="math/tex">n</script>-й степени <script type="math/tex">P(x)</script>, если даны его значения <script type="math/tex">P(0)</script>, <script type="math/tex">P(1), \ldots, P(n)</script>. Ограничение по времени &#8212; <script type="math/tex">O(n^2)</script>.</li><li>Вычислите интеграл
+<script type="math/tex; mode=display">\int e^{e^x + 2014x} dx.</script></li><li>Когда студент пришел в аудиторию, на доске было написано число <script type="math/tex">0</script>. В ожидании лекции студент
 подкидывает монетку и, если выпадет орел, он прибавляет к числу <script type="math/tex">1</script>, а если решка &#8212; то вычитает <script type="math/tex">1</script>. Орел и решка
 выпадают с равной вероятностью. Найдите вероятность того, что на момент после <script type="math/tex">(2n+1)</script>-го подбрасывания число на доске сменило знак 
-(с положительного на отрицательный или наоборот) (а) ровно <script type="math/tex">n</script> раз; (б) ни разу.</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">При каких натуральных <script type="math/tex">N</script> существует квадратная матрица порядка <script type="math/tex">N</script> с элементами <script type="math/tex">0,1</script> такая, что 
-ее квадрат &#8212; это матрица из одних единиц?</td></tr>
-  </table>
+(с положительного на отрицательный или наоборот) (а) ровно <script type="math/tex">n</script> раз; (б) ни разу.</li><li>При каких натуральных <script type="math/tex">N</script> существует квадратная матрица порядка <script type="math/tex">N</script> с элементами <script type="math/tex">0,1</script> такая, что 
+ее квадрат &#8212; это матрица из одних единиц?</li></ol>
   </article>
 
 </div>

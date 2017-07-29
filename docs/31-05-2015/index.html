@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,25 +71,14 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>31 мая 2015</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Квадратная матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\mathrm{tr}(AX)=0</script> для любой матрицы <script type="math/tex">X</script>, имеющей нулевой след. Докажите, что матрица <script type="math/tex">A</script> является скалярной 
-(то есть имеет вид <script type="math/tex">\lambda E</script> для некоторого скаляра <script type="math/tex">\lambda</script>).</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Придя на письменный экзамен в ШАД, студенты поняли, что среди любых четырех человек хотя бы один уже знаком с тремя оставшимися.
-Докажите, что в этом случае среди любых четверых человек хотя бы один уже знаком со всеми остальными студентами.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">На окружности выбираются две случайные точки <script type="math/tex">A</script> и <script type="math/tex">B</script>. Найдите математическое ожидание площади меньшего из сегментов,
-на которые хорда <script type="math/tex">AB</script> разбивает круг.</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Дан массив из <script type="math/tex">n</script> целых чисел. Предложите алгоритм, сортирующий их по остатку при делении на <script type="math/tex">5</script> за время <script type="math/tex">O(n)</script> (в каком
-порядке будут расположены числа, имеющие один и тот же остаток, неважно). Ограничение по дополнительной памяти &#8212; <script type="math/tex">O(1)</script>.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Исследуйте на сходимость и абсолютную сходимость ряд
-<script type="math/tex; mode=display">\sum\limits_{k=1}^\infty \sin \left( \pi \sqrt{n^2 + 1} \right).</script></td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">У вас имеется неограниченное число костей в форме всех возможных правильных многогранников. Можно ли, однократно бросив некоторый набор
-таких костей, симулировать бросок (а) правильной семигранной кости? (б) правильной 15-гранной кости?</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212; квадратные вещественные матрицы одного и того же размера. Докажите, что
-<script type="math/tex; mode=display">\mathrm{det} (E-AB) = \mathrm{det} (E-BA).</script></td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">За столом сидят <script type="math/tex">n</script> старателей, перед каждым из которых находится кучка золотого песка. Каждую минуту происходит следующее:
-по общей команде каждый из них перекладывает в свою кучку половину песка из кучки левого соседа и половину &#8212; из кучки правого соседа. Опишите асимптотическое поведение кучек (а) при <script type="math/tex">n=3</script>; (б) при произвольном <script type="math/tex">n</script>.</td></tr>
-  </table>
+  <ol><li>Квадратная матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\mathrm{tr}(AX)=0</script> для любой матрицы <script type="math/tex">X</script>, имеющей нулевой след. Докажите, что матрица <script type="math/tex">A</script> является скалярной 
+(то есть имеет вид <script type="math/tex">\lambda E</script> для некоторого скаляра <script type="math/tex">\lambda</script>).</li><li>Придя на письменный экзамен в ШАД, студенты поняли, что среди любых четырех человек хотя бы один уже знаком с тремя оставшимися.
+Докажите, что в этом случае среди любых четверых человек хотя бы один уже знаком со всеми остальными студентами.</li><li>На окружности выбираются две случайные точки <script type="math/tex">A</script> и <script type="math/tex">B</script>. Найдите математическое ожидание площади меньшего из сегментов,
+на которые хорда <script type="math/tex">AB</script> разбивает круг.</li><li>Дан массив из <script type="math/tex">n</script> целых чисел. Предложите алгоритм, сортирующий их по остатку при делении на <script type="math/tex">5</script> за время <script type="math/tex">O(n)</script> (в каком порядке будут расположены числа, имеющие один и тот же остаток, неважно). Ограничение по дополнительной памяти &#8212; <script type="math/tex">O(1)</script>.</li><li>Исследуйте на сходимость и абсолютную сходимость ряд
+<script type="math/tex; mode=display">\sum\limits_{k=1}^\infty \sin \left( \pi \sqrt{n^2 + 1} \right).</script></li><li>У вас имеется неограниченное число костей в форме всех возможных правильных многогранников. Можно ли, однократно бросив некоторый набор
+таких костей, симулировать бросок (а) правильной семигранной кости? (б) правильной 15-гранной кости?</li><li>Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212; квадратные вещественные матрицы одного и того же размера. Докажите, что
+<script type="math/tex; mode=display">\mathrm{det} (E-AB) = \mathrm{det} (E-BA).</script></li><li>За столом сидят <script type="math/tex">n</script> старателей, перед каждым из которых находится кучка золотого песка. Каждую минуту происходит следующее:
+по общей команде каждый из них перекладывает в свою кучку половину песка из кучки левого соседа и половину &#8212; из кучки правого соседа. Опишите асимптотическое поведение кучек (а) при <script type="math/tex">n=3</script>; (б) при произвольном <script type="math/tex">n</script>.</li></ol>
   </article>
 
 </div>

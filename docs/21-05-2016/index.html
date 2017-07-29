@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,27 +71,16 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>21 мая 2016</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Решите уравнение <script type="math/tex; mode=display">\lim\limits_{n\to \infty} \cos nx = 1.</script></td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Докажите, что целочисленная матрица не может иметь собственного значения, равного <script type="math/tex">\frac14 (-3 + i\sqrt{5})</script>.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">В мишень, которая представляет собой прямоугольник размера <script type="math/tex">3\times 2</script>, стреляют из пистолета.
+  <ol><li>Решите уравнение <script type="math/tex; mode=display">\lim\limits_{n\to \infty} \cos nx = 1.</script></li><li>Докажите, что целочисленная матрица не может иметь собственного значения, равного <script type="math/tex">\frac14 (-3 + i\sqrt{5})</script>.</li><li>В мишень, которая представляет собой прямоугольник размера <script type="math/tex">3\times 2</script>, стреляют из пистолета.
 Известно, что отклонение пули от точки, на которую нацелен пистолет, произвольно, но не превышает <script type="math/tex">0,1</script> по любому направлению, параллельному сторонам прямоугольника.
-Стрелок целится в произвольную точку мишени. С какой вероятностью он попадет в мишень? </td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">f:\mathbb{R}^2 \to \mathbb{R}</script> &#8212; ограниченная гладкая функция, причем ее среднее значение на любой окружности радиуса <script type="math/tex">1</script> равно значению в центре этой окружности. Докажите, что <script type="math/tex">f</script> постоянна.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Дана матрица <script type="math/tex">n\times n</script>, каждая строка и каждый столбец которой упорядочены по возрастанию
+Стрелок целится в произвольную точку мишени. С какой вероятностью он попадет в мишень?</li><li>Пусть <script type="math/tex">f:\mathbb{R}^2 \to \mathbb{R}</script> &#8212; ограниченная гладкая функция, причем ее среднее значение на любой окружности радиуса <script type="math/tex">1</script> равно значению в центре этой окружности. Докажите, что <script type="math/tex">f</script> постоянна.</li><li>Дана матрица <script type="math/tex">n\times n</script>, каждая строка и каждый столбец которой упорядочены по возрастанию
 (то есть <script type="math/tex">a_{ki} < a_{kj}</script> и <script type="math/tex">a_{it} < a_{jt}</script> при <script type="math/tex">i<j</script>). Предложите алгоритм, находящий два элемента
 этой матрицы, сумма которых наиболее близка к заданному числу <script type="math/tex">q</script>. Ограничение по дополнительной памяти &#8212; <script type="math/tex">O(n)</script>. Изменять 
-исходную матрицу нельзя. Внимание: оценка будет зависеть от эффективности вашего алгоритма.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Робот движется по клеткам бесконечной шахматной доски. Один его шаг &#8212; это перемещение на случайную из восьми соседних клеток.
-Найдите математическое ожидание модуля разности между количеством черных и количеством белых клеток, на которых робот побывал за <script type="math/tex">n</script> шагов (каждая клетка считается столько раз,
-сколько на ней побывал робот). Ответ представьте в виде компактного выражения.</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">J \in \mathrm{Mat}_{2n\times 2n} (\mathbb{R})</script> &#8212; кососимметрическая матрица, 
+исходную матрицу нельзя. Внимание: оценка будет зависеть от эффективности вашего алгоритма.</li><li>Робот движется по клеткам бесконечной шахматной доски. Один его шаг &#8212; это перемещение на случайную из восьми соседних клеток.
+Найдите математическое ожидание модуля разности между количеством черных и количеством белых клеток, на которых робот побывал за <script type="math/tex">n</script> шагов (каждая клетка считается столько раз, сколько на ней побывал робот). Ответ представьте в виде компактного выражения.</li><li>Пусть <script type="math/tex">J \in \mathrm{Mat}_{2n\times 2n} (\mathbb{R})</script> &#8212; кососимметрическая матрица, 
 <script type="math/tex">\beta</script> &#8212; положительное число, а <script type="math/tex">u \in \mathbb{R}^{2n}</script> &#8212; ненулевой вектор. Найдите 
-<script type="math/tex">\mathrm{det}\;(E + \beta u u^{\mathrm{T}} J)</script>.</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">Докажите, что из последовательности из <script type="math/tex">mn+1</script> различных действительных чисел всегда можно
-выделить возрастающую подпоследовательность из <script type="math/tex">n+1</script> числа или убывающую подпоследовательность из <script type="math/tex">m+1</script> числа.</td></tr>
-  </table>
+<script type="math/tex">\mathrm{det}\;(E + \beta u u^{\mathrm{T}} J)</script>.</li><li>Докажите, что из последовательности из <script type="math/tex">mn+1</script> различных действительных чисел всегда можно
+выделить возрастающую подпоследовательность из <script type="math/tex">n+1</script> числа или убывающую подпоследовательность из <script type="math/tex">m+1</script> числа.</li></ol>
   </article>
 
 </div>

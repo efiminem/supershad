@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,23 +71,12 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>9 июня 2013</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Последовательность <script type="math/tex">\{a_n\}_{n=0}^\infty</script> определена рекурсивно:
-<script type="math/tex; mode=display">a_0=1, \;\;\;\;\;\;\; a_{n+1} = \frac{a_n}{1 + na_n}.</script>Найдите формулу общего члена последовательности.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Дано множество <script type="math/tex">A=\{1,2,\ldots,n\}</script>. Среди всех его подмножеств рановероятно выбирается <script type="math/tex">k</script> его подмножеств. 
-Найдите вероятность того, что <script type="math/tex">A_1 \cap A_2 \cap \ldots \cap A_n = \varnothing</script>.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Дан массив длины <script type="math/tex">n</script> из нулей и единиц. Найдите в нем подмассив максимальной длины, в котором количество единиц равно количеству нулей. 
-Ограничения: <script type="math/tex">O(n)</script> по времени, <script type="math/tex">O(n)</script> по дополнительной памяти.</td></tr>
-  <tr><td valign="top" style="padding-top: 14px;">4. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">I_m=\int\limits_0^{2\pi} \cos (x) \cos (2x) \ldots \cos (mx) dx</script>. Для каких <script type="math/tex">m \in [1,10]</script> <script type="math/tex">I_m \neq 0</script>?</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Дан неориентированный граф <script type="math/tex">G</script> без петель. Пронумеруем все его вершины. Матрица смежности графа <script type="math/tex">G</script> с конечным числом вершин <script type="math/tex">n</script> (
-пронумерованных числами от <script type="math/tex">1</script> до <script type="math/tex">n</script>) &#8212; это квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n</script>, в которой значение элемента <script type="math/tex">a_{ij}</script> равно числу ребер из <script type="math/tex">i</script>-й вершины графа в <script type="math/tex">j</script>-ю вершину. 
-Докажите, что матрица <script type="math/tex">A</script> имеет отрицательное собственное значение. </td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Рассмотрим бесконечный двумерный массив <script type="math/tex">\{a_{ij}\}_{i,j=1}^{\infty}</script>, состоящий из натуральных чисел, причем каждое число встречается 
-в массиве ровно <script type="math/tex">8</script> раз. Докажите, что <script type="math/tex">\exists (m,n): a_{mn} > mn</script>.</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Дана матрица из нулей и единиц, причем для каждой строки матрицы верно следующее: если в строке есть единицы, то они все идут подряд 
-(неразрывной группой из единиц). Докажите, что определитель такой матрицы может быть равен только <script type="math/tex">\pm 1</script> или <script type="math/tex">0</script>.</td></tr>
-  </table>
+  <ol><li>Последовательность <script type="math/tex">\{a_n\}_{n=0}^\infty</script> определена рекурсивно:
+<script type="math/tex; mode=display">a_0=1, \;\;\;\;\;\;\; a_{n+1} = \frac{a_n}{1 + na_n}.</script>Найдите формулу общего члена последовательности.</li><li>Дано множество <script type="math/tex">A=\{1,2,\ldots,n\}</script>. Среди всех его подмножеств рановероятно выбирается <script type="math/tex">k</script> его подмножеств. 
+Найдите вероятность того, что <script type="math/tex">A_1 \cap A_2 \cap \ldots \cap A_n = \varnothing</script>.</li><li>Дан массив длины <script type="math/tex">n</script> из нулей и единиц. Найдите в нем подмассив максимальной длины, в котором количество единиц равно количеству нулей. 
+Ограничения: <script type="math/tex">O(n)</script> по времени, <script type="math/tex">O(n)</script> по дополнительной памяти.</li><li>Пусть <script type="math/tex">I_m=\int\limits_0^{2\pi} \cos (x) \cos (2x) \ldots \cos (mx) dx</script>. Для каких <script type="math/tex">m \in [1,10]</script> <script type="math/tex">I_m \neq 0</script>?</li><li>Дан неориентированный граф <script type="math/tex">G</script> без петель. Пронумеруем все его вершины. Матрица смежности графа <script type="math/tex">G</script> с конечным числом вершин <script type="math/tex">n</script> (пронумерованных числами от <script type="math/tex">1</script> до <script type="math/tex">n</script>) &#8212; это квадратная матрица <script type="math/tex">A</script> размера <script type="math/tex">n</script>, в которой значение элемента <script type="math/tex">a_{ij}</script> равно числу ребер из <script type="math/tex">i</script>-й вершины графа в <script type="math/tex">j</script>-ю вершину. Докажите, что матрица <script type="math/tex">A</script> имеет отрицательное собственное значение.</li><li>Рассмотрим бесконечный двумерный массив <script type="math/tex">\{a_{ij}\}_{i,j=1}^{\infty}</script>, состоящий из натуральных чисел, причем каждое число встречается 
+в массиве ровно <script type="math/tex">8</script> раз. Докажите, что <script type="math/tex">\exists (m,n): a_{mn} > mn</script>.</li><li>Дана матрица из нулей и единиц, причем для каждой строки матрицы верно следующее: если в строке есть единицы, то они все идут подряд 
+(неразрывной группой из единиц). Докажите, что определитель такой матрицы может быть равен только <script type="math/tex">\pm 1</script> или <script type="math/tex">0</script>.</li></ol>
   </article>
 
 </div>

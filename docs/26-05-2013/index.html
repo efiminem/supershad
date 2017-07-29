@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,27 +71,16 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>26 мая 2013</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Последовательность <script type="math/tex">\{x_n\}_{n=0}^\infty</script> задана рекуррентным соотношением:
+  <ol><li>Последовательность <script type="math/tex">\{x_n\}_{n=0}^\infty</script> задана рекуррентным соотношением:
 <script type="math/tex; mode=display">x_0=0,\; x_1=1,\; x_{n+1}=\frac{x_n + nx_{n-1}}{n+1}.</script>
-Покажите, что данная последовательность сходится и найдите ее предел.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Имеется <script type="math/tex">100</script> некоторых подмножеств множества <script type="math/tex">\{0,1, \ldots, 9\}</script>. Докажите, что среди них найдется два подмножества, 
-у которых симметрическая разность имеет мощность не более двух.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">На единичной окружности <script type="math/tex">\{x^2+y^2=1\}</script> выбирается случайная точка <script type="math/tex">P</script> (из равномерного распределения). В единичном круге 
+Покажите, что данная последовательность сходится и найдите ее предел.</li><li>Имеется <script type="math/tex">100</script> некоторых подмножеств множества <script type="math/tex">\{0,1, \ldots, 9\}</script>. Докажите, что среди них найдется два подмножества, 
+у которых симметрическая разность имеет мощность не более двух.</li><li>На единичной окружности <script type="math/tex">\{x^2+y^2=1\}</script> выбирается случайная точка <script type="math/tex">P</script> (из равномерного распределения). В единичном круге 
 <script type="math/tex">\{x^2 + y^2 \leqslant 1\}</script> выбирается случайная точка <script type="math/tex">Q</script> (также из равномерного распределения). Пусть <script type="math/tex">R</script> &#8212; прямоугольник со сторонами, параллельными осям координат и диагональю <script type="math/tex">PQ</script>. 
-Какова вероятность того, что весь прямоугольник лежит в единичном круге?</td></tr>
-  <tr><td valign="top" style="padding-top: 11px;">4. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">f</script> &#8212; положительная непрерывная функция на <script type="math/tex">\mathbb{R}</script>, причем <script type="math/tex">\int\limits_{-\infty}^\infty f(x) dx = 1</script>. 
-Пусть <script type="math/tex">\alpha \in (0,1)</script>, а интервал <script type="math/tex">[a;b]</script> &#8212; это интервал минимальной длины из тех, для которых <script type="math/tex">\int\limits_a^b f(x) dx = \alpha</script>. Покажите, что <script type="math/tex">f(a)=f(b)</script>.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Дана матрица <script type="math/tex">M</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">m_{ij}=a_i a_j</script> при <script type="math/tex">i\neq j</script> и <script type="math/tex">m_{ii} = {a_i}^2 + k,\; i,j=1,\ldots,n</script>. 
-Найдите определитель матрицы <script type="math/tex">M</script>.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Задана битовая матрица <script type="math/tex">n\times n</script> с элементами <script type="math/tex">0</script> и <script type="math/tex">1</script> (каждый элемент матрицы занимает один бит памяти). 
+Какова вероятность того, что весь прямоугольник лежит в единичном круге?</li><li>Пусть <script type="math/tex">f</script> &#8212; положительная непрерывная функция на <script type="math/tex">\mathbb{R}</script>, причем <script type="math/tex">\int\limits_{-\infty}^\infty f(x) dx = 1</script>. Пусть <script type="math/tex">\alpha \in (0,1)</script>, а интервал <script type="math/tex">[a;b]</script> &#8212; это интервал минимальной длины из тех, для которых <script type="math/tex">\int\limits_a^b f(x) dx = \alpha</script>. Покажите, что <script type="math/tex">f(a)=f(b)</script>.</li><li>Дана матрица <script type="math/tex">M</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">m_{ij}=a_i a_j</script> при <script type="math/tex">i\neq j</script> и <script type="math/tex">m_{ii} = {a_i}^2 + k,\; i,j=1,\ldots,n</script>. 
+Найдите определитель матрицы <script type="math/tex">M</script>.</li><li>Задана битовая матрица <script type="math/tex">n\times n</script> с элементами <script type="math/tex">0</script> и <script type="math/tex">1</script> (каждый элемент матрицы занимает один бит памяти). 
 Назовем строку (столбец) исходной матрицы плохой (плохим), если в нем встречается хотя бы один ноль. Необходимо в исходной матрице занулить все плохие строки и столбцы. 
-Предложите алгоритм, решающий эту задачу за <script type="math/tex">O(1)</script> дополнительной памяти и оцените его временную стоимость.</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
-Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем 
-для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.</td></tr>
-  </table>
+Предложите алгоритм, решающий эту задачу за <script type="math/tex">O(1)</script> дополнительной памяти и оцените его временную стоимость.</li><li>Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
+Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.</li></ol>
   </article>
 
 </div>

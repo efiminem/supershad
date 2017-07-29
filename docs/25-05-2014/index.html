@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -64,24 +71,14 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>25 мая 2014</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">A</script> &#8212; квадратная матрица, у которой сумма матричных элементов в каждом столбце равна <script type="math/tex">\lambda</script>. 
-Докажите, что <script type="math/tex">\lambda</script> является собственным значением матрицы <script type="math/tex">A</script>.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">На плоскости зафиксированы две точки <script type="math/tex">A</script> и <script type="math/tex">B</script> на расстоянии <script type="math/tex">2</script>. Пусть <script type="math/tex">C</script> &#8212; случайно выбранная точка круга радиуса <script type="math/tex">R</script> с центром в 
-середине отрезка <script type="math/tex">AB</script>. С какой вероятностью треугольник <script type="math/tex">ABC</script> будет тупоугольным?</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Требуется отгадать число от <script type="math/tex">1</script> до <script type="math/tex">n</script> <script type="math/tex">(n>10)</script>, задавая лишь вопросы, на которые можно отвечать &laquo;да&raquo; или &laquo;нет&raquo;, при этом отвечающий 
-может один раз солгать. Придумайте алгоритм, гарантированно позволяющий сделать это быстрее, чем за <script type="math/tex">2\lceil \log_2 n \rceil + 1</script> шагов.</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Найдите интеграл <script type="math/tex; mode=display">\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{\sin^{2014} x}{\sin^{2014} + \cos^{2014} x} dx.</script></td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Зададим числовую последовательность <script type="math/tex">a_n</script> следующим образом. Пусть <script type="math/tex">a_1</script> и <script type="math/tex">a_2</script> &#8212; произвольные натуральные числа. 
+  <ol><li>Пусть <script type="math/tex">A</script> &#8212; квадратная матрица, у которой сумма матричных элементов в каждом столбце равна <script type="math/tex">\lambda</script>. 
+Докажите, что <script type="math/tex">\lambda</script> является собственным значением матрицы <script type="math/tex">A</script>.</li><li>На плоскости зафиксированы две точки <script type="math/tex">A</script> и <script type="math/tex">B</script> на расстоянии <script type="math/tex">2</script>. Пусть <script type="math/tex">C</script> &#8212; случайно выбранная точка круга радиуса <script type="math/tex">R</script> с центром в 
+середине отрезка <script type="math/tex">AB</script>. С какой вероятностью треугольник <script type="math/tex">ABC</script> будет тупоугольным?</li><li>Требуется отгадать число от <script type="math/tex">1</script> до <script type="math/tex">n</script> <script type="math/tex">(n>10)</script>, задавая лишь вопросы, на которые можно отвечать &laquo;да&raquo; или &laquo;нет&raquo;, при этом отвечающий 
+может один раз солгать. Придумайте алгоритм, гарантированно позволяющий сделать это быстрее, чем за <script type="math/tex">2\lceil \log_2 n \rceil + 1</script> шагов.</li><li>Найдите интеграл <script type="math/tex; mode=display">\int\limits_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \frac{\sin^{2014} x}{\sin^{2014} + \cos^{2014} x} dx.</script></li><li>Зададим числовую последовательность <script type="math/tex">a_n</script> следующим образом. Пусть <script type="math/tex">a_1</script> и <script type="math/tex">a_2</script> &#8212; произвольные натуральные числа. 
 Число <script type="math/tex">a_n</script> получается приписыванием к <script type="math/tex">a_{n-1}</script> числа <script type="math/tex">a_{n-2}</script> справа. Предложите алгоритм, вычисляющий по данным <script type="math/tex">a_1</script> и <script type="math/tex">a_2</script> <script type="math/tex">i</script>-ю цифру числа <script type="math/tex">a_n</script> и оцените его временную сложность. 
-Ограничение по памяти: <script type="math/tex">O(1)</script>.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Пусть функция <script type="math/tex">f</script> непрерывна и ограничена на промежутке <script type="math/tex">(x_0, +\infty)</script>. Докажите, что для любого числа <script type="math/tex">T</script> 
-существует последовательность <script type="math/tex">\{x_n\}</script>, стремящаяся к <script type="math/tex">+\infty</script> и такая, что <script type="math/tex">f(x_n+T) - f(x_n) \to 0</script> при <script type="math/tex">n \to \infty</script>.</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Найдите максимальное значение определителя матрицы (а) второго (б) третьего порядка, если сумма квадратов всех ее элементов не превосходит <script type="math/tex">1</script>.</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">В компании из <script type="math/tex">51</script> человека каждый на дух не переносит ровно троих (при этом они не обязательно отвечают ему взаимностью). 
-Требуется разделить компанию на <script type="math/tex">n</script> групп так, чтобы каждый человек входил только в одну грппу, и между членами каждой из групп царило взаимопонимание. При каком наименьшем <script type="math/tex">n</script> это возможно?</td></tr>
-  </table>
+Ограничение по памяти: <script type="math/tex">O(1)</script>.</li><li>Пусть функция <script type="math/tex">f</script> непрерывна и ограничена на промежутке <script type="math/tex">(x_0, +\infty)</script>. Докажите, что для любого числа <script type="math/tex">T</script> 
+существует последовательность <script type="math/tex">\{x_n\}</script>, стремящаяся к <script type="math/tex">+\infty</script> и такая, что <script type="math/tex">f(x_n+T) - f(x_n) \to 0</script> при <script type="math/tex">n \to \infty</script>.</li><li>Найдите максимальное значение определителя матрицы (а) второго (б) третьего порядка, если сумма квадратов всех ее элементов не превосходит <script type="math/tex">1</script>.</li><li>В компании из <script type="math/tex">51</script> человека каждый на дух не переносит ровно троих (при этом они не обязательно отвечают ему взаимностью). 
+Требуется разделить компанию на <script type="math/tex">n</script> групп так, чтобы каждый человек входил только в одну грппу, и между членами каждой из групп царило взаимопонимание. При каком наименьшем <script type="math/tex">n</script> это возможно?</li></ol>
   </article>
 
 </div>

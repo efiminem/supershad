@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -63,25 +70,15 @@ $(document).ready(function(){
 
   <article class="post-content">
   
-  <h4><center>19 февраля 2014</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Найти все квадратные вещественные матрицы порядка <script type="math/tex">3</script>, удовлетворяющие уравнению <script type="math/tex">X^2 + E = 0</script>.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Среди участников похода из любых четырех как минимум один знаком с тремя другими. Докажите, что каждый участник похода 
-кроме максимум трех, знаком со всеми остальными.</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Опишите все невырожденные вещественные матрицы <script type="math/tex">A</script>, для которых все элементы матриц <script type="math/tex">A</script> и <script type="math/tex">A^{-1}</script> неотрицательны.</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Дан числовой массив длины <script type="math/tex">n</script>. Предложите алгоритм, находящий максимальное значение сумм отрезков этого массива. 
-Ограничение по времени &#8212; <script type="math/tex">O(n)</script>, по дополнительной памяти &#8212; <script type="math/tex">O(1)</script>.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Есть <script type="math/tex">10</script> монет разного веса и некоторые весы. При помощи одного взвешивания на весах можно узнать для выбранных двух монет, какая тяжелее. 
-Можно ли за <script type="math/tex">20</script> взвешиваний узнать, в каком порядке монеты идут по весу?</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Вычислите сумму интегралов:
-<script type="math/tex; mode=display">\int\limits_{\sqrt{\pi/6}}^{\sqrt{\pi/3}} \sin (x^2) dx + \int\limits_{1/2}^{\sqrt{3}/2} \sqrt{\arcsin x} dx.</script></td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Игра состоит из одинаковых и независимых конов, в каждом из которых выигрыш происходит с вероятностью <script type="math/tex">p</script>. Когда игрок выигрывает, 
+  <h4><center>19 февраля 2014 (Харьков)</center></h4>
+  <ol><li>Найти все квадратные вещественные матрицы порядка <script type="math/tex">3</script>, удовлетворяющие уравнению <script type="math/tex">X^2 + E = 0</script>.</li><li>Среди участников похода из любых четырех как минимум один знаком с тремя другими. Докажите, что каждый участник похода 
+кроме максимум трех, знаком со всеми остальными.</li><li>Опишите все невырожденные вещественные матрицы <script type="math/tex">A</script>, для которых все элементы матриц <script type="math/tex">A</script> и <script type="math/tex">A^{-1}</script> неотрицательны.</li><li>Дан числовой массив длины <script type="math/tex">n</script>. Предложите алгоритм, находящий максимальное значение сумм отрезков этого массива. 
+Ограничение по времени &#8212; <script type="math/tex">O(n)</script>, по дополнительной памяти &#8212; <script type="math/tex">O(1)</script>.</li><li>Есть <script type="math/tex">10</script> монет разного веса и некоторые весы. При помощи одного взвешивания на весах можно узнать для выбранных двух монет, какая тяжелее. 
+Можно ли за <script type="math/tex">20</script> взвешиваний узнать, в каком порядке монеты идут по весу?</li><li>Вычислите сумму интегралов:
+<script type="math/tex; mode=display">\int\limits_{\sqrt{\pi/6}}^{\sqrt{\pi/3}} \sin (x^2) dx + \int\limits_{1/2}^{\sqrt{3}/2} \sqrt{\arcsin x} dx.</script></li><li>Игра состоит из одинаковых и независимых конов, в каждом из которых выигрыш происходит с вероятностью <script type="math/tex">p</script>. Когда игрок выигрывает, 
 он получает <script type="math/tex">1</script> доллар, а когда проигрывает &#8212; платит <script type="math/tex">1</script> доллар. Как только его капитал достигает величины <script type="math/tex">N</script> долларов, он объявляется победителем и удаляется из казино. 
-Найдите вероятность того, что игрок рано или поздно проиграет все деньги, в зависимости от его стартового капитала <script type="math/tex">K</script>.</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">Пусть <script type="math/tex">a</script> &#8212; действительное число. Для каждого целого <script type="math/tex">n \geqslant 0</script> обозначим через <script type="math/tex">a_n</script> расстояние от <script type="math/tex">a</script> до ближайшего 
-рационального числа вида <script type="math/tex">\frac{m}{2^n}</script>, где <script type="math/tex">m</script> &#8212; целое. Найдите наибольшую возможную сумму ряда <script type="math/tex">\sum\limits_{n=0}^\infty a_n</script>.</td></tr>
-  </table>
+Найдите вероятность того, что игрок рано или поздно проиграет все деньги, в зависимости от его стартового капитала <script type="math/tex">K</script>.</li><li>Пусть <script type="math/tex">a</script> &#8212; действительное число. Для каждого целого <script type="math/tex">n \geqslant 0</script> обозначим через <script type="math/tex">a_n</script> расстояние от <script type="math/tex">a</script> до ближайшего 
+рационального числа вида <script type="math/tex">\frac{m}{2^n}</script>, где <script type="math/tex">m</script> &#8212; целое. Найдите наибольшую возможную сумму ряда <script type="math/tex">\sum\limits_{n=0}^\infty a_n</script>.</li></ol>
   </article>
 
 </div>

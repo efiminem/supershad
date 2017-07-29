@@ -23,6 +23,9 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
 code {
  border: 0px;
  background-color: transparent;
@@ -67,27 +70,19 @@ $(document).ready(function(){
 
   <article class="post-content">
   
-  <h4><center>30 мая 2015</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">Докажите, что для любого натурального <script type="math/tex">n</script> больше пяти лист бумаги квадратной формы можно разрезать на <script type="math/tex">n</script> квадратных кусков.</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">Рассмотрим случайную перестановку <script type="math/tex">P = (p_1,p_2,\ldots,p_n)</script> натуральных чисел от <script type="math/tex">1</script> до <script type="math/tex">n</script>. Пару чисел <script type="math/tex">(i,j)</script> назовем &laquo;обменом&raquo;, 
+  <h4><center>30 мая 2015 (Минск)</center></h4>
+  <ol><li>Докажите, что для любого натурального <script type="math/tex">n</script> больше пяти лист бумаги квадратной формы можно разрезать на <script type="math/tex">n</script> квадратных кусков.</li><li>Рассмотрим случайную перестановку <script type="math/tex">P = (p_1,p_2,\ldots,p_n)</script> натуральных чисел от <script type="math/tex">1</script> до <script type="math/tex">n</script>. Пару чисел <script type="math/tex">(i,j)</script> назовем &laquo;обменом&raquo;, 
 если выполняются соотношения <script type="math/tex">p_i=j, p_j=i</script>. Вычислите математическое ожидание количества обменов в перестановке <script type="math/tex">P</script> (перестановка выбирается случайно равновероятно из множества всех перестановок 
-от <script type="math/tex">1</script> до <script type="math/tex">n</script>).</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">Докажите, что для любого неотрицательного целого <script type="math/tex">n</script> существуют целые числа <script type="math/tex">x</script>, <script type="math/tex">y</script> и <script type="math/tex">z</script> <script type="math/tex">(0 \leqslant x < y \leqslant z)</script> такие, что 
-выполняется соотношение: <script type="math/tex; mode=display">n = C_x^1 + C_y^2 + C_z^3.</script></td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">Трудоемкость алгоритма <script type="math/tex">A</script> описывается следующим соотношением (<script type="math/tex">T(n)</script> &#8212; время решения задачи размерности <script type="math/tex">n</script>):
+от <script type="math/tex">1</script> до <script type="math/tex">n</script>).</li><li>Докажите, что для любого неотрицательного целого <script type="math/tex">n</script> существуют целые числа <script type="math/tex">x</script>, <script type="math/tex">y</script> и <script type="math/tex">z</script> <script type="math/tex">(0 \leqslant x < y \leqslant z)</script> такие, что 
+выполняется соотношение: <script type="math/tex; mode=display">n = C_x^1 + C_y^2 + C_z^3.</script></li><li>Трудоемкость алгоритма <script type="math/tex">A</script> описывается следующим соотношением (<script type="math/tex">T(n)</script> &#8212; время решения задачи размерности <script type="math/tex">n</script>):
 <script type="math/tex; mode=display">T(n) \leqslant T(\lfloor \sqrt{n} \rfloor ) + 1,\;\;\; T(1) = C_1 (\textrm{const}).</script>
-Найдите асимптотически как можно бо́льшую функцию, удовлетворяющую этому соотношению. Ответ представьте в <script type="math/tex">O</script>-нотации, докажите, что функция удовлетворяет данному соотношению.</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">Рассмотрим клетчатую доску размера <script type="math/tex">N\times M</script>. Раскрасим клетки доски в шахматном порядке в белый и черный цвета, причем 
+Найдите асимптотически как можно бо́льшую функцию, удовлетворяющую этому соотношению. Ответ представьте в <script type="math/tex">O</script>-нотации, докажите, что функция удовлетворяет данному соотношению.</li><li>Рассмотрим клетчатую доску размера <script type="math/tex">N\times M</script>. Раскрасим клетки доски в шахматном порядке в белый и черный цвета, причем 
 левую верхнюю клетку покрасим в белый цвет. Найдите количество способов вырезать из этой доски содержащий не более <script type="math/tex">4</script> черных клеток участок. Резать разрешается только по границам клеток.<br>
 (a) <script type="math/tex">N=8</script> и <script type="math/tex">M=8</script>.<br>
 (b) <script type="math/tex">N=99</script> и <script type="math/tex">M=101</script>.<br>
-(c) Найдите ответ для произвольных натуральных <script type="math/tex">N</script> и <script type="math/tex">M</script>.</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">Палиндромом называется строка, которая одинаково читается слева направо и справа налево. Рассмотрим некоторую строку <script type="math/tex">S</script>, 
+(c) Найдите ответ для произвольных натуральных <script type="math/tex">N</script> и <script type="math/tex">M</script>.</li><li>Палиндромом называется строка, которая одинаково читается слева направо и справа налево. Рассмотрим некоторую строку <script type="math/tex">S</script>, 
 состоящую из маленьких латинских букв. Какое минимальное количество букв (возможно нуль) нужно в ней удалить, чтобы она не являлась палиндромом? Предложите алгоритм решения задачи, 
-докажите его корректность, оцените трудоемкость.</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">Рассмотрим четыре реализации одной и той же функции на языке программирования <i>python</i>. Определите, что должна вычислять функция. 
+докажите его корректность, оцените трудоемкость.</li><li>Рассмотрим четыре реализации одной и той же функции на языке программирования <i>python</i>. Определите, что должна вычислять функция. 
 Какие из реализаций работают корректно?<br>
 (a) <br><code>
 def solve(n, k):<br>
@@ -126,9 +121,7 @@ def solve(n, k):<br>
 &#8212; <code>range(x)</code> возвращает массив <code>[0,1,...,x-1]</code><br>
 &#8212; <code>**</code> возведение в степень, например, <code>2**5 == 32</code><br>
 &#8212; <code>%</code> взятие остатка от деления, например, <code>7 % 3 == 1</code><br>
-&#8212; <code>//</code> целочисленное деление, например, <code>7 // 3 == 2</code>
-</td></tr>
-  </table>
+&#8212; <code>//</code> целочисленное деление, например, <code>7 // 3 == 2</code></li></ol>
   </article>
 
 </div>
