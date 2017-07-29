@@ -1,0 +1,4 @@
+<script type="math/tex">Dx = \int\limits_0^1 x^2 dF(x) - ( \int\limits_0^1 x dF(x) )^2 \leq \int\limits_0^1 x dF(x) - ( \int\limits_0^1 x dF(x) )^2 = z - z^2 \leq \frac14</script>, 
+где <script type="math/tex">F(x)</script> &#8212; произвольная монотонная функция распределения, а интегралы берутся в смысле Римана-Стилтьеса.
+Очевидно, что неравенство превращается в равенство в случае, если <script type="math/tex">F(x)</script> описывает распределение Бернулли с параметром <script type="math/tex">\frac12</script>.
+
