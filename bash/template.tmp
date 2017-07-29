@@ -23,6 +23,13 @@
  display: none;
  background: #eeeeee;
  }
+li{
+  margin: 20px 0;
+}
+code {
+ border: 0px;
+ background-color: transparent;
+}
 </style>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -63,18 +70,8 @@ $(document).ready(function(){
 
   <article class="post-content">
   
-  <h4><center>00 месяц 0000</center></h4>
-  <table>
-  <!-- <script type="math/tex"><script type="math/tex; mode=display">&#8212; -->  
-  <tr><td valign="top">1. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">2. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">3. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">4. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">5. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">6. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">7. </td><td style="padding-bottom:20px;">#</td></tr>
-  <tr><td valign="top">8. </td><td style="padding-bottom:20px;">#</td></tr>
-  </table>
+  <h4><center>!DATA</center></h4>
+  <ol>!PROBLEMS</ol>
   </article>
 
 </div>
