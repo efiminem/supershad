@@ -71,10 +71,41 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>2 июня 2013</center></h4>
-  <ol><li>Найдите <script type="math/tex">\prod\limits_{k=1}^\infty \cos (x2^{-k})</script>.</li><li>Дана матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">a_{ij} = (i-j)^2, i,j=1, \ldots, n</script>. Найдите ранг матрицы <script type="math/tex">A</script>.</li><li>Имеется множество <script type="math/tex">A=\{1,2,3,\ldots,256\}</script>. Найдите размер максимального по мощности подмножества <script type="math/tex">A' \in A</script>, такого, что <script type="math/tex">A'</script> не содержит элементов <script type="math/tex">x,y</script>, таких, что <script type="math/tex">x=2y</script>.</li><li>На окружности случайно выбирается <script type="math/tex">n</script> точек. Найдите вероятность того, что все они принадлежат некоторой полуокружности.</li><li>Назовем двумерный массив действительных чисел <script type="math/tex">A[1\ldots n][1\ldots n]</script> возрастающим, если для любых <script type="math/tex">k,l</script> <script type="math/tex">A[k][l] \geqslant A[i][j], i \leqslant k, j \leqslant l</script>. Задача поиска в квадратном возрастающем массиве формулируется так: для заданного возрастающего массива <script type="math/tex">A[1\ldots n][1\ldots n]</script> и некоторого числа <script type="math/tex">X</script> определить, 
+  <ol><li>Найдите <script type="math/tex">\prod\limits_{k=1}^\infty \cos (x2^{-k})</script>.</li><li>Дана матрица <script type="math/tex">A</script> размера <script type="math/tex">n\times n</script>, где <script type="math/tex">a_{ij} = (i-j)^2, i,j=1, \ldots, n</script>. Найдите ранг матрицы <script type="math/tex">A</script>.<div class="solution" toid = "text2">Решение</div><div class="solution-text" id="text2">Пусть <script type="math/tex">\{A_j\}_{j=1}^n</script> &#8212; столбцы матрицы <script type="math/tex">A</script>, а <script type="math/tex">\{P_k\}</script> &#8212; столбцы вида <script type="math/tex">(1^k, 2^k, \ldots, n^k)^\mathrm{T}</script>.
+Тогда по условию задачи <script type="math/tex">A_j = P_2 - 2jP_1 + j^2P_0</script>. Отсюда следует, что столбцы матрицы <script type="math/tex">A</script> принадлежат подпространству, натянутому на линейно независимые вектора <script type="math/tex">P_2, P_1, P_0</script>.
+Значит, <script type="math/tex">\mathrm{rank }A \leq 3</script>.
+Заметим, что в случае  <script type="math/tex">n\geq 3</script> столбы <script type="math/tex">A_1, A_2, A_3</script> будут линейно независимы. Действительно,
+<script type="math/tex; mode=display">\begin{vmatrix}
+1&-2&1\\
+1&-4&4\\
+1&-6&9
+\end{vmatrix}
+= -4 \neq 0</script>
+Поэтому при <script type="math/tex">n\geq 3</script> <script type="math/tex">\mathrm{rank } A = 3</script>. В случаях <script type="math/tex">n=1</script> и <script type="math/tex">n=2</script> получим <script type="math/tex">0</script> и <script type="math/tex">2</script> соответственно.</div></li><li>Имеется множество <script type="math/tex">A=\{1,2,3,\ldots,256\}</script>. Найдите размер максимального по мощности подмножества <script type="math/tex">A' \in A</script>, такого, что <script type="math/tex">A'</script> не содержит элементов <script type="math/tex">x,y</script>, таких, что <script type="math/tex">x=2y</script>.</li><li>На окружности случайно выбирается <script type="math/tex">n</script> точек. Найдите вероятность того, что все они принадлежат некоторой полуокружности.</li><li>Назовем двумерный массив действительных чисел <script type="math/tex">A[1\ldots n][1\ldots n]</script> возрастающим, если для любых <script type="math/tex">k,l</script> <script type="math/tex">A[k][l] \geqslant A[i][j], i \leqslant k, j \leqslant l</script>. Задача поиска в квадратном возрастающем массиве формулируется так: для заданного возрастающего массива <script type="math/tex">A[1\ldots n][1\ldots n]</script> и некоторого числа <script type="math/tex">X</script> определить, 
 встречается ли число <script type="math/tex">X</script> в массиве <script type="math/tex">A</script>. Покажите, что не существует алгоритма, решающего эту задачу менее, чем за <script type="math/tex">n</script> сравнений.</li><li>У линейного преобразования <script type="math/tex">n</script>-мерного пространства существуют <script type="math/tex">n+1</script> собственных векторов, таких, что любые <script type="math/tex">n</script> из них линейно независимы. Найдите всевозможные матрицы, которые могли бы задавать такое преобразование.</li><li>Найдите сумму ряда:
 <script type="math/tex; mode=display">\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)},</script>
-где <script type="math/tex">f(n)</script> &#8212; количество единиц в двоичном представлении числа <script type="math/tex">n</script>.</li></ol>
+где <script type="math/tex">f(n)</script> &#8212; количество единиц в двоичном представлении числа <script type="math/tex">n</script>.<div class="solution" toid = "text7">Решение</div><div class="solution-text" id="text7">В первую очередь докажем, что данный ряд сходится. Нетрудно понять, что <script type="math/tex">f(n) \leq \log_2 (n+1)</script>.
+Теперь докажем, что начиная с некоторого <script type="math/tex">n</script> выполняется <script type="math/tex">\log_2 (n+1)</script> < <script type="math/tex">\sqrt{n}</script>. Действительно, по правилу Лопиталя получим:
+<script type="math/tex; mode=display">\lim_{n\to \infty} \frac{\log_2 (n+1)}{\sqrt{n}} = \frac{2}{\ln 2} \lim_{n\to \infty} \frac{1}{\sqrt{n}} = 0.</script>
+Отсюда получаем, что сходимость ряда <script type="math/tex">\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)}</script> эквивалентна сходимости ряда <script type="math/tex">\sum\limits_{n=1}^\infty \frac{\sqrt{n}}{n(n+1)}</script>.<br>
+Этот ряд нетрудно ограничить:
+<script type="math/tex; mode=display">\sum_{n=1}^\infty \frac{\sqrt{n}}{n(n+1)} = \sum_{n=1}^\infty \left( \frac{\sqrt{n}}{n} - \frac{\sqrt{n}}{n+1} \right) = 1 + \sum_{n=2}^\infty \frac{\sqrt{n} - \sqrt{n-1}}{n} < 1 + \sum_{n=2}^\infty \left( \frac{1}{\sqrt{n-1}} - \frac{1}{\sqrt{n}} \right) = 2</script>
+(или воспользоваться фактом, что <script type="math/tex">\sum_{n=1}^\infty \frac{1}{n^{1+\varepsilon}}</script> сходится при <script type="math/tex">\varepsilon > 0</script>).
+
+Для нахождения суммы ряда заметим, что <script type="math/tex">f(2n) = f(n)</script> и <script type="math/tex">f(2n+1) = f(n)+1</script>. Тогда:
+<script type="math/tex; mode=display">
+\begin{align*}
+\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} &= \frac12 + \sum\limits_{n=1}^\infty \frac{f(2n)}{2n(2n+1)} + \sum\limits_{n=1}^\infty \frac{f(2n+1)}{(2n+1)(2n+2)} \\
+&= \frac12 + \sum\limits_{n=1}^\infty \frac{f(n)}{2n(2n+1)} + \sum\limits_{n=1}^\infty \frac{f(n)+1}{(2n+1)(2n+2)} \\
+&= \frac12 + \sum\limits_{n=1}^\infty f(n) \left[ \frac{1}{2n(2n+1)} + \frac{1}{(2n+1)(2n+2)} \right] + \sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)} \\
+&= \frac12 + \frac12 \sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} + \sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)}.
+\end{align*}</script>
+Поскольку ряд сходится, мы можем переписать:
+<script type="math/tex; mode=display">
+\begin{align*}
+\sum\limits_{n=1}^\infty \frac{f(n)}{n(n+1)} &= 1 + 2\sum\limits_{n=1}^\infty \frac{1}{(2n+1)(2n+2)} = 1 + 2\sum_{n=3}^\infty \frac{(-1)^{n+1}}{n} \\
+&= 2\sum_{n=1}^\infty \frac{(-1)^{n+1}}{n} = 2 \left. \sum_{n=1}^\infty \frac{(-1)^{n+1}x^n}{n} \right|_{x=1} = 2\ln (1+x) |_{x=1} = 2\ln 2.
+\end{align*}</script></div></li></ol>
   </article>
 
 </div>
