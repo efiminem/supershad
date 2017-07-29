@@ -29,5 +29,5 @@ for i in `seq 1 8`;
         done    
 IFS= read -d '' -r < <(sed -e ':a' -e '$!{N;ba' -e '}' -e 's/[&/\]/\\&/g; s/\n/\\&/g' <<<"$ALL")
 AllEscaped=${REPLY%$'\n'}
-sed "s/!PROBLEMS/$AllEscaped/;s/!DATA/$datt/" template.tmp > ../docs/$dat/indexr.html
+sed "s/!PROBLEMS/$AllEscaped/;s/!DATA/$datt/" template.tmp > ../docs/$dat/index.html
 
