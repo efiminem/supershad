@@ -80,9 +80,9 @@ $(document).ready(function(){
 маленьких кубиков и как попало сложили из них большой куб. С какой вероятностью все грани этого куба будут белыми?</li><li>Придумайте структуру для хранения действительных чисел, которая могла бы выполнять запросы &laquo;добавить элемент&raquo;,
 &laquo;удалить элемент&raquo;, &laquo;удалить максимальный элемент&raquo; и &laquo;удалить минимальный элемент&raquo;, причем последние два выполняла бы за <script type="math/tex">O(1)</script>. Постарайтесь также минимизировать время выполнения первых двух запросов. Можно ли сделать так, чтобы и они тоже выполнялись за <script type="math/tex">O(1)</script>?</li><li>Последовательность <script type="math/tex">a_n</script> задана условиями <script type="math/tex">a_1=1, a_{n+1}=\sin (a_n)</script>.
 Сходится ли ряд <script type="math/tex">\sum_{i=1}^\infty a_i</script>?<div class="solution" toid = "text6">Решение</div><div class="solution-text" id="text6">Докажем по индукции, что <script type="math/tex">a_n \geqslant \frac1n</script>.<br>
-\textit{База индукции}, <script type="math/tex">n=1</script>.<br>
+<i>База индукции</i>, <script type="math/tex">n=1</script>.<br>
 <script type="math/tex; mode=display">a_1 \geqslant 1.</script>
-\textit{Переход:} предположим, что
+<i>Переход:</i> предположим, что
 <script type="math/tex; mode=display">a_k \geqslant \frac1k,</script>
 тогда
 <script type="math/tex; mode=display">a_{k+1} = \sin (a_k) \geqslant \sin \frac1k \geqslant \frac1k - \frac{1}{6k^3} \geqslant \frac{1}{k+1},</script>
