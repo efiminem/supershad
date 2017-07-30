@@ -1,0 +1,4 @@
+Длина <script type="math/tex">x</script> первого оставшегося отрезка (все делим на <script type="math/tex">L</script>) равномерно распределена на отрезке <script type="math/tex">[\frac12;1]</script>. Если мы зафиксируем длину <script type="math/tex">x</script>, 
+то длина второго оставшегося отрезка <script type="math/tex">y</script> будет равномерно распределена на отрезке <script type="math/tex">[\frac{x}{2};x]</script>. Нас интересует событие <script type="math/tex">y \geqslant \frac12</script>.<br> 
+Запишем формулу полной вероятности:
+<script type="math/tex; mode=display">p(y \geqslant \frac12) = \int\limits_{1/2}^1 2dx \int\limits_{1/2}^x \frac2x dy = 4\int\limits_{1/2}^1 \frac{dx}{x} \left( x- \frac12 \right) = 2 - 2\ln 2.</script>

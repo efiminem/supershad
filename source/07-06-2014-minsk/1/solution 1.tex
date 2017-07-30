@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Длина $x$ первого оставшегося отрезка (все делим на $L$) равномерно распределена на отрезке $[\frac12;1]$. Если мы зафиксируем длину $x$, 
+то длина второго оставшегося отрезка $y$ будет равномерно распределена на отрезке $[\frac{x}{2};x]$. Нас интересует событие $y \geqslant \frac12$.\\ 
+Запишем формулу полной вероятности:
+$$p(y \geqslant \frac12) = \int\limits_{1/2}^1 2dx \int\limits_{1/2}^x \frac2x dy = 4\int\limits_{1/2}^1 \frac{dx}{x} \left( x- \frac12 \right) = 2 - 2\ln 2.$$
+\end{document}
