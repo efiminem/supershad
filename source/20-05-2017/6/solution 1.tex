@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Докажем по индукции, что $a_n \geqslant \frac1n$.\\
+\textit{База индукции}, $n=1$.\\
+$$a_1 \geqslant 1.$$
+\textit{Переход:} предположим, что
+$$a_k \geqslant \frac1k,$$
+тогда
+$$a_{k+1} = \sin (a_k) \geqslant \sin \frac1k \geqslant \frac1k - \frac{1}{6k^3} \geqslant \frac{1}{k+1},$$
+что и требовалось доказать.
+Таким образом, ряд ограничен снизу гармоническим рядом, а значит, он расходится.
+\end{document}

@@ -1,0 +1,9 @@
+Докажем по индукции, что <script type="math/tex">a_n \geqslant \frac1n</script>.<br>
+\textit{База индукции}, <script type="math/tex">n=1</script>.<br>
+<script type="math/tex; mode=display">a_1 \geqslant 1.</script>
+\textit{Переход:} предположим, что
+<script type="math/tex; mode=display">a_k \geqslant \frac1k,</script>
+тогда
+<script type="math/tex; mode=display">a_{k+1} = \sin (a_k) \geqslant \sin \frac1k \geqslant \frac1k - \frac{1}{6k^3} \geqslant \frac{1}{k+1},</script>
+что и требовалось доказать.<br>
+Таким образом, ряд ограничен снизу гармоническим рядом, а значит, он расходится.
