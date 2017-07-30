@@ -1,0 +1,9 @@
+Воспользуемся известным фактом, что определитель матрицы равен произведению ее собственных значений. Отсюда следует, что если мы найдем собственные значения 
+матрицы <script type="math/tex">u u^{\mathrm{T}} J</script> (обозначим их как <script type="math/tex">\lambda_i</script>), то определитель исходной матрицы будет равен <script type="math/tex">\prod\limits_i (1 + \beta \lambda_i)</script>.<br>
+Для нахождения собственных значений матрицы <script type="math/tex">u u^{\mathrm{T}} J</script> воспользуемся ассоциативностью произведения матриц. Заметим, что если мы умножим матрицу на произвольный 
+вектор <script type="math/tex">(u u^{\mathrm{T}} J) h = u (u^{\mathrm{T}} J h)</script>, то в случае <script type="math/tex">u^{\mathrm{T}} J h \neq 0</script> получившийся вектор будет коллинеарен вектору <script type="math/tex">u</script>.<br>
+Отсюда следует, что<br>
+(а) <script type="math/tex">u</script> &#8212; собственный вектор с собственным значением <script type="math/tex">u^{\mathrm{T}} J u</script>,<br>
+(б) все собственные значения кроме, возможно, <script type="math/tex">u^{\mathrm{T}} J u</script> равны <script type="math/tex">0</script>.<br>
+Функция <script type="math/tex">u^{\mathrm{T}} J u</script> представляет собой квадратичную форму с нулевой матрицей, поскольку матрица <script type="math/tex">J</script> кососимметрична. Значит, все собственные значения <script type="math/tex">u u^{\mathrm{T}} J</script> ранвы нулю.
+Таким образом, определитель исходной матрицы равен <script type="math/tex">1</script>.
