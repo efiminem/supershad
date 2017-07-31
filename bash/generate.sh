@@ -1,4 +1,5 @@
 #/bin/bash
+cd bash
 
 dat=$1
 datt=$2
