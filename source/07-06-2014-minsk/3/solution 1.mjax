@@ -9,4 +9,4 @@
 задача снова сводится к нахождению уже <script type="math/tex">2012</script>-значных чисел, которые дают остаток <script type="math/tex">4</script> при делении на <script type="math/tex">7</script>.<br>
 Продолжая рассуждения по индукции, мы придем к задаче о количестве <script type="math/tex">1</script>-значных чисел из набора, которые дают остаток <script type="math/tex">2</script> при делении на <script type="math/tex">7</script>. Таких чисел, очевидно, <script type="math/tex">1</script>.<br>
 Объединив все эти задачи, получим ответ на изначальный вопрос:
-<script type="math/tex; mode=display">6^{2013} - 6^{2012} + \ldots + 6^1 - 1 = \frac{6^{2014}-1}{7}</script>.
+<script type="math/tex; mode=display">6^{2013} - 6^{2012} + \ldots + 6^1 - 1 = \frac{6^{2014}-1}{7}.</script>
