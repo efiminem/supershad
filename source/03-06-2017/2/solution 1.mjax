@@ -2,7 +2,7 @@
 <script type="math/tex">\begin{cases}
 g(1) = f(1) - f(0), \\
 g(2) = f(2) - f(1).
-\end{cases}</script>
-Заметим, что <script type="math/tex">g(1) + g(2) = f(2) - f(1) = 0</script>. Отсюда следует, что функция <script type="math/tex">g(x)</script> меняет знак на отрезке <script type="math/tex">[1,2]</script> (теорема о промежуточном значении непрерывной функции).
+\end{cases}</script><br>
+Заметим, что <script type="math/tex">g(1) + g(2) = f(2) - f(0) = 0</script>. Отсюда следует, что функция <script type="math/tex">g(x)</script> меняет знак на отрезке <script type="math/tex">[1,2]</script> (теорема о промежуточном значении непрерывной функции).
 Иными словами, <script type="math/tex">\exists x_0 \in [1,2]: g(x_0)=0</script>, откуда следует утверждение задачи.
 
