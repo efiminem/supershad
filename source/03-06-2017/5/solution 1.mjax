@@ -2,4 +2,4 @@
 <script type="math/tex; mode=display">
 \det \begin{pmatrix}-\lambda E&-A\\A&-\lambda E\end{pmatrix} = \det(A^2 + \lambda^2 E^2) = \det(A - i \lambda E) \det(A + i \lambda E) = 0
 </script>
-Видно, что уравнению удовлетворяют <script type="math/tex">2n</script> чисел <script type="math/tex">\pm i \lambda</script> &#8212; они и будут искомыми собственными значениями.
+Видно, что уравнению удовлетворяют <script type="math/tex">2n</script> чисел <script type="math/tex">\pm i \lambda_k</script> &#8212; они и будут искомыми собственными значениями.
