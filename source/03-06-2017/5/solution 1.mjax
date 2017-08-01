@@ -1,3 +1,4 @@
+Поскольку элементы столбцов блочной матрицы коммутируют, характеристическое уравнение можно представить в следующем виде:
 <script type="math/tex; mode=display">
 \det \begin{pmatrix}-\lambda E&-A\\A&-\lambda E\end{pmatrix} = \det(A^2 + \lambda^2 E^2) = \det(A - i \lambda E) \det(A + i \lambda E) = 0
 </script>
