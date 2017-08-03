@@ -1,0 +1,12 @@
+Немного преобразуем выражение:
+<script type="math/tex; mode=display">\sum_{i=0}^n \frac{1}{2^{m+i+1}} C_{m+i}^i + \sum_{i=0}^m \frac{1}{2^{n+i+1}} C_{n+i}^i = \frac{1}{2^{m+n+1}} \left( \sum_{i=0}^n 2^{n-i} C_{m+i}^i + \sum_{i=0}^m 2^{m-i} C_{n+i}^i \right).</script>
+Знаменатель можно проинтерпретировать как количество последовательностей из <script type="math/tex">0</script> и <script type="math/tex">1</script> длины <script type="math/tex">m+n+1</script>. Пусть <script type="math/tex">X</script> &#8212; множество последовательностей, в которых хотя бы <script type="math/tex">n+1</script>
+единица, а <script type="math/tex">Y</script> &#8212; множество последовательностей, в которых хотя бы <script type="math/tex">m+1</script> ноль. Ясно, что <script type="math/tex">X \cap Y = \varnothing</script>, а <script type="math/tex">X \cup Y</script> &#8212; множество всех последовательностей.<br>
+Найдём мощность множества <script type="math/tex">X</script>. Пусть <script type="math/tex">(n + 1)</script>-я единица стоит на месте с номером <script type="math/tex">n + 1 +i</script>, где <script type="math/tex">i \in \{0, \ldots , m\}</script>. Тогда первые <script type="math/tex">n + i</script> членов последовательности полностью
+определяются выбором позиций, на которых стоят единицы (это можно сделать <script type="math/tex">C_{n+i}^n=C_{n+i}^i</script> способами), а последние <script type="math/tex">n-i</script> могут быть любыми, то есть их можно выбрать <script type="math/tex">2^{n-i}</script> способами.
+Таким образом, число последовательностей, содержащих хотя бы <script type="math/tex">n+1</script> единицу, равно <script type="math/tex">\sum\limits_{i=0}^m 2^{m-i} C_{n+i}^i</script>.<br>
+Аналогично число последовательностей, содержащих хотя бы <script type="math/tex">m+1</script> ноль, равно <script type="math/tex">\sum\limits_{i=0}^n 2^{n-i} C_{m+i}^i</script>. А поскольку каждая последовательность принадлежит к одному и только
+одному из этих видов, то мы делаем вывод, что
+<script type="math/tex; mode=display">\sum_{i=0}^n 2^{n-i} C_{m+i}^i + \sum_{i=0}^m 2^{m-i} C_{n+i}^i = 2^{m+n+1}.</script>
+Таким образом,
+<script type="math/tex; mode=display">\sum_{i=0}^n \frac{1}{2^{m+i+1}} C_{m+i}^i + \sum_{i=0}^m \frac{1}{2^{n+i+1}} C_{n+i}^i = 1.</script>
