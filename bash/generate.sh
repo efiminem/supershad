@@ -25,7 +25,15 @@ for i in `seq 1 8`;
                 				ALL+='</div>'
                 			fi
 				done
+                        if [ -e ../source/$dat/$i/answer.mjax ]
+                        then
+                		ALL+="<div class=\"solution\" toid = \"answer$i\">Ответ</div>"
+                		ALL+="<div class=\"solution-text\" id=\"answer$i\">"
+                		ALL+=`cat ../source/$dat/$i/answer.mjax`
+                		ALL+='</div>'
+                	fi
                 	ALL+='</li>'
+
 		fi
         done    
 IFS= read -d '' -r < <(sed -e ':a' -e '$!{N;ba' -e '}' -e 's/[&/\]/\\&/g; s/\n/\\&/g' <<<"$ALL")
