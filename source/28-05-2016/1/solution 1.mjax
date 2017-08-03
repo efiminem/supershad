@@ -1,0 +1,1 @@
+Пусть <script type="math/tex">A = \begin{pmatrix}1&0\\0&0\end{pmatrix}</script>, а <script type="math/tex">B = \begin{pmatrix}1&0\\0&1\end{pmatrix}</script>. Тогда <script type="math/tex">ABA = A^2 = A</script>, но <script type="math/tex">BAB = A \neq B</script>. Значит, утверждение задачи не верно.
