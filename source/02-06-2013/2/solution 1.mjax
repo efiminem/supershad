@@ -1,12 +1,12 @@
 Пусть <script type="math/tex">\{A_j\}_{j=1}^n</script> &#8212; столбцы матрицы <script type="math/tex">A</script>, а <script type="math/tex">\{P_k\}</script> &#8212; столбцы вида <script type="math/tex">(1^k, 2^k, \ldots, n^k)^\mathrm{T}</script>.
 Тогда по условию задачи <script type="math/tex">A_j = P_2 - 2jP_1 + j^2P_0</script>. Отсюда следует, что столбцы матрицы <script type="math/tex">A</script> принадлежат подпространству, натянутому на линейно независимые вектора <script type="math/tex">P_2, P_1, P_0</script>.
-Значит, <script type="math/tex">\mathrm{rank}\,A \leq 3</script>.
-Заметим, что в случае  <script type="math/tex">n\geq 3</script> столбы <script type="math/tex">A_1, A_2, A_3</script> будут линейно независимы. Действительно,
+Значит, <script type="math/tex">\mathrm{rank}\,A \leqslant 3</script>.
+Заметим, что в случае  <script type="math/tex">n\geqslant 3</script> столбы <script type="math/tex">A_1, A_2, A_3</script> будут линейно независимы. Действительно,
 <script type="math/tex; mode=display">\begin{vmatrix}
 1&-2&1\\
 1&-4&4\\
 1&-6&9
 \end{vmatrix}
 = -4 \neq 0</script>
-Поэтому при <script type="math/tex">n\geq 3</script> <script type="math/tex">\mathrm{rank}\, A = 3</script>. В случаях <script type="math/tex">n=1</script> и <script type="math/tex">n=2</script> получим <script type="math/tex">0</script> и <script type="math/tex">2</script> соответственно.
+Поэтому при <script type="math/tex">n\geqslant 3</script> <script type="math/tex">\mathrm{rank}\, A = 3</script>. В случаях <script type="math/tex">n=1</script> и <script type="math/tex">n=2</script> получим <script type="math/tex">0</script> и <script type="math/tex">2</script> соответственно.
 
