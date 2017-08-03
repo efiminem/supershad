@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Проведем через точки $C$ и $D$ экватор. Тогда, очевидно, для выполнения условия задачи необходимо, чтобы точки $A$ и $B$ относительно этого экватора 
+лежали в разных полусферах. Вероятность такого события равна $\frac12$. Пусть теперь точка $E$ -- точка пересечения этого экватора и кратчайшей дуги, 
+соединяющей точки $A$ и $B$. Ясно, что ее вероятность равномерно распределена по экватору. Таким образом, задача свелась к нахождению вероятности того, 
+что случайная точка $E$ на окружности (экваторе), попадет в дугу $CD$:
+$$p(E \in CD) = \int\limits_0^{\pi} \frac{x}{2\pi} \frac{dx}{\pi} = \frac14.$$
+Тогда полная вероятность равна:
+$$p(AB \cap CD) = \frac12 p(E \in CD) = \frac18.$$
+\end{document}

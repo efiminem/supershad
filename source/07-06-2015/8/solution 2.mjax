@@ -1,0 +1,9 @@
+Рассмотрим случайную четвёрку точек <script type="math/tex">A</script>, <script type="math/tex">B</script>, <script type="math/tex">C</script> и <script type="math/tex">D</script>. Прежде всего надо заметить, что
+ситуации, когда три и более точек лежат на одной большой окружности (в частности, если
+какие-то две из них диаметрально противоположны), имеют место c вероятностью ноль и
+потому не заслуживают рассмотрения. Далее, рассмотрим точки <script type="math/tex">A_-</script>, <script type="math/tex">B_-</script>, <script type="math/tex">C_-</script> и <script type="math/tex">D_-</script>,
+диаметрально противоположные исходным. Имеются <script type="math/tex">16</script> четвёрок точек <script type="math/tex">A_\pm</script>, <script type="math/tex">B_\pm</script>, <script type="math/tex">C_\pm</script>, <script type="math/tex">D_\pm</script>, из
+которых лишь <script type="math/tex">2</script> нам подходят (это легко увидеть, если предположить, что исходные
+точки лежат в одной полусфере). Понятно, что появление случайных точек <script type="math/tex">A</script>, <script type="math/tex">B</script>, <script type="math/tex">C</script> и <script type="math/tex">D</script> можно представить, 
+как появление восьми точек, включая диаметрально противоположные, а затем реализацию одной из четверок. Поскольку только <script type="math/tex">2</script> 
+нам подходят, вероятность равна <script type="math/tex">\frac18</script>.
