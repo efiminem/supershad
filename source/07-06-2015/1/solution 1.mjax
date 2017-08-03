@@ -1,0 +1,9 @@
+Рассмотрим несколько случаев:<br>
+1) <script type="math/tex">x<1</script>. Тогда <script type="math/tex">x^n</script> и <script type="math/tex">( \frac{x^2}{2} )^n</script> стремятся к нулю при <script type="math/tex">n \to \infty</script> и, следовательно,
+<script type="math/tex; mode=display">\lim\limits_{n\to \infty} \sqrt[n]{1 + x^n + \left( \frac{x^2}{2} \right)^n} = 1.</script>
+2) <script type="math/tex">1 \leqslant x < 2</script>. Тогда <script type="math/tex">\frac{x}{2} < 1</script> и мы имеем
+<script type="math/tex; mode=display">\sqrt[n]{1 + x^n + \left( \frac{x^2}{2} \right)^n} = x \sqrt[n]{\frac{1}{x^n} + 1 + \left( \frac{x}{2} \right)^n} \to x\;\;(n \to \infty).</script>
+3) <script type="math/tex">x \geqslant 2</script>. Тогда <script type="math/tex">\frac{2}{x} \leqslant 1</script> и мы имеем
+<script type="math/tex; mode=display">\sqrt[n]{1 + x^n + \left( \frac{x^2}{2} \right)^n} = \frac{x^2}{2} \sqrt[n]{\left( \frac{2}{x^2} \right)^n + \left( \frac{2}{x} \right)^n + 1} \to \frac{x^2}{2}\;\;(n \to \infty).</script>
+Получается следующий график (правый участок графика представляет собою часть параболы):<br>
+<center><img src="graph.png" width="300px" /></center>
