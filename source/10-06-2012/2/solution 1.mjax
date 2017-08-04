@@ -1,0 +1,6 @@
+Заметим, что
+<script type="math/tex; mode=display">\int\limits_0^{2\pi} (\sin x)^n dx = -\int\limits_0^{2\pi} (\sin x)^{n-1} d(\cos x) = (n-1) \int\limits_0^{2\pi} (\cos x)^2 (\sin x)^{n-2}.</script>
+Используя основное тригонометрическое тождество, получаем
+<script type="math/tex; mode=display">\int\limits_0^{2\pi} (\sin x)^n dx = \frac{n-1}{n} \int\limits_0^{2\pi} (\sin x)^{n-2} dx.</script>
+Тогда
+<script type="math/tex; mode=display">\int\limits_0^{2\pi} (\sin x)^8 dx = 2\pi \prod_{\substack{k=2\\k+=2}}^8 \frac{k-1}{k} = \frac{35\pi}{64}.</script>
