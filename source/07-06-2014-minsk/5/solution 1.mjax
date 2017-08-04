@@ -1,0 +1,4 @@
+Заметим, что
+<script type="math/tex; mode=display">e^x = \sum\limits_{n=0}^\infty \frac{x^n}{n!} = 1 + \sum\limits_{n=1}^\infty \frac{x^n}{n!}.</script>
+Тогда
+<script type="math/tex; mode=display">\sum\limits_{n=1}^\infty \frac{2^n}{n!} = e^2 - 1.</script>
