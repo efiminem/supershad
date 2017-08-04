@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Зададим все подписки булевой матрицей $A$ размером $n\times n$, в которой
+$$A_{ij} = \begin{cases} 1,&\text{если } i\text{-й подписан на }j\text{-ого;}\\ 0,&\text{иначе.}\end{cases}$$
+Заметим, что если $A_{ij} = 1$, то $i$-ый не может быть знаменитостью, а если $A_{ij} = 0$, то $j$-ый не может быть знаменитостью. Таким образом, за 
+один запрос к серверу можно исключить одного человека из кандидатов в знаменитости.\\
+Сначала пусть $k=1$, а $l$ пробегает значения от $2$ до $n$. Если в какой-то момент $A_{kl}=1$, то приравниваем $k=l$. Тогда значение 
+$k$ после последнего запроса --- номер знаменитости. Всего будет послано $n-1$ запросов на сервер.
+\end{document}
