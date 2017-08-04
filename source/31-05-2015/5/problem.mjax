@@ -1,2 +1,2 @@
 Исследуйте на сходимость и абсолютную сходимость ряд
-<script type="math/tex; mode=display">\sum\limits_{k=1}^\infty \sin \left( \pi \sqrt{n^2 + 1} \right).</script>
+<script type="math/tex; mode=display">\sum\limits_{k=1}^\infty \sin \left( \pi \sqrt{k^2 + 1} \right).</script>
