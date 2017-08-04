@@ -1,0 +1,6 @@
+Рассмотрим функцию <script type="math/tex">z = f(x,y)+100 = (x-6)^2 + (y+8)^2</script>. Понятно, что эта функция достигает минимума и максимума в тех же точках, что и <script type="math/tex">f(x,y)</script>. Видно, что 
+<script type="math/tex">z</script> постоянна на окружности с центром в точке <script type="math/tex">(6, -8)</script> и увеличивается с увеличением радиуса окружности, поэтому минимум достигается в ближней точке касания 
+этой окружности с окружностью <script type="math/tex">x^2 + y^2 = 5^2</script>, а максимум &#8212; в дальней.<br>
+Заметим, что через точки касания окружностей проходит прямая, соединяющая центры окружностей. Поэтому, достаточно найти точки пересечения окружности <script type="math/tex">x^2 + y^2 = 5^2</script> с 
+прямой <script type="math/tex">y = -\frac{8x}{6}</script>. Получим <script type="math/tex">(3,-4)</script> и <script type="math/tex">(-3,4)</script>. Им соответствуют значения <script type="math/tex">z=25</script> и <script type="math/tex">z=225</script>.
+Тогда <script type="math/tex">\min (f(x,y)) = -75</script>, а <script type="math/tex">\max (f(x,y)) = 125</script>.
