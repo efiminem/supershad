@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Мы будем активно пользоваться следующим правилом:
+$$\begin{rcases} u'(x) \leqslant v'(x)\;\text{при } x \geqslant 0\\u(0)=v(0) \end{rcases} \Rightarrow u(x) \leqslant v(x)\;\text{при }x \geqslant 0.$$
+Пусть $F(x) = \int\limits_0^x f^3(t) dt$, $G(x) = \left(\int\limits_0^x f(t) dt\right)^2$. Отметим, что $F(0)=G(0)=0$.\\
+Продифференцируем обе функции:
+$$F'(x) = f^3(x),\;\;G'(x) = 2\left(\int\limits_0^x f(t) dt\right)^2 \cdot f(x).$$
+Снова видим, что $F'(0) = G'(0) = 0$ и снова дифференцируем.
+$$F''(x) = 3f^2(x) \cdot f'(x),\;\; G''(x) = 2f^2(x) + 2f'(x) \cdot \int_0^x f(t) dt.$$
+Здесь уже можно немножко облегчить себе жизнь, заметив, что $2f^2(x) \cdot f'(x) \leqslant 2f^2(x)$. Значит, нам достаточно сравнить $f^2(x) \cdot f'(x)$ и 
+$2f'(x) \cdot \int\limits_0^x f(t) dt$, а поскольку $f'(x) > 0$, то и просто $f^2(x)$ и $2\int\limits_0^x f(t) dt$.\\
+Заметим, что в нуле и то, и другое, равно $0$, и продифференцируем:
+$$(f^2(x))' = 2f(x) \cdot f'(x) \leqslant 2f(x) = \left( 2\int\limits_0^x f(t) dt \right)'.$$
+\end{document}

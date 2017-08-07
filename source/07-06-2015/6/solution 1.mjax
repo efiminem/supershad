@@ -1,0 +1,11 @@
+Мы будем активно пользоваться следующим правилом:
+<script type="math/tex; mode=display">\left. \begin{align*} u'(x) \leqslant v'(x)\;\text{при } x \geqslant 0\\u(0)=v(0) \end{align*} \right\} \Rightarrow u(x) \leqslant v(x)\;\text{при }x \geqslant 0.</script>
+Пусть <script type="math/tex">F(x) = \int\limits_0^x f^3(t) dt</script>, <script type="math/tex">G(x) = \left(\int\limits_0^x f(t) dt\right)^2</script>. Отметим, что <script type="math/tex">F(0)=G(0)=0</script>.<br>
+Продифференцируем обе функции:
+<script type="math/tex; mode=display">F'(x) = f^3(x),\;\;G'(x) = 2\left(\int\limits_0^x f(t) dt\right)^2 \cdot f(x).</script>
+Снова видим, что <script type="math/tex">F'(0) = G'(0) = 0</script> и снова дифференцируем:
+<script type="math/tex; mode=display">F''(x) = 3f^2(x) \cdot f'(x),\;\; G''(x) = 2f^2(x) + 2f'(x) \cdot \int_0^x f(t) dt.</script>
+Здесь уже можно немножко облегчить себе жизнь, заметив, что <script type="math/tex">2f^2(x) \cdot f'(x) \leqslant 2f^2(x)</script>. Значит, нам достаточно сравнить <script type="math/tex">f^2(x) \cdot f'(x)</script> и 
+<script type="math/tex">2f'(x) \cdot \int\limits_0^x f(t) dt</script>, а поскольку <script type="math/tex">f'(x) > 0</script>, то и просто <script type="math/tex">f^2(x)</script> и <script type="math/tex">2\int\limits_0^x f(t) dt</script>.<br>
+Заметим, что в нуле и то, и другое, равно <script type="math/tex">0</script>, и продифференцируем:
+<script type="math/tex; mode=display">(f^2(x))' = 2f(x) \cdot f'(x) \leqslant 2f(x) = \left( 2\int\limits_0^x f(t) dt \right)'.</script>
