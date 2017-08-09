@@ -98,7 +98,31 @@ g(2) = f(2) - f(1).
 алгоритм нахождения этого числа ударов. Ваш алгоритм должен иметь асимптотику по времени <script type="math/tex">O(n \log n)</script>, затраты по памяти &#8212; <script type="math/tex">O(n)</script>.</li><li>Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212; две случайных булевых матрицы <script type="math/tex">n\times n</script>,
 у которых каждый элемент равен <script type="math/tex">1</script> с вероятностью <script type="math/tex">p</script> (значения различных элементов не зависят друг от друга). Сколько в среднем единиц
 будет в их произведении, если сложение и умножение происходят по модулю <script type="math/tex">2</script>?</li><li>Исследуйте на сходимость (абсолютную и условную) ряд <script type="math/tex">\sum_{k=1}^\infty a_k</script>, где
-  <script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt</script>.</li></ol>
+  <script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt</script>.<div class="solution" toid = "text8">Решение</div><div class="solution-text" id="text8">(а) Исследуем на абсолютную сходимость.<br>
+Разберем сначала вспомогательное утверждение:
+<script type="math/tex; mode=display">\left| \frac{\sin k}{k} \right| + \left| \frac{\sin (k+1)}{k+1} \right| \geqslant \frac{1}{6k},\;\; \forall k \geqslant 1.</script>
+Рассмотрим два случая:<br>
+(i) <script type="math/tex">|\sin k | \geqslant \frac13 \Rightarrow</script> утверждение очевидно<br>
+(ii) <script type="math/tex">|\sin k| \leqslant \frac13</script><br>
+Рассмотрим единичную окружность и проведем две прямые: <script type="math/tex">y=\frac13</script> и <script type="math/tex">y=-\frac13</script>. Тогда множество <script type="math/tex">|\sin k| \leqslant \frac13</script> расположено на окружности между двумя этими прямыми. 
+Из геометрических соображений можно увидеть, что при повороте этого множества на <script type="math/tex">1</script> радиан, оно выйдет за пространство между прямыми. Это означает, что <script type="math/tex">|\sin(k+1)| \geqslant \frac13</script> и 
+<script type="math/tex">\left| \frac{\sin(k+1)}{k+1} \right| \geqslant \frac{1}{3(k+1)} \geqslant \frac{1}{6k}</script>, откуда следует исходное утверждение. В частности, из этого утверждения следует расходимость ряда <script type="math/tex">\sum\limits_{k=1}^\infty \left| \frac{\sin k}{k} \right|</script>.<br>
+Попробуем теперь на основе этой идеи получить оценку на сумму абсолютных значений соседних членов исходного ряда:
+<script type="math/tex; mode=display">|a_k| + |a_{k+1}| = \left| \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt \right| + \left| \int\limits_0^{\frac{\sin (k+1)}{k+1}} \frac{\sin t}{t} dt \right| = \int\limits_0^{\left| \frac{\sin k}{k} \right|} \frac{\sin t}{t} dt + \int\limits_0^{\left| \frac{\sin (k+1)}{k+1} \right|} \frac{\sin t}{t} dt.</script>
+(здесь мы воспользовались тем, что <script type="math/tex">\frac{\sin x}{x}</script> &#8212; четная функция, первый нуль которой расположен в точках <script type="math/tex">\pm \pi</script> и при интегрировании не достигается).<br>
+Используя аналогичные рассуждения, получим:
+<script type="math/tex; mode=display">|a_k| + |a_{k+1}| \geqslant \int\limits_0^{\frac{1}{6k}} \frac{\sin t}{t} dt \geqslant \sin \frac{1}{6k}.</script>
+Воспользуемся неравенством <script type="math/tex">\sin x \geqslant \frac{2x}{\pi}</script> при <script type="math/tex">x \in [0; \frac{\pi}{2}]</script>. Тогда получим
+<script type="math/tex; mode=display">|a_k| + |a_{k+1}| \geqslant \frac{1}{3\pi k},</script>
+и по признаку сравнения заключаем, что ряд не сходится абсолютно.<br>
+(б) Исследуем интеграл на условную сходимость.<br>
+Представим члены ряда в следующем виде:
+<script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt = \int\limits_0^{\frac{\sin k}{k}} 1 + O(t^2) dt = \frac{\sin k}{k} + O\left( \left( \frac{\sin k}{k} \right)^3 \right).</script>
+Также заметим, что <script type="math/tex">O\left( \left( \frac{\sin k}{k} \right)^3 \right)</script> сходится, поскольку ряд <script type="math/tex">\left( \frac{\sin k}{k} \right)^3</script> сходится абсолютно. Тогда по признаку сравнения, если ряд <script type="math/tex">\sum\limits_{k=1}^\infty \frac{\sin k}{k}</script> сходится, то сходится и исходный ряд.<br>
+Воспользуемся признаком Дирихле для сходимости рядов Абелева типа. Последовательность <script type="math/tex">\{\frac{1}{n}\}</script> монотонна и стремится к нулю, осталось доказать ограниченность последовательности частичных сумм <script type="math/tex">\sum\limits_{k=1}^n \sin k</script>.<br>
+Поскольку
+<script type="math/tex; mode=display">\sum\limits_{k=1}^n \sin k = \frac{\sin(\frac{n}{2}) \sin(\frac{n+1}{2})}{\sin(\frac{1}{2})} \leqslant \frac{1}{\sin (\frac12)},</script>
+получаем, что ряд сходится условно (чтобы посчитать последнюю сумму, можно домножить ее на <script type="math/tex">2\sin(\frac12)</script> и расписать произведения синусов через разности косинусов).</div><div class="solution" toid = "answer8">Ответ</div><div class="solution-text" id="answer8">Ряд сходится условно.</div></li></ol>
   </article>
 
 </div>
