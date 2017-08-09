@@ -26,7 +26,7 @@ $$|a_k| + |a_{k+1}| \geqslant \int\limits_0^{\frac{1}{6k}} \frac{\sin t}{t} dt \
 Воспользуемся неравенством $\sin x \geqslant \frac{2x}{\pi}$ при $x \in [0; \frac{\pi}{2}]$. Тогда получим
 $$|a_k| + |a_{k+1}| \geqslant \frac{1}{3\pi k},$$
 и по признаку сравнения заключаем, что ряд не сходится абсолютно.\\
-(б) Исследуем интеграл на условную сходимость.\\
+(б) Исследуем на условную сходимость.\\
 Представим члены ряда в следующем виде:
 $$a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt = \int\limits_0^{\frac{\sin k}{k}} 1 + O(t^2) dt = \frac{\sin k}{k} + O\left( \left( \frac{\sin k}{k} \right)^3 \right).$$
 Также заметим, что $O\left( \left( \frac{\sin k}{k} \right)^3 \right)$ сходится, поскольку ряд $\left( \frac{\sin k}{k} \right)^3$ сходится абсолютно. Тогда по признаку сравнения, если ряд $\sum\limits_{k=1}^\infty \frac{\sin k}{k}$ сходится, то сходится и исходный ряд.\\

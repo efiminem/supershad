@@ -115,7 +115,7 @@ g(2) = f(2) - f(1).
 Воспользуемся неравенством <script type="math/tex">\sin x \geqslant \frac{2x}{\pi}</script> при <script type="math/tex">x \in [0; \frac{\pi}{2}]</script>. Тогда получим
 <script type="math/tex; mode=display">|a_k| + |a_{k+1}| \geqslant \frac{1}{3\pi k},</script>
 и по признаку сравнения заключаем, что ряд не сходится абсолютно.<br>
-(б) Исследуем интеграл на условную сходимость.<br>
+(б) Исследуем на условную сходимость.<br>
 Представим члены ряда в следующем виде:
 <script type="math/tex; mode=display">a_k = \int\limits_0^{\frac{\sin k}{k}} \frac{\sin t}{t} dt = \int\limits_0^{\frac{\sin k}{k}} 1 + O(t^2) dt = \frac{\sin k}{k} + O\left( \left( \frac{\sin k}{k} \right)^3 \right).</script>
 Также заметим, что <script type="math/tex">O\left( \left( \frac{\sin k}{k} \right)^3 \right)</script> сходится, поскольку ряд <script type="math/tex">\left( \frac{\sin k}{k} \right)^3</script> сходится абсолютно. Тогда по признаку сравнения, если ряд <script type="math/tex">\sum\limits_{k=1}^\infty \frac{\sin k}{k}</script> сходится, то сходится и исходный ряд.<br>
