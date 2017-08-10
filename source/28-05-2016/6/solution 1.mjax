@@ -1,0 +1,11 @@
+Пусть случайная величина <script type="math/tex">Y_i</script> равна <script type="math/tex">1</script> если <script type="math/tex">i</script> выбран, а все его соседи не выбраны, и <script type="math/tex">0</script> в противном случае. Тогда
+<script type="math/tex; mode=display">M(X) = M \left( \sum\limits_{j=1}^m Y_i \right) = \sum\limits_{j=1}^m M(Y_i).</script>
+Рассмотрим два случая.<br>
+(а) <script type="math/tex">j = 1</script> или <script type="math/tex">j=m</script>.<br>
+Фиксируем один предмет и расставляем оставшиеся <script type="math/tex">k-1</script> предметов по <script type="math/tex">m-2</script> местам:
+<script type="math/tex; mode=display">M(Y_1) = M(Y_m) = C_{m-2}^{k-1} / C_m^k = \frac{k(m-k)}{m(m-1)}.</script>
+(б) <script type="math/tex">j=2\ldots m-1</script>.<br>
+Фиксируем один предмет и расставляем оставшиеся <script type="math/tex">k-1</script> предметов по <script type="math/tex">m-3</script> местам:
+<script type="math/tex; mode=display">M(Y_{j\neq 1,m}) = C_{m-3}^{k-1} / C_m^k = \frac{k(m-k)(m-k-1)}{m(m-1)(m-2)}.</script>
+Считаем суммарное математическое ожидание:
+<script type="math/tex; mode=display">M(X) = 2 \frac{k(m-k)}{m(m-1)} + (m-2) \frac{k(m-k)(m-k-1)}{m(m-1)(m-2)} = \frac{k(m-k)(m-k+1)}{m(m-1)}.</script>

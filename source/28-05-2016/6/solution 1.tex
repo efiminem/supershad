@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Пусть случайная величина $Y_i$ равна $1$ если $i$ выбран, а все его соседи не выбраны, и $0$ в противном случае. Тогда
+$$M(X) = M \left( \sum\limits_{j=1}^m Y_i \right) = \sum\limits_{j=1}^m M(Y_i).$$
+Рассмотрим два случая.\\
+(а) $j = 1$ или $j=m$.\\
+Фиксируем один предмет и расставляем оставшиеся $k-1$ предметов по $m-2$ местам:
+$$M(Y_1) = M(Y_m) = C_{m-2}^{k-1} / C_m^k = \frac{k(m-k)}{m(m-1)}.$$
+(б) $j=2\ldots m-1$.\\
+Фиксируем один предмет и расставляем оставшиеся $k-1$ предметов по $m-3$ местам:
+$$M(Y_{j\neq 1,m}) = C_{m-3}^{k-1} / C_m^k = \frac{k(m-k)(m-k-1)}{m(m-1)(m-2)}.$$
+Считаем суммарное математическое ожидание:
+$$M(X) = 2 \frac{k(m-k)}{m(m-1)} + (m-2) \frac{k(m-k)(m-k-1)}{m(m-1)(m-2)} = \frac{k(m-k)(m-k+1)}{m(m-1)}.$$
+\end{document}
