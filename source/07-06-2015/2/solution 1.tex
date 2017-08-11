@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Пусть $(\cdot,\cdot)$ --- стандартное евклидово скалярное произведение
+$$(u,v) = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n.$$
+Заметим, что $(v \cdot v^{\mathrm{T}})x = v \cdot v^{\mathrm{T}} x = (v,x)v$. Пространство $V$, на котором действует наш линейный оператор, 
+раскладывается в прямую сумму $V = < v > \oplus {< v >}^\perp$. Нетрудно видеть, что оба слагаемых являются собственными подпространствами для 
+$v \cdot v^{\mathrm{T}}$ с собственными значениями $|v|^2$ и $0$ соответственно:
+\begin{align*}
+w = \lambda v &\Rightarrow (v \cdot v^{\mathrm{T}})w = \lambda v \cdot (v^{\mathrm{T}} v) = |v|^2 \cdot \lambda v;\\
+w \perp v &\Rightarrow (v \cdot v^{\mathrm{T}})w = v \cdot (v^{\mathrm{T}} w) = (v,w)v = 0.
+\end{align*}
+\end{document}

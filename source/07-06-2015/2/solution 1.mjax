@@ -1,0 +1,11 @@
+Пусть <script type="math/tex">(\cdot,\cdot)</script> &#8212; стандартное евклидово скалярное произведение
+<script type="math/tex; mode=display">(u,v) = u_1 v_1 + u_2 v_2 + \cdots + u_n v_n.</script>
+Заметим, что <script type="math/tex">(v \cdot v^{\mathrm{T}})x = v \cdot v^{\mathrm{T}} x = (v,x)v</script>. Пространство <script type="math/tex">V</script>, на котором действует наш линейный оператор, 
+раскладывается в прямую сумму <script type="math/tex">V = < v > \oplus {< v >}^\perp</script>. Нетрудно видеть, что оба слагаемых являются собственными подпространствами для 
+<script type="math/tex">v \cdot v^{\mathrm{T}}</script> с собственными значениями <script type="math/tex">|v|^2</script> и <script type="math/tex">0</script> соответственно:
+<script type="math/tex; mode=display">
+\begin{align*}
+w = \lambda v &\Rightarrow (v \cdot v^{\mathrm{T}})w = \lambda v \cdot (v^{\mathrm{T}} v) = |v|^2 \cdot \lambda v;\\
+w \perp v &\Rightarrow (v \cdot v^{\mathrm{T}})w = v \cdot (v^{\mathrm{T}} w) = (v,w)v = 0.
+\end{align*}
+</script>
