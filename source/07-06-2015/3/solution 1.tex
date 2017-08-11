@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Рассмотрим индикаторные случайные величины:
+$$X_i = \begin{cases} 1,& \text{если } \sigma_i = i,\\0,& \text{иначе} \end{cases}.$$
+Тогда число $X$ неподвижных точек подстановки $\sigma$ равно сумме $X_1 + X_2 + \cdots + X_n$.\\
+Найдем математическое ожидание каждого из слагаемых:
+$$M(X_1) = 0 \cdot P(X_1=0) + 1 \cdot P(X_1=1) = P(X_1=1)=P(\sigma_i=i)=\frac{1}{n}.$$
+В самом деле, элемент $i$ фиксирует $(n-1)!$ перестановок.\\
+Теперь воспользуемся линейностью матожидания:
+$$M(X) = M(X_1 + X_2 + \cdots + X_n) = M(X_1) + M(X_2) + \cdots + M(X_n) = n \cdot \frac{1}{n} = 1.$$
+\end{document}

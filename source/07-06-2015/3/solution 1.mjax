@@ -1,0 +1,8 @@
+Рассмотрим индикаторные случайные величины:
+<script type="math/tex; mode=display">X_i = \begin{cases} 1,& \text{если } \sigma_i = i,\\0,& \text{иначе} \end{cases}.</script>
+Тогда число <script type="math/tex">X</script> неподвижных точек подстановки <script type="math/tex">\sigma</script> равно сумме <script type="math/tex">X_1 + X_2 + \cdots + X_n</script>.<br>
+Найдем математическое ожидание каждого из слагаемых:
+<script type="math/tex; mode=display">M(X_1) = 0 \cdot P(X_1=0) + 1 \cdot P(X_1=1) = P(X_1=1)=P(\sigma_i=i)=\frac{1}{n}.</script>
+В самом деле, элемент <script type="math/tex">i</script> фиксирует <script type="math/tex">(n-1)!</script> перестановок.<br>
+Теперь воспользуемся линейностью матожидания:
+<script type="math/tex; mode=display">M(X) = M(X_1 + X_2 + \cdots + X_n) = M(X_1) + M(X_2) + \cdots + M(X_n) = n \cdot \frac{1}{n} = 1.</script>
