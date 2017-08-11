@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">A = \begin{pmatrix}0&1\\0&0\end{pmatrix}</script>, а <script type="math/tex">B = \begin{pmatrix}1&0\\0&0\end{pmatrix}</script>. 
+Тогда <script type="math/tex">\mathrm{rank}\,AB = 0</script>, но <script type="math/tex">\mathrm{rank}\,BA = 1</script>.
