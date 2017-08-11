@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Преобразуем наше равенство:
+$$XY = \lambda X + \mu Y \iff XY - \lambda X - \mu Y + \lambda \mu E = \lambda \mu E \iff (X - \lambda E)(Y - \mu E) = \lambda \mu E.$$
+Поскольку $\lambda, \mu \neq 0$, сомножители левой части обратимы, и мы можем сопрячь обе части, к примеру, матрицей $(X - \lambda E)$:
+$$(X - \lambda E)^{-1} (X - \lambda E) (Y - \mu E) (X - \lambda E) = \lambda \mu E \iff (Y - \mu E)(X - \lambda E) = \lambda \mu E.$$
+Раскрывая скобки в левой части, получаем
+$$YX = \lambda X + \mu Y = XY,$$
+что и требовалось доказать.
+\end{document}

@@ -1,0 +1,7 @@
+Преобразуем наше равенство:
+<script type="math/tex; mode=display">XY = \lambda X + \mu Y \iff XY - \lambda X - \mu Y + \lambda \mu E = \lambda \mu E \iff (X - \lambda E)(Y - \mu E) = \lambda \mu E.</script>
+Поскольку <script type="math/tex">\lambda, \mu \neq 0</script>, сомножители левой части обратимы, и мы можем сопрячь обе части, к примеру, матрицей <script type="math/tex">(X - \lambda E)</script>:
+<script type="math/tex; mode=display">(X - \lambda E)^{-1} (X - \lambda E) (Y - \mu E) (X - \lambda E) = \lambda \mu E \iff (Y - \mu E)(X - \lambda E) = \lambda \mu E.</script>
+Раскрывая скобки в левой части, получаем
+<script type="math/tex; mode=display">YX = \lambda X + \mu Y = XY,</script>
+что и требовалось доказать.
