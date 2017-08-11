@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\usepackage{listings}
+\pagenumbering{gobble}
+
+\lstdefinestyle{EscapeStyle}
+{
+escapeinside=++,
+}
+
+\begin{document}
+Это тот редкий случай, когда решение проще записать в виде псевдокода.
+\begin{lstlisting}[style={EscapeStyle}]
++\textbf{FindBug(Node* root)}:+
+  +Если граф --- дерево, то бракованное реле находится перед+
+  +первой (от корня) не горящей лампочкой.+
+  +Если такого нет, отключаем все ребра графа. \textbf{Return}.+
+  +Отключаем все ребра, выходящие из \textbf{root}.+ 
+  +\textbf{for} (ребра \textbf{j}, выходящие из корня):+
+    +Включаем \textbf{j}+
+    +Его другой конец обозначим через \textbf{new\_root}.+
+    +\textbf{FindBug(new\_root)}. Если успешно --- \textbf{return}.+
+    +Выключаем \textbf{j}.+
+\end{lstlisting}
+\textit{Важное замечание.} После выхода из \textbf{FindBug} все ребра в обработанном подграфе оказываются отключены и не мешают в дальнейшем.\\\\
+Оценим время работы алгоритма. Пусть $S_n$ --- максимальная сложность \textbf{FindBug} для графа с $n$ ребрами. Пусть, далее, $j_1 \ldots j_t$ --- все ребра, 
+выходящие из источника. В худшем случае нам пришлось включить и выключить каждое из ребер $j_1 \ldots j_t$ и запустить процедуру \textbf{FindBug} для каждого из них.\\
+Тогда
+$$S_n \leqslant 2t + S_{k_1} + S_{k_2} + \cdots + S_{k_t},$$
+где $k_1 + k_2 + \cdots + k_t = n-t.$\\
+Нетрудно видеть, что $S_1=S_2=0$, $S_3=1$. В любом случае, $S_m \leqslant 2m$ при $m=1,2,3$.\\
+Примем это за рабочую гипотезу. По индукции тогда можно заключить, что
+\begin{align*}
+S_n &\leqslant 2t + S_{k_1} + S_{k_2} + \cdots + S_{k_t} \leqslant 2t + 2k_1 + 2k_2 + \cdots + 2k_t\\
+&= 2t + 2(k_1 + k_2 + \cdots + k_t) = 2t + 2(n-t) = 2n,
+\end{align*}
+что и требовалось доказать.
+\end{document}
