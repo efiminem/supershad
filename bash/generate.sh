@@ -19,8 +19,8 @@ for i in `seq 1 8`;
                 		do
 					if [ -e ../source/$dat/$i/solution\ $k.mjax ]
                 			then
-                				ALL+="<div class=\"solution\" toid = \"text$i_$k\">Решение $k</div>"
-                				ALL+="<div class=\"solution-text\" id=\"text$i_$k\">"
+                				ALL+="<div class=\"solution\" toid = \"text$i""_$k\">Решение $k</div>"
+                				ALL+="<div class=\"solution-text\" id=\"text$i""_$k\">"
                 				ALL+=`cat ../source/$dat/$i/solution\ $k.mjax`
                 				ALL+='</div>'
                 			fi
