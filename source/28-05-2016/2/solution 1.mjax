@@ -1,0 +1,3 @@
+Воспользуемся логарифмическим признаком сходимости рядов:
+<script type="math/tex; mode=display">D = \lim_{n\to \infty} \frac{\ln \frac{1}{a_n}}{\ln n} = \lim_{n\to \infty} \frac{\ln ((\ln \ln n)^{\ln n})}{\ln n} = \lim_{n\to \infty} \ln \ln \ln n.</script>
+Поскольку предел существует и равен <script type="math/tex">+ \infty</script>, ряд сходится.

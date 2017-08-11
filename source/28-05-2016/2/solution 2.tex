@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Перепишем выражение для членов ряда в следующем виде
+$$a_n = (\ln \ln n)^{-\ln n} = \exp (-\ln n \ln \ln \ln n) = \frac{1}{n^{\ln \ln \ln n}}.$$
+Заметим, что начиная с $n = \lceil \exp \exp \exp (2) \rceil$, данный ряд сходится быстрее, чем 
+сходящийся ряд $\frac{1}{n^2}$. Следовательно, ряд сходится.
+\end{document}

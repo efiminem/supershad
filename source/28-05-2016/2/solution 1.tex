@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Воспользуемся логарифмическим признаком сходимости рядов:
+$$D = \lim_{n\to \infty} \frac{\ln \frac{1}{a_n}}{\ln n} = \lim_{n\to \infty} \frac{\ln ((\ln \ln n)^{\ln n})}{\ln n} = \lim_{n\to \infty} \ln \ln \ln n.$$
+Поскольку предел существует и равен $+ \infty$, ряд сходится.
+\end{document}

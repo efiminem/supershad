@@ -1,0 +1,4 @@
+Перепишем выражение для членов ряда в следующем виде
+<script type="math/tex; mode=display">a_n = (\ln \ln n)^{-\ln n} = \exp (-\ln n \ln \ln \ln n) = \frac{1}{n^{\ln \ln \ln n}}.</script>
+Заметим, что начиная с <script type="math/tex">n = \lceil \exp \exp \exp (2) \rceil</script>, данный ряд сходится быстрее, чем 
+сходящийся ряд <script type="math/tex">\frac{1}{n^2}</script>. Следовательно, ряд сходится.
