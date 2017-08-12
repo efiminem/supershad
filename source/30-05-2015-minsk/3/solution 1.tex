@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Пусть $z$ --- наибольшее целое число, для которого $C_z^3 \leqslant n$. Тогда остаток $r = n - C_z^3 < C_{z+1}^3 - C_z^3 = C_z^2$ (здесь мы учли, что $z \geqslant 2$). 
+Пусть $y$ --- наибольшее целое число, для которого $C_y^2 \leqslant r$. Тогда $y < z$ и остаток $\tau = r - C_y^2 < C_{y+1}^2 - C_y^2 = C_y^1$ (здесь мы учли, что $y \geqslant 1$). Теперь 
+$x$ --- наибольшее целое число, для которого $C_x^1 \leqslant \tau$. Тогда $0 \leqslant x < y$.
+\end{document}
