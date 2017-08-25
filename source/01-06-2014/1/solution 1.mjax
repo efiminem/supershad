@@ -1,0 +1,4 @@
+Пусть <script type="math/tex">x_1 < x_2 < \cdots x_n</script> &#8212; элементы множества <script type="math/tex">M</script>. Тогда
+<script type="math/tex; mode=display">\frac{x_1+x_2}{2} < \frac{x_1+x_3}{2} < \cdots < \frac{x_1+x_n}{2} < \frac{x_2+x_n}{2} < \frac{x_3+x_n}{2} < \cdots < \frac{x_{n-1}+x_n}{2}</script>
+суть различные элементы множества <script type="math/tex">S_M</script> в количестве <script type="math/tex">2n-3</script>.<br>
+Чтобы убедиться, что оценка точна, достаточно рассмотреть множество <script type="math/tex">M=\{1,2,\ldots,n\}.</script>
