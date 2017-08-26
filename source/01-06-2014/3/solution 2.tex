@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\DeclareMathOperator{\rank}{rank}
+
+\begin{document}
+\paragraph{Автор} emazhnik
+\paragraph{Решение} Пусть $V$ -- векторное пространство над полем $K$, $\dim V = 9$.
+Также введем обозначения  $U = \ker (E+A)$, $W = \ker (E-A)$. Тогда $\dim U = \dim V - \rank (E+A) = 9 - 7 = 2$.
+Докажем, что $U \cap W = \varnothing$. В самом деле, если $(E-A)x = 0$, то $(E+A)x = 2x$. Поскольку $\text{char } K \neq 2$, $2x \neq 0$ для $x \neq 0$ (в соответствии с определением характеристики поля). 
+
+Заметим, что $(E-A)(E+A)=0$. Отсюда следует, что $\text{Im}(E+A) \subset \ker (E-A)$, а значит $\dim W \geq \rank (E+A)=7$.
+
+С другой стороны, $\dim (U+W) = \dim U + \dim W - \dim (U \cap W) = \dim U + \dim W \leq \dim V = 9$. Следовательно, $\dim W \leq 9 - \dim U = 7$.
+
+Из $\dim W \geq 7$ и $\dim W \leq 7$ получаем $\dim W = 7$. Значит $\rank (E-A) = \dim V - \dim W = 9 - 7 = 2$.
+\end{document}
+

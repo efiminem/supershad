@@ -1,0 +1,10 @@
+Пусть <script type="math/tex">V</script> &#8212; векторное пространство над полем <script type="math/tex">K</script>, <script type="math/tex">\dim V = 9</script>.
+Также введем обозначения  <script type="math/tex">U = \ker (E+A)</script>, <script type="math/tex">W = \ker (E-A)</script>. Тогда <script type="math/tex">\dim U = \dim V - \mathrm{rank}\, (E+A) = 9 - 7 = 2</script>.<br>
+Докажем, что <script type="math/tex">U \cap W = \varnothing</script>. В самом деле, если <script type="math/tex">(E-A)x = 0</script>, то <script type="math/tex">(E+A)x = 2x</script>. Поскольку <script type="math/tex">\text{char } K \neq 2</script>, <script type="math/tex">2x \neq 0</script> для <script type="math/tex">x \neq 0</script> (в соответствии с определением характеристики поля). 
+<br>
+Заметим, что <script type="math/tex">(E-A)(E+A)=0</script>. Отсюда следует, что <script type="math/tex">\text{Im}(E+A) \subset \ker (E-A)</script>, а значит <script type="math/tex">\dim W \geq \mathrm{rank}\, (E+A)=7</script>.
+<br>
+С другой стороны, <script type="math/tex">\dim (U+W) = \dim U + \dim W - \dim (U \cap W) = \dim U + \dim W \leq \dim V = 9</script>. Следовательно, <script type="math/tex">\dim W \leq 9 - \dim U = 7</script>.
+<br>
+Из <script type="math/tex">\dim W \geq 7</script> и <script type="math/tex">\dim W \leq 7</script> получаем <script type="math/tex">\dim W = 7</script>. Значит <script type="math/tex">\mathrm{rank}\, (E-A) = \dim V - \dim W = 9 - 7 = 2</script>.
+
