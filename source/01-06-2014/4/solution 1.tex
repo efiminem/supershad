@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Возьмем на диаметре полукруга $n+1$ точку $A_1,A_2, \ldots A_{n+1}$ и для каждой из них зададим наш вопрос. По принципу Дирихле, для каких-то двух соседних точек полученный ответ относился к одной и той же загаданной точке. Теперь мы рассматриваем точки $B_i$ пересечения окружностей с центрами в точках $A_i$ и $A_{i+1}$, $i=1,\ldots,n$. По сказанному выше, хотя бы одна из загаданных точек совпадает с одной из точек $B_i$. Эту точку мы находим за $n$ вопросов. Итого нам потребовалось не более $(n+1)+n=2n+1$ вопросов.
+\end{document}
