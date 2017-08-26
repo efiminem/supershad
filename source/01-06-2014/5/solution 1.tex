@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Разобьем интеграл на слагаемые:
+$$\int\limits_\lambda^a \frac{\cos x}{x} dx = \int\limits_\lambda^a \frac{1}{x} dx + \int\limits_\lambda^a \frac{\cos x - 1}{x} dx.$$
+Для первого слагаемого имеем:
+$$\lim\limits_{\lambda \to 0+} \frac{1}{\ln \lambda} \int\limits_\lambda^a \frac{1}{x} dx = -1.$$
+Для второго слагаемого:
+$$\left| \int\limits_\lambda^a \frac{\cos x - 1}{x} dx \right| \leqslant \left| \int\limits_0^a \frac{\cos x - 1}{x} dx \right|.$$
+Подынтегральная функция непрерывна в нуле (так как $\cos x - 1 = O(x^2)$), поэтому интеграл конечен, откуда получаем:
+$$\lim\limits_{\lambda \to 0+} \frac{1}{\ln \lambda} \int\limits_\lambda^a \frac{\cos x - 1}{x} dx = 0.$$
+Поскольку оба предела существуют и конечны, предел суммы равен $-1$.
+\end{document}
