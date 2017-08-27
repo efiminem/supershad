@@ -1,0 +1,10 @@
+Многократно воспользуемся формулой:
+<script type="math/tex; mode=display">\cos (lx) \cos (nx) = \frac12 (\cos ((l+n)x) \cos ((l-n)x)).</script>
+Тогда получим
+<script type="math/tex; mode=display">\cos (x) \cos (2x) \ldots \cos (mx) = \frac{1}{2^{m-1}} ( \cos (\alpha_1 x) + \cdots + \cos(\alpha_{2^m} x) ),</script>
+где <script type="math/tex">a_i = 1 \pm 2 \pm 3 \pm \cdots \pm m \in \mathbb{Z}</script>. Несложно убедиться, что четности всех чисел <script type="math/tex">a_i</script> будут одинаковы. Более того, в случаях <script type="math/tex">m=4k</script> и <script type="math/tex">m=4k+3</script> все <script type="math/tex">a_i</script> четны, а в случаях <script type="math/tex">m=4k+1</script> и <script type="math/tex">4k+2</script> &#8212; нечетны.<br>
+Если <script type="math/tex">a_i \neq 0</script>, <script type="math/tex">\int\limits_0^{2\pi} \cos (\alpha_i x) dx = 0</script>. Значит, <script type="math/tex">I_m = 0</script> при <script type="math/tex">m=4k+1</script> и <script type="math/tex">m=4k+2</script>. Если же <script type="math/tex">m=4k</script> или <script type="math/tex">4k+1</script>, то среди <script type="math/tex">a_i</script> обязательно есть ноль, так как между числами <script type="math/tex">1,2,\ldots,m</script> можно так расставить знаки &laquo;<script type="math/tex">+</script>&raquo; и &laquo;<script type="math/tex">-</script>&raquo;, чтобы получился ноль.<br>
+Действительно,
+<script type="math/tex; mode=display">(1-2-3+4)+(5-6-7+8) + \cdots + ((4k-3) - (4k-2) - (4k-1) + 4k) = 0,</script>
+<script type="math/tex; mode=display">(1+2-3)+(4-5-6+7) + \cdots + (4k - (4k+1) - (4k+2) + (4k+3)) = 0.</script>
+Таким образом, <script type="math/tex">I_m \neq 0</script> при <script type="math/tex">m=4k</script> и <script type="math/tex">4k+3</script>. Для <script type="math/tex">m \in [1,10]</script> получим <script type="math/tex">m=3,4,7,8.</script>

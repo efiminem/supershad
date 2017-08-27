@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Многократно воспользуемся формулой:
+$$\cos (lx) \cos (nx) = \frac12 (\cos ((l+n)x) \cos ((l-n)x)).$$
+Тогда получим
+$$\cos (x) \cos (2x) \ldots \cos (mx) = \frac{1}{2^{m-1}} ( \cos (\alpha_1 x) + \cdots + \cos(\alpha_{2^m} x) ),$$
+где $a_i = 1 \pm 2 \pm 3 \pm \cdots \pm m \in \mathbb{Z}$. Несложно убедиться, что четности всех чисел $a_i$ будут одинаковы. Более того, в случаях $m=4k$ и $m=4k+3$ все $a_i$ четны, а в случаях $m=4k+1$ и $4k+2$ --- нечетны.\\
+Если $a_i \neq 0$, $\int\limits_0^{2\pi} \cos (\alpha_i x) dx = 0$. Значит, $I_m = 0$ при $m=4k+1$ и $m=4k+2$. Если же $m=4k$ или $4k+1$, то среди $a_i$ обязательно есть ноль, так как между числами $1,2,\ldots,m$ можно так расставить знаки <<$+$>> и <<$-$>>, чтобы получился ноль.\\
+Действительно,
+$$(1-2-3+4)+(5-6-7+8) + \cdots + ((4k-3) - (4k-2) - (4k-1) + 4k) = 0,$$
+$$(1+2-3)+(4-5-6+7) + \cdots + (4k - (4k+1) - (4k+2) + (4k+3)) = 0.$$
+Таким образом, $I_m \neq 0$ при $m=4k$ и $4k+3$. Для $m \in [1,10]$ получим $m=3,4,7,8$.
+\end{document}
