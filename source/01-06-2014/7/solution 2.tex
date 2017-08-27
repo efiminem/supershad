@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+За $O(n^2)$ операций находим максимумы и вторые максимумы по строкам и столбцам, записываем их вместе с индексами в массив длины $O(n)$. Для каждого из них выбираем из списка максимальное число, не лежащее с ним ни в одной строке, ни в одном столбце, и перемножаем. Из полученных произведений выбираем максимальное.
+\end{document}
