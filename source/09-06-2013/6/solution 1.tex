@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Допустим, что $\forall (m,n) \colon a_{mn} \leqslant mn$. Выберем некоторое $k \in \mathbb{N}$ и рассмотрим кривую на плоскости $y=\frac{1}{k} x$. Если $i,j \in \mathbb{N}$ и точка $(i,j)$ лежит под кривой $y = \frac{1}{k} x$, то $a_{ij} \leqslant ij \leqslant i \cdot \frac{k}{i} = k$. Таким образом, количество целых точек под кривой $y = \frac{1}{k} x$ должно быть не больше $8k$. С другой стороны, количество целых точек под этой кривой не меньше, чем $\int\limits_2^k \frac{kdx}{x} = k \ln x |_2^k = k(\ln k - \ln 2)$. При достаточно большом $k$ это число больше $8k$. Таким образом, мы получаем противоречие. Следовательно, найдется пара $(m,n)$ такая, что $a_{mn} > mn$.
+\end{document}
