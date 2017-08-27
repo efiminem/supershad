@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Введем обозначение $b_n = \frac{1}{a_n}$. Тогда $b_{n+1} = \frac{1 + na_n}{a_n} = b_n + n$. Кроме того, $b_0 = \frac{1}{a_0} = 1$.\\
+Получаем, что
+$$b_n = b_0 + 1 + 2 + \cdots + n-1 = 1 + \frac{n(n-1)}{2} = \frac{n(n-1) + 2}{2}.$$
+Отсюда получаем
+$$a_n = \frac{2}{n(n-1)+2}.$$
+\end{document}

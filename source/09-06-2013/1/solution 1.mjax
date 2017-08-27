@@ -1,0 +1,5 @@
+Введем обозначение <script type="math/tex">b_n = \frac{1}{a_n}</script>. Тогда <script type="math/tex">b_{n+1} = \frac{1 + na_n}{a_n} = b_n + n</script>. Кроме того, <script type="math/tex">b_0 = \frac{1}{a_0} = 1</script>.<br>
+Получаем, что
+<script type="math/tex; mode=display">b_n = b_0 + 1 + 2 + \cdots + n-1 = 1 + \frac{n(n-1)}{2} = \frac{n(n-1) + 2}{2}.</script>
+Отсюда получаем
+<script type="math/tex; mode=display">a_n = \frac{2}{n(n-1)+2}.</script>
