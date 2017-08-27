@@ -1,0 +1,10 @@
+Обозначим через <script type="math/tex">M(k)</script> математическое ожидание числа бросков, требуемых для получения суммы, большей или равной <script type="math/tex">n</script>, при условии, что в начальный момент сумма была равна <script type="math/tex">k</script>.<br>
+Тогда имеем
+<script type="math/tex; mode=display">M(n)=0, M(n-1)=1, M(n-2) = 1 + \frac{1}{n} M(n-1) = 1 + \frac{1}{n},</script>
+<script type="math/tex; mode=display">M(n-3) = 1 + \frac{1}{n} M(n-2) + \frac{1}{n} M(n-1) = 1 + \frac{2}{n} + \frac{1}{n^2},</script>
+<script type="math/tex; mode=display">M(n-4) = 1 + \frac{1}{n} M(n-3) + \frac{1}{n} M(n-2) + \frac{1}{n} M(n-1) = 1 + \frac{3}{n} + \frac{3}{n^2} + \frac{1}{n^3}.</script>
+Возникает гипотеза о том, что
+<script type="math/tex; mode=display">M(n-k) = \sum_{i=1}^{k-1} C_{k-1}^i \frac{1}{n^i},</script>
+которая проверяется при помощи индукции.<br>
+Искомое математическое ожидание равно
+<script type="math/tex; mode=display">M(0) = \sum_{i=1}^{n-1} C_{n-1}^i \frac{1}{n^i} = \left( 1 + \frac{1}{n} \right)^{n-1}.</script>

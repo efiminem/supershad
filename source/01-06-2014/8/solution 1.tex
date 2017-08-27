@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Обозначим через $M(k)$ математическое ожидание числа бросков, требуемых для получения суммы, большей или равной $n$, при условии, что в начальный момент сумма была равна $k$.\\
+Тогда имеем
+$$M(n)=0, M(n-1)=1, M(n-2) = 1 + \frac{1}{n} M(n-1) = 1 + \frac{1}{n},$$
+$$M(n-3) = 1 + \frac{1}{n} M(n-2) + \frac{1}{n} M(n-1) = 1 + \frac{2}{n} + \frac{1}{n^2},$$
+$$M(n-4) = 1 + \frac{1}{n} M(n-3) + \frac{1}{n} M(n-2) + \frac{1}{n} M(n-1) = 1 + \frac{3}{n} + \frac{3}{n^2} + \frac{1}{n^3}.$$
+Возникает гипотеза о том, что
+$$M(n-k) = \sum_{i=1}^{k-1} C_{k-1}^i \frac{1}{n^i},$$
+которая проверяется при помощи индукции.\\
+Искомое математическое ожидание равно
+$$M(0) = \sum_{i=1}^{n-1} C_{n-1}^i \frac{1}{n^i} = \left( 1 + \frac{1}{n} \right)^{n-1}.$$
+\end{document}
