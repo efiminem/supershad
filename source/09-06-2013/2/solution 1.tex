@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Рассмотрим элемент $i \in A$. Очевидно, подмножеств в $A$, содержащих $i$ и не содержащих $i$, равное количество. Таким образом, вероятность того, что $i$ лежит в $A_j$ равна $\frac12$. Эти вероятности независимы для разных $j$. Получаем, что вероятность того, что $i$ содержится в $A_1 \cap A_2 \cap \ldots \cap A_k$ равна $\frac{1}{2^k}$. Соответственно, вероятность того, что $i$ не содержится в $A_1 \cap A_2 \cap \ldots \cap A_k$ равна $1 - \frac{1}{2^k}$. Эти вероятности независимы для разных $i$. Получается, что вероятность того, что ни один из номеров $i$ не попал в $A_1 \cap A_2 \cap \ldots \cap A_k$ равна $(1 - \frac{1}{2^k})^n$.
+\end{document}
