@@ -1,0 +1,5 @@
+Сначала докажем, что последовательность сходится. Если <script type="math/tex">a_n < 0</script>, то <script type="math/tex">a_{n+1} < 0</script>, поэтому она ограниченна сверху. Сравним <script type="math/tex">a_n</script> и <script type="math/tex">a_{n+1}</script>:
+<script type="math/tex; mode=display">a_n \;\;?\;\; \frac{a_n^2 - 3}{4} \Leftrightarrow 0 \;\;?\;\; a_n^3 - 3a_n^2 - 4a_n \Leftrightarrow 0 \;\;?\;\; a_n(a_n+1)(a_n-4).</script>
+Видим, что при <script type="math/tex">a_n \in (-1;0)</script> имеет место неравенство <script type="math/tex">a_n < a_{n+1}</script>, то есть последовательность возрастает. По теореме Вейерштрасса она имеет предел. Чтобы его найти, перейдем к пределу в нашем рекуррентном соотношении:
+<script type="math/tex; mode=display">a = \frac{a^2(a-3)}{4} \Leftrightarrow a^3 - 3a^2 - 4a = 0,</script>
+откуда предел может быть одним из чисел <script type="math/tex">0</script>, <script type="math/tex">-1</script> и <script type="math/tex">4</script>. Нетрудно понять, что это <script type="math/tex">0</script>.
