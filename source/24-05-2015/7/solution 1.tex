@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Обозначим исходный интеграл через $I$. Произведем замену $x = \frac{1}{t}$.\\
+Тогда
+$$I = \int\limits_{\frac13}^3 \frac{\textrm{arctg}\, x}{x^2-x+1} dx = \int\limits_{\frac13}^3 \frac{\textrm{arcctg}\, t}{t^2 - t + 1} dt = $$
+$$= \int\limits_{\frac13}^3 \frac{\frac{\pi}{2} - \textrm{arctg}\, t}{t^2 - t + 1} dt = \frac{\pi}{2} \int\limits_{\frac13}^3 \frac{dt}{t^2 - t + 1} dt - I.$$
+Отсюда
+$$I = \frac{\pi}{4} \int\limits_{\frac13}^3 \frac{dt}{t^2 - t + 1} dt = \frac{\pi}{2 \sqrt{3}} \textrm{arctg}\, \left. \left( \frac{2x-1}{\sqrt{3}} \right) \right|_{\frac13}^3 = $$
+$$= \frac{\pi}{2\sqrt{3}} \left( \textrm{arctg}\, \frac{5}{\sqrt{3}} + \textrm{arctg}\, \frac{1}{3\sqrt{3}} \right) = \frac{\pi}{2\sqrt{3}} \textrm{arctg}\, 4\sqrt{3}.$$
+\end{document}
