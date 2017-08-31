@@ -1,6 +1,6 @@
 all:
 	bash bash/generate.sh '27-05-2012' '27 мая 2012'
-	bash bash/generate.sh '03-06-2012' '3 марта 2012'
+	bash bash/generate.sh '03-06-2012' '3 июня 2012'
 	bash bash/generate.sh '10-06-2012' '10 июня 2012'
 	bash bash/generate.sh '26-05-2013' '26 мая 2013'
 	bash bash/generate.sh '02-06-2013' '2 июня 2013'
