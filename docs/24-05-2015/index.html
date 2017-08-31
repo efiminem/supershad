@@ -106,7 +106,38 @@ $(document).ready(function(){
 Отсюда
 <script type="math/tex; mode=display">I = \frac{\pi}{4} \int\limits_{\frac13}^3 \frac{dt}{t^2 - t + 1} dt = \frac{\pi}{2 \sqrt{3}} \textrm{arctg}\, \left. \left( \frac{2x-1}{\sqrt{3}} \right) \right|_{\frac13}^3 = </script>
 <script type="math/tex; mode=display">= \frac{\pi}{2\sqrt{3}} \left( \textrm{arctg}\, \frac{5}{\sqrt{3}} + \textrm{arctg}\, \frac{1}{3\sqrt{3}} \right) = \frac{\pi}{2\sqrt{3}} \textrm{arctg}\, 4\sqrt{3}.</script></div><div class="solution" toid = "answer7">Ответ</div><div class="solution-text" id="answer7"><script type="math/tex">\dfrac{\pi}{2\sqrt{3}} \textrm{arctg}\, 4\sqrt{3}.</script></div></li><li>На плоскости нарисована ломаная с <script type="math/tex">n</script> звеньями. Длина каждого звена равна <script type="math/tex">1</script>, ориентированный угол между соседними звеньями с равной
-вероятностью равен <script type="math/tex">\alpha</script> или <script type="math/tex">-\alpha</script>. Найдите математическое ожидание квадрата расстояния от ее начальной точки до конечной.</li></ol>
+вероятностью равен <script type="math/tex">\alpha</script> или <script type="math/tex">-\alpha</script>. Найдите математическое ожидание квадрата расстояния от ее начальной точки до конечной.<div class="solution" toid = "text8">Решение</div><div class="solution-text" id="text8">Введем на плоскости систему координат так, чтобы первое звено ломаной было направлено вдоль оси <script type="math/tex">Ox</script>. Пусть <script type="math/tex">\alpha_k</script> &#8212; ориентированный угол между <script type="math/tex">(k+1)</script>-м звеном ломаной и первым звеном ломаной (то есть осью <script type="math/tex">Ox</script>). Тогда <script type="math/tex">\alpha_0=0</script>, <script type="math/tex">\alpha_{k+1} = \alpha_k + \xi_{k+1} \alpha</script>, где <script type="math/tex">\xi_k</script> &#8212; случайная величина, принимающая с вероятностью <script type="math/tex">\frac12</script> значения <script type="math/tex">\pm 1</script>. Отметим, что проекции на оси <script type="math/tex">Ox</script> и <script type="math/tex">Oy</script> <script type="math/tex">k</script>-го звена ломаной равны <script type="math/tex">\cos \alpha_{k-1}</script> и <script type="math/tex">\sin \alpha_{k-1}</script> соответственно. Тогда квадрат расстояния от начала ломаной до ее конца равен
+<script type="math/tex; mode=display">L_n^2 = \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2.</script>
+Наша задача &#8212; найти математическое ожидание этой случайной величины.<br>
+Имеем
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k) &= M(\cos(\alpha_{k-1} + \xi_k \alpha)) = M(\cos \alpha_{k-1} \cos (\xi_k \alpha) - \sin \alpha_{k-1} \sin (\xi_k \alpha)),\\
+M(\sin \alpha_k) &= M(\sin(\alpha_{k-1} + \xi_k \alpha)) = M(\sin \alpha_{k-1} \cos (\xi_k \alpha) + \cos \alpha_{k-1} \sin (\xi_k \alpha)).
+\end{align*}
+</script>
+Пользуясь тем, что <script type="math/tex">\sin \alpha_0 = 0</script> и <script type="math/tex">\cos (\xi_k \alpha) = \cos \alpha</script> (в силу нечетности косинуса), по индукции получаем, что
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k) &= \cos^k \alpha,\\
+M(\sin \alpha_k) &= 0.
+\end{align*}
+</script>
+Далее найдем математическое ожидание произведений. Пусть <script type="math/tex">m \geqslant k</script>. С помощью индукции по <script type="math/tex">(m-k)</script> можно доказать, что
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k \cdot \cos \alpha_m) &= \cos^{m-k} \alpha \cdot M(\cos^2 \alpha_k),\\
+M(\sin \alpha_k \cdot \sin \alpha_m) &= \cos^{m-k} \alpha \cdot M(\sin^2 \alpha_k).
+\end{align*}
+</script>
+Следовательно
+<script type="math/tex; mode=display">M(L_n^2) = M \left( \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2 \right) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + M \left( \cos^2 \alpha_n + \sin^2 \alpha_n + 2 \sum\limits_{k=0}^{n-1} (\cos \alpha_n \cos \alpha_k + \sin \alpha_n \sin \alpha_k) \right) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha \cdot (M(\sin^2 \alpha_k) + M(\cos^2 \alpha_k)) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha = M(L_{n-1}^2) + 1 + 2 \sum\limits_{t=1}^n \cos^t \alpha = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2\cos \alpha \cdot \frac{1 - \cos^n \alpha}{1 - \cos \alpha}.</script>
+Отсюда уже нетрудно получить ответ
+<script type="math/tex; mode=display">M(L_n^2) = n \cdot \frac{1+\cos \alpha}{1 - \cos \alpha} - 2 \cos^2 \alpha \cdot \frac{1 - \cos^n \alpha}{(1 - \cos \alpha)^2}.</script></div><div class="solution" toid = "answer8">Ответ</div><div class="solution-text" id="answer8"><script type="math/tex">n \cdot \dfrac{1+\cos \alpha}{1 - \cos \alpha} - 2 \cos^2 \alpha \cdot \dfrac{1 - \cos^n \alpha}{(1 - \cos \alpha)^2}</script>.</div></li></ol>
   </article>
 
 </div>

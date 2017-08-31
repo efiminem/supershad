@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Введем на плоскости систему координат так, чтобы первое звено ломаной было направлено вдоль оси $Ox$. Пусть $\alpha_k$ --- ориентированный угол между $(k+1)$-м звеном ломаной и первым звеном ломаной (то есть осью $Ox$). Тогда $\alpha_0=0$, $\alpha_{k+1} = \alpha_k + \xi_{k+1} \alpha$, где $\xi_k$ --- случайная величина, принимающая с вероятностью $\frac12$ значения $\pm 1$. Отметим, что проекции на оси $Ox$ и $Oy$ $k$-го звена ломаной равны $\cos \alpha_{k-1}$ и $\sin \alpha_{k-1}$ соответственно. Тогда квадрат расстояния от начала ломаной до ее конца равен
+$$L_n^2 = \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2.$$
+Наша задача --- найти математическое ожидание этой случайной величины.\\
+Имеем
+\begin{align*}
+M(\cos \alpha_k) &= M(\cos(\alpha_{k-1} + \xi_k \alpha)) = M(\cos \alpha_{k-1} \cos (\xi_k \alpha) - \sin \alpha_{k-1} \sin (\xi_k \alpha)),\\
+M(\sin \alpha_k) &= M(\sin(\alpha_{k-1} + \xi_k \alpha)) = M(\sin \alpha_{k-1} \cos (\xi_k \alpha) + \cos \alpha_{k-1} \sin (\xi_k \alpha)).
+\end{align*}
+Пользуясь тем, что $\sin \alpha_0 = 0$ и $\cos (\xi_k \alpha) = \cos \alpha$ (в силу нечетности косинуса), по индукции получаем, что
+\begin{align*}
+M(\cos \alpha_k) &= \cos^k \alpha,\\
+M(\sin \alpha_k) &= 0.
+\end{align*}
+Далее найдем математическое ожидание произведений. Пусть $m \geqslant k$. С помощью индукции по $(m-k)$ можно доказать, что
+\begin{align*}
+M(\cos \alpha_k \cdot \cos \alpha_m) &= \cos^{m-k} \alpha \cdot M(\cos^2 \alpha_k),\\
+M(\sin \alpha_k \cdot \sin \alpha_m) &= \cos^{m-k} \alpha \cdot M(\sin^2 \alpha_k).
+\end{align*}
+Следовательно
+$$M(L_n^2) = M \left( \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2 \right) = $$
+$$= M(L_{n-1}^2) + M \left( \cos^2 \alpha_n + \sin^2 \alpha_n + 2 \sum\limits_{k=0}^{n-1} (\cos \alpha_n \cos \alpha_k + \sin \alpha_n \sin \alpha_k) \right) = $$
+$$= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha \cdot (M(\sin^2 \alpha_k) + M(\cos^2 \alpha_k)) = $$
+$$= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha = M(L_{n-1}^2) + 1 + 2 \sum\limits_{t=1}^n \cos^t \alpha = $$
+$$= M(L_{n-1}^2) + 1 + 2\cos \alpha \cdot \frac{1 - \cos^n \alpha}{1 - \cos \alpha}.$$
+Отсюда уже нетрудно получить ответ
+$$M(L_n^2) = n \cdot \frac{1+\cos \alpha}{1 - \cos \alpha} - 2 \cos^2 \alpha \cdot \frac{1 - \cos^n \alpha}{(1 - \cos \alpha)^2}.$$
+\end{document}

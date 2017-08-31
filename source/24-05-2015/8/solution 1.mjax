@@ -1,0 +1,32 @@
+Введем на плоскости систему координат так, чтобы первое звено ломаной было направлено вдоль оси <script type="math/tex">Ox</script>. Пусть <script type="math/tex">\alpha_k</script> &#8212; ориентированный угол между <script type="math/tex">(k+1)</script>-м звеном ломаной и первым звеном ломаной (то есть осью <script type="math/tex">Ox</script>). Тогда <script type="math/tex">\alpha_0=0</script>, <script type="math/tex">\alpha_{k+1} = \alpha_k + \xi_{k+1} \alpha</script>, где <script type="math/tex">\xi_k</script> &#8212; случайная величина, принимающая с вероятностью <script type="math/tex">\frac12</script> значения <script type="math/tex">\pm 1</script>. Отметим, что проекции на оси <script type="math/tex">Ox</script> и <script type="math/tex">Oy</script> <script type="math/tex">k</script>-го звена ломаной равны <script type="math/tex">\cos \alpha_{k-1}</script> и <script type="math/tex">\sin \alpha_{k-1}</script> соответственно. Тогда квадрат расстояния от начала ломаной до ее конца равен
+<script type="math/tex; mode=display">L_n^2 = \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2.</script>
+Наша задача &#8212; найти математическое ожидание этой случайной величины.<br>
+Имеем
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k) &= M(\cos(\alpha_{k-1} + \xi_k \alpha)) = M(\cos \alpha_{k-1} \cos (\xi_k \alpha) - \sin \alpha_{k-1} \sin (\xi_k \alpha)),\\
+M(\sin \alpha_k) &= M(\sin(\alpha_{k-1} + \xi_k \alpha)) = M(\sin \alpha_{k-1} \cos (\xi_k \alpha) + \cos \alpha_{k-1} \sin (\xi_k \alpha)).
+\end{align*}
+</script>
+Пользуясь тем, что <script type="math/tex">\sin \alpha_0 = 0</script> и <script type="math/tex">\cos (\xi_k \alpha) = \cos \alpha</script> (в силу нечетности косинуса), по индукции получаем, что
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k) &= \cos^k \alpha,\\
+M(\sin \alpha_k) &= 0.
+\end{align*}
+</script>
+Далее найдем математическое ожидание произведений. Пусть <script type="math/tex">m \geqslant k</script>. С помощью индукции по <script type="math/tex">(m-k)</script> можно доказать, что
+<script type="math/tex; mode=display">
+\begin{align*}
+M(\cos \alpha_k \cdot \cos \alpha_m) &= \cos^{m-k} \alpha \cdot M(\cos^2 \alpha_k),\\
+M(\sin \alpha_k \cdot \sin \alpha_m) &= \cos^{m-k} \alpha \cdot M(\sin^2 \alpha_k).
+\end{align*}
+</script>
+Следовательно
+<script type="math/tex; mode=display">M(L_n^2) = M \left( \left( \sum\limits_{k=0}^{n-1} \cos \alpha_k \right)^2 + \left( \sum\limits_{k=0}^{n-1} \sin \alpha_k \right)^2 \right) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + M \left( \cos^2 \alpha_n + \sin^2 \alpha_n + 2 \sum\limits_{k=0}^{n-1} (\cos \alpha_n \cos \alpha_k + \sin \alpha_n \sin \alpha_k) \right) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha \cdot (M(\sin^2 \alpha_k) + M(\cos^2 \alpha_k)) = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2 \sum\limits_{k=0}^{n-1} \cos^{n-k} \alpha = M(L_{n-1}^2) + 1 + 2 \sum\limits_{t=1}^n \cos^t \alpha = </script>
+<script type="math/tex; mode=display">= M(L_{n-1}^2) + 1 + 2\cos \alpha \cdot \frac{1 - \cos^n \alpha}{1 - \cos \alpha}.</script>
+Отсюда уже нетрудно получить ответ
+<script type="math/tex; mode=display">M(L_n^2) = n \cdot \frac{1+\cos \alpha}{1 - \cos \alpha} - 2 \cos^2 \alpha \cdot \frac{1 - \cos^n \alpha}{(1 - \cos \alpha)^2}.</script>
