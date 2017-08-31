@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Сделаем замену $t=\sqrt{1 + e^x}$. Тогда
+$$\int \frac{dx}{\sqrt{1+e^x}} = \int \frac{2 dt}{t^2 - 1} = \int \left( \frac{1}{t-1} - \frac{1}{t+1} \right) dt = \ln \frac{|t-1|}{|t+1|} + C.$$
+Сделав обратную замену, получаем
+$$\int \frac{dx}{\sqrt{1+e^x}} = \ln \frac{\sqrt{1+e^x} - 1}{\sqrt{1+e^x} + 1} + C.$$
+\textit{Примечание.} Ответ можно также записать в виде
+$$\int \frac{dx}{\sqrt{1+e^x}} = -2\, \textrm{arcth}\, (\sqrt{1+e^x}) + C,$$
+где $\textrm{arcth}$ --- гиперболический арккотангенс.
+\end{document}
