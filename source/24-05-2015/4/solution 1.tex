@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Воспользуемся формулой $C_n^k = C_{n-1}^{k-1} + C_{n-1}^k$. Вычтем из каждой строки матрицы предыдущую, а затем из каждого столбца предыдущий. Полученная матрица будет иметь вид:
+$$\begin{pmatrix}1&0\\0& \left( C_{i+j-2}^{i-1} \right)_{i,j=1}^{n-1} \end{pmatrix}.$$
+Продолжая рассуждение по индукции, убеждаемся, что определитель исходной матрицы равен единичной, то есть $1$.
+\end{document}
