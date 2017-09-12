@@ -1,0 +1,15 @@
+Разобьем интервал интегрирования на <script type="math/tex">n</script> участков, на каждом из которых целая часть числа <script type="math/tex">nx</script> постоянна. Тогда
+<script type="math/tex; mode=display">\int\limits_0^1 e^{\{nx\}} x^{2016} dx = \sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx.</script>
+Пусть функция <script type="math/tex">e^{nx} x^{2016}</script> имеет первообразную <script type="math/tex">F(x)</script>. Тогда по формуле Ньютона-Лейбница получим
+<script type="math/tex; mode=display">\sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx = (e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) + \frac{1}{e^n} F(1) - F(0).</script>
+Нетрудно понять, что <script type="math/tex">F(x)</script> имеет вид <script type="math/tex">e^{nx} g(x) = e^{nx} \sum_{s=0}^{2016} A_s x^s</script>. Коэффициенты полинома <script type="math/tex">g(x)</script> легко найти из выражения <script type="math/tex">F'(x) = e^{nx} x^{2016}</script>. Рекуррентно получим
+<script type="math/tex; mode=display">A_{2016} = \frac{1}{n},</script>
+<script type="math/tex; mode=display">A_{2015} = \frac{-2016}{n^2},</script>
+<script type="math/tex; mode=display">A_{2014} = \frac{2015 \cdot 2016}{n^3},</script>
+<script type="math/tex; mode=display">\vdots</script>
+<script type="math/tex; mode=display">A_{0} = \frac{1 \cdots 2016}{n^{2017}}.</script>
+Сразу заметим, что <script type="math/tex">\lim\limits_{n\to \infty} \frac{1}{e^n} F(1) = \lim\limits_{n\to \infty} F(0) = 0</script>. Далее запишем
+<script type="math/tex; mode=display">(e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) = </script>
+<script type="math/tex; mode=display"> = (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} - \frac{2016}{n^{2017}} \sum_{k=1}^n k^{2015} + \cdots + \frac{1 \cdots 2016}{n^{2017}} \sum_{k=1}^n k^0 \right).</script>
+Поскольку <script type="math/tex">\sum\limits_{k=1}^n k^s</script> &#8212; многочлен степени <script type="math/tex">s+1</script>, при <script type="math/tex">n \to \infty</script> все члены суммы кроме первого стремятся к нулю. Итого
+<script type="math/tex; mode=display">\lim\limits_{n \to \infty} (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} \right) = \frac{e-1}{2017}.</script>

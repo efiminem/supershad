@@ -82,7 +82,21 @@ $(document).ready(function(){
 Найдите <script type="math/tex">P(\xi + \eta < t\lambda)</script>.</li><li>В пространстве многочленов с действительными коэффициентами степени не выше <script type="math/tex">n</script> задана
 квадратичная форма <script type="math/tex">Q(f) = f(1) \cdot f(2)</script>. Найдите ее сигнатуру (число единиц и минус единиц в нормальном виде).</li><li>Найдите предел последовательности 
 <script type="math/tex; mode=display">\lim_{n\to \infty} \int_0^1 e^{\{nx\}} x^{2016} dx,</script>
-где <script type="math/tex">\{t\}</script> означает дробную часть числа <script type="math/tex">t</script> (например, <script type="math/tex">\{ -\frac23 \} = \{ \frac43 \} = \frac13</script>).</li><li>а) Докажите, что во множестве отрезков <script type="math/tex">\Lambda = \{ [i,j] | i,j=1,\ldots ,n, i<j \}</script> можно
+где <script type="math/tex">\{t\}</script> означает дробную часть числа <script type="math/tex">t</script> (например, <script type="math/tex">\{ -\frac23 \} = \{ \frac43 \} = \frac13</script>).<div class="solution" toid = "text7">Решение</div><div class="solution-text" id="text7">Разобьем интервал интегрирования на <script type="math/tex">n</script> участков, на каждом из которых целая часть числа <script type="math/tex">nx</script> постоянна. Тогда
+<script type="math/tex; mode=display">\int\limits_0^1 e^{\{nx\}} x^{2016} dx = \sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx.</script>
+Пусть функция <script type="math/tex">e^{nx} x^{2016}</script> имеет первообразную <script type="math/tex">F(x)</script>. Тогда по формуле Ньютона-Лейбница получим
+<script type="math/tex; mode=display">\sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx = (e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) + \frac{1}{e^n} F(1) - F(0).</script>
+Нетрудно понять, что <script type="math/tex">F(x)</script> имеет вид <script type="math/tex">e^{nx} g(x) = e^{nx} \sum_{s=0}^{2016} A_s x^s</script>. Коэффициенты полинома <script type="math/tex">g(x)</script> легко найти из выражения <script type="math/tex">F'(x) = e^{nx} x^{2016}</script>. Рекуррентно получим
+<script type="math/tex; mode=display">A_{2016} = \frac{1}{n},</script>
+<script type="math/tex; mode=display">A_{2015} = \frac{-2016}{n^2},</script>
+<script type="math/tex; mode=display">A_{2014} = \frac{2015 \cdot 2016}{n^3},</script>
+<script type="math/tex; mode=display">\vdots</script>
+<script type="math/tex; mode=display">A_{0} = \frac{1 \cdots 2016}{n^{2017}}.</script>
+Сразу заметим, что <script type="math/tex">\lim\limits_{n\to \infty} \frac{1}{e^n} F(1) = \lim\limits_{n\to \infty} F(0) = 0</script>. Далее запишем
+<script type="math/tex; mode=display">(e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) = </script>
+<script type="math/tex; mode=display"> = (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} - \frac{2016}{n^{2017}} \sum_{k=1}^n k^{2015} + \cdots + \frac{1 \cdots 2016}{n^{2017}} \sum_{k=1}^n k^0 \right).</script>
+Поскольку <script type="math/tex">\sum\limits_{k=1}^n k^s</script> &#8212; многочлен степени <script type="math/tex">s+1</script>, при <script type="math/tex">n \to \infty</script> все члены суммы кроме первого стремятся к нулю. Итого
+<script type="math/tex; mode=display">\lim\limits_{n \to \infty} (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} \right) = \frac{e-1}{2017}.</script></div><div class="solution" toid = "answer7">Ответ</div><div class="solution-text" id="answer7"><script type="math/tex">\dfrac{e-1}{2017}</script>.</div></li><li>а) Докажите, что во множестве отрезков <script type="math/tex">\Lambda = \{ [i,j] | i,j=1,\ldots ,n, i<j \}</script> можно
 выбрать подмножество <script type="math/tex">\Sigma</script>, содержащее <script type="math/tex">O(n \log n)</script> отрезков так, чтобы любой отрезок из <script type="math/tex">\Lambda</script>
 представлялся в виде объединения не более двух отрезков из <script type="math/tex">\Sigma</script>.<br>
 б) Докажите, что эта оценка точна, то есть подможество <script type="math/tex">\Sigma \subseteq \Lambda</script>, удовлетворяющее условиям, должно содержать <script type="math/tex">\Omega (n \log n)</script> отрезков.</li></ol>

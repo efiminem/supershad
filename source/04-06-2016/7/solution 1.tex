@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Разобьем интервал интегрирования на $n$ участков, на каждом из которых целая часть числа $nx$ постоянна. Тогда
+$$\int\limits_0^1 e^{\{nx\}} x^{2016} dx = \sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx.$$
+Пусть функция $e^{nx} x^{2016}$ имеет первообразную $F(x)$. Тогда по формуле Ньютона-Лейбница получим
+$$\sum_{k=1}^n \int\limits_{\frac{k-1}{n}}^{\frac{k}{n}} e^{nx} e^{1-k} x^{2016} dx = (e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) + \frac{1}{e^n} F(1) - F(0).$$
+Нетрудно понять, что $F(x)$ имеет вид $e^{nx} g(x) = e^{nx} \sum_{s=0}^{2016} A_s x^s$. Коэффициенты полинома $g(x)$ легко найти из выражения $F'(x) = e^{nx} x^{2016}$. Рекуррентно получим
+$$A_{2016} = \frac{1}{n},$$
+$$A_{2015} = \frac{-2016}{n^2},$$
+$$A_{2014} = \frac{2015 \cdot 2016}{n^3},$$
+$$\vdots$$
+$$A_{0} = \frac{1 \cdots 2016}{n^{2017}}.$$
+Сразу заметим, что $\lim\limits_{n\to \infty} \frac{1}{e^n} F(1) = \lim\limits_{n\to \infty} F(0) = 0$. Далее запишем
+$$(e-1) \sum_{k=1}^n \frac{1}{e^k} F\left( \frac{k}{n} \right) = (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} - \frac{2016}{n^{2017}} \sum_{k=1}^n k^{2015} + \cdots + \frac{1 \cdots 2016}{n^{2017}} \sum_{k=1}^n k^0 \right).$$
+Поскольку $\sum\limits_{k=1}^n k^s$ --- многочлен степени $s+1$, при $n \to \infty$ все члены суммы кроме первого стремятся к нулю. Итого
+$$\lim\limits_{n \to \infty} (e-1) \left( \frac{1}{n^{2017}} \sum_{k=1}^n k^{2016} \right) = \frac{e-1}{2017}.$$
+\end{document}
