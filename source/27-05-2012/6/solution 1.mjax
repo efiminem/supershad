@@ -1,0 +1,5 @@
+Предположим, что у такой матрицы есть рациональное целое собственное значение в виде несократимой дроби <script type="math/tex">p/m</script>. Подставим его в характеристическое уравнение на собственные значения матрицы:
+<script type="math/tex; mode=display">\left( \frac{p}{m} \right)^n + a_{n-1} \left( \frac{p}{m} \right)^{n-1} + \cdots + a_0 = 0.</script>
+Домножим все члены этого уравнения на <script type="math/tex">m^{n-1}</script>:
+<script type="math/tex; mode=display">\frac{p^n}{m} + a_{n-1} p^{n-1} + \cdots + a_0 m^{n-1} = 0.</script>
+Заметим, что в этом уравнении только одно нецелое слагаемое <script type="math/tex">\frac{p^n}{m}</script>, чего быть не может.

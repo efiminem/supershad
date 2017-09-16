@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Предположим, что у такой матрицы есть рациональное целое собственное значение в виде несократимой дроби $p/m$. Подставим его в характеристическое уравнение на собственные значения матрицы:
+$$\left( \frac{p}{m} \right)^n + a_{n-1} \left( \frac{p}{m} \right)^{n-1} + \cdots + a_0 = 0.$$
+Домножим все члены этого уравнения на $m^{n-1}$:
+$$\frac{p^n}{m} + a_{n-1} p^{n-1} + \cdots + a_0 m^{n-1} = 0.$$
+Заметим, что в этом уравнении только одно нецелое слагаемое $\frac{p^n}{m}$, чего быть не может.
+\end{document}
