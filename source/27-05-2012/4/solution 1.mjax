@@ -1,0 +1,1 @@
+Заметим, что <script type="math/tex">M(S_{ABM} + S_{BCM} + S_{CAM}) = 1</script>. Тогда из линейности матожидания и равенства матожиданий площадей треугольников <script type="math/tex">ABM</script>, <script type="math/tex">BCM</script> и <script type="math/tex">CAM</script> получим <script type="math/tex">M(S_{ABM}) = \frac13</script>.
