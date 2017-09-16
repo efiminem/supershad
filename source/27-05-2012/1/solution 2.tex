@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Выбираем сначала $n$ шагов по одной из осей из $6n$ возможных: $C_{6n}^n$. Выбираем $2n$ шагов из оставшихся $5n$ шагов: $C_{5n}^{2n}$. Общее число комбинаций равно $C_{6n}^n C_{5n}^{2n} = \frac{(6n)!}{n! (2n)! (3n)!}$.
+\end{document}

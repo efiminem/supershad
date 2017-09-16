@@ -1,0 +1,1 @@
+Число способов разбить множество из <script type="math/tex">6n</script> элементов на множества из <script type="math/tex">n</script>, <script type="math/tex">2n</script> и <script type="math/tex">3n</script> элементов равно мультиномиальному коэффициенту <script type="math/tex">\frac{(6n)!}{n! (2n)! (3n)!}</script>.
