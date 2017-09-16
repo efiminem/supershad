@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+В задаче требуется найти число различных наборов $a,b,c,d,e,f$ таких, что выполнено
+$$\begin{pmatrix}1&2&3&4&5&6\\b&c&a&e&f&d\end{pmatrix} = \begin{pmatrix}1&2&3&4&5&6\\a&b&c&d&e&f\end{pmatrix} \begin{pmatrix}1&2&3&4&5&6\\2&3&1&5&6&4\end{pmatrix}.$$
+Заметим, что, например, утверждение $a=1$ полностью задает весь цикл ($a=1$, $b=2$, $c=3$). Подставляя другие значения $a$ убеждаемся, что на местах $a,b,c$ может быть либо циклическая перестановка $1,2,3$, либо циклическая перестановка $4,5,6$. Проведя аналогичные рассуждения для $d,e,f$ получим, что число всех возможных наборов равно $2 \cdot 3^2 = 18$.\\
+\textit{Примечание.} Точно так же можно доказать и более общее утверждение. Если перестановка состоит из циклов, различные длины которых равны $n_1, n_2, \ldots, n_k$ и каждая длина $n_i$ встречается $m_i$ раз, то число перестановок, которые с ней коммутируют, равно
+$$\prod\limits_{i=1}^k m_i! \: n_i^{m_i}.$$
+\end{document}
