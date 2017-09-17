@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Матрицу $M$ можно представить в виде $M = uu^{\mathrm{T}} + kE$, где $u^{\mathrm{T}} = \begin{pmatrix}a_1&a_2&\cdots &a_n \end{pmatrix}$, а $E$ --- единичная матрица. Тогда если $\{\lambda_i\}$ --- собственные значения матрицы $uu^{\mathrm{T}}$, то $$\textrm{det}\, M = \textrm{det}\, (uu^{\mathrm{T}} + kE) = \prod\limits_i (\lambda_i + k).$$
+Найдем собственные значения $uu^{\mathrm{T}}$. Заметим, что $(u u^{\mathrm{T}})x = u u^{\mathrm{T}} x = (u,x)u$. Пространство $V$, на котором действует $uu^{\mathrm{T}}$, 
+раскладывается в прямую сумму $V = < u > \oplus {< u >}^\perp$. Нетрудно видеть, что оба слагаемых являются собственными подпространствами для 
+$u u^{\mathrm{T}}$ с собственными значениями $u^{\mathrm{T}} u = \sum\limits_{i=1}^n a_i^2$ и $0$. Отсюда окончательно получим
+$$\textrm{det}\, M = k^{n-1} \left( k + \sum_{i=1}^n a_i^2 \right).$$
+\end{document}
