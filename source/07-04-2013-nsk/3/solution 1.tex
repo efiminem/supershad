@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Будем искать решение в виде $x_n = \lambda^n$. Тогда $\lambda^{n+1} = \frac12 (\lambda^n + \lambda^{n-1})$. Поделив на $\lambda^{n-1}$ получим
+$$\lambda^2 = \frac12 (\lambda + 1) \Leftrightarrow (\lambda -1)(\lambda + \frac12) = 0.$$
+Таким образом, мы нашли решения $x_n=1$ и $x_n = \left( -\frac12 \right)^n$. Из линейности рекуррентного соотношения общее решение можно записать в виде $$x_n = C_1 + C_2 \left(-\frac12 \right)^n.$$
+Подставим начальные условия $x_1=a$ и $x_2=b$. Тогда
+$$x_n = \frac13 (a+2b) + \frac23 (b-a) \left( -\frac12 \right)^n.$$
+Переходя к пределу $n \to \infty$, получаем $\frac13 (a+2b)$.
+\end{document}
