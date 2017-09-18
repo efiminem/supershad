@@ -1,0 +1,6 @@
+Производя рекуррентные подстановки, нетрудно получить явное выражение <script type="math/tex; mode=display">c_n = \frac{1}{n-1} \sum\limits_{k=1}^{n-1} k \beta_{k}.</script>
+Поскольку последовательность <script type="math/tex">n^2 \beta_n</script> сходится, она ограничена. Более формально <script type="math/tex">\exists A: \forall k \;\; |\beta_k| \leqslant \frac{A}{k^2}</script>. Тогда
+<script type="math/tex; mode=display">|c_n| \leqslant \frac{1}{n-1} \sum\limits_{k=1}^{n-1} k |\beta_{k}| \leqslant \frac{1}{n-1} \sum_{k=1}^{n-1} \frac{A}{k}.</script>
+Воспользуемся неравенством между средним арифметическим и средним квадратическим
+<script type="math/tex; mode=display">|c_n| \leqslant A \sqrt{\frac{\sum\limits_{k=1}^{n-1} \frac{1}{k^2}}{n-1}} \leqslant A \sqrt{\frac{2}{n-1}}.</script>
+Поскольку модуль <script type="math/tex">c_n</script> ограничен рядом, сходящимся к <script type="math/tex">0</script>, <script type="math/tex">c_n \to 0</script> при <script type="math/tex">n \to \infty</script>.

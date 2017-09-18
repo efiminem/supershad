@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Производя рекуррентные подстановки, нетрудно получить явное выражение $$c_n = \frac{1}{n-1} \sum\limits_{k=1}^{n-1} k \beta_{k}.$$
+Поскольку последовательность $n^2 \beta_n$ сходится, она ограничена. Более формально $\exists A: \forall k \;\; |\beta_k| \leqslant \frac{A}{k^2}$. Тогда
+$$|c_n| \leqslant \frac{1}{n-1} \sum\limits_{k=1}^{n-1} k |\beta_{k}| \leqslant \frac{1}{n-1} \sum_{k=1}^{n-1} \frac{A}{k}.$$
+Воспользуемся неравенством между средним арифметическим и средним квадратическим
+$$|c_n| \leqslant A \sqrt{\frac{\sum\limits_{k=1}^{n-1} \frac{1}{k^2}}{n-1}} \leqslant A \sqrt{\frac{2}{n-1}}.$$
+Поскольку модуль $c_n$ ограничен рядом, сходящимся к $0$, $c_n \to 0$ при $n \to \infty$.
+\end{document}
