@@ -1,0 +1,3 @@
+Заметим, что такая сумма равна <script type="math/tex; mode=display">\left( 1 + \frac11 \right) \left( 1 + \frac12 \right) \cdots \left( 1 + \frac{1}{n} \right) - 1.</script>
+В самом деле, в результате раскрытия скобок мы получим все возможные комбинации произведений обратных элементов. Приведем слагаемые в скобках к общему знаменателю. Тогда
+<script type="math/tex; mode=display">\frac21 \frac32 \cdots \frac{n+1}{n} - 1 = n+1 - 1 = n.</script>

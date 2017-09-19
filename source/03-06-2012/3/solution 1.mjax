@@ -1,0 +1,4 @@
+Докажем по индукции, что <script type="math/tex">S_n = n</script>.<br>
+<i>База индукции,</i> <script type="math/tex">n=1</script>. Тогда <script type="math/tex">S_1 = 1</script>.<br>
+<i>Переход:</i> предположим, что <script type="math/tex">S_k = k</script>. Тогда
+<script type="math/tex; mode=display">S_{k+1} = \frac{1}{k+1} + \frac{1}{k+1} S_k + S_k = \frac{1 + k + k(k+1)}{k+1} = k+1.</script>

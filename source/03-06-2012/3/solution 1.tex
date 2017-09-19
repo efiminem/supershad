@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Докажем по индукции, что $S_n = n$.\\
+\textit{База индукции,} $n=1$. Тогда $S_1 = 1$.\\
+\textit{Переход:} предположим, что $S_k = k$. Тогда
+$$S_{k+1} = \frac{1}{k+1} + \frac{1}{k+1} S_k + S_k = \frac{1 + k + k(k+1)}{k+1} = k+1.$$
+\end{document}
