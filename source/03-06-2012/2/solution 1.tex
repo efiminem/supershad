@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Нетрудно показать, что $\int \varphi(x) \varphi'(x) dx = \frac{\varphi^2 (x)}{2} + C$. Тогда $$\int\limits_0^1 \varphi(x) \varphi'(x) dx = \frac{\varphi^2 (1)}{2} - \frac{\varphi^2 (0)}{2} = \frac{\varphi^2 (1)}{2}.$$
+Найдем $\varphi(1) = \sum\limits_{k=1}^\infty \frac{1}{2^{2[\log_2 k]}}$. Число $[\log_2 k]$ равно количеству значащих разрядов в двоичной записи числа $k$, а значит, оно меняется от $s$ до $s+1$ через $2^s$ членов ряда. Таким образом
+$$\varphi(1) = \sum\limits_{s=0}^\infty \frac{2^s}{2^{2s}} = \sum\limits_{s=0}^\infty \frac{1}{2^s} = 2.$$
+И окончательно получим $\int\limits_0^1 \varphi(x) \varphi'(x) dx = 2$.
+\end{document}

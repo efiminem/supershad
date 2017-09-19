@@ -1,0 +1,4 @@
+Нетрудно показать, что <script type="math/tex">\int \varphi(x) \varphi'(x) dx = \frac{\varphi^2 (x)}{2} + C</script>. Тогда <script type="math/tex; mode=display">\int\limits_0^1 \varphi(x) \varphi'(x) dx = \frac{\varphi^2 (1)}{2} - \frac{\varphi^2 (0)}{2} = \frac{\varphi^2 (1)}{2}.</script>
+Найдем <script type="math/tex">\varphi(1) = \sum\limits_{k=1}^\infty \frac{1}{2^{2[\log_2 k]}}</script>. Число <script type="math/tex">[\log_2 k]</script> равно количеству значащих разрядов в двоичной записи числа <script type="math/tex">k</script>, а значит, оно меняется от <script type="math/tex">s</script> до <script type="math/tex">s+1</script> через <script type="math/tex">2^s</script> членов ряда. Таким образом
+<script type="math/tex; mode=display">\varphi(1) = \sum\limits_{s=0}^\infty \frac{2^s}{2^{2s}} = \sum\limits_{s=0}^\infty \frac{1}{2^s} = 2.</script>
+И окончательно получим <script type="math/tex">\int\limits_0^1 \varphi(x) \varphi'(x) dx = 2</script>.
