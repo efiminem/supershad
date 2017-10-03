@@ -1,0 +1,3 @@
+Покроем данное множество <script type="math/tex">M</script> счетным числом подмножеств:
+<script type="math/tex; mode=display">M = \bigcup_{n=1}^\infty \left(M \cap \left[ \frac{1}{n}; \infty \right)\right).</script>
+Заметим, что хотя бы одно такое подмножество <script type="math/tex">A_N = M \cap [ \frac{1}{N}; \infty )</script> должно иметь мощность континуум, поскольку в противном случае множество <script type="math/tex">M</script> счетно как объединение счетного числа счетных множеств. Но в таком множестве будет континуум элементов, которые больше (или равны) некоторого числа <script type="math/tex">\frac{1}{N}</script>. А значит, любое счетное подмножество <script type="math/tex">A_N</script> будет с бесконечной суммой.

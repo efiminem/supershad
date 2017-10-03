@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Покроем данное множество $M$ счетным числом подмножеств:
+$$M = \bigcup_{n=1}^\infty \left(M \cap \left[ \frac{1}{n}; \infty \right)\right).$$
+Заметим, что хотя бы одно такое подмножество $A_N = M \cap [ \frac{1}{N}; \infty )$ должно иметь мощность континуум, поскольку в противном случае множество $M$ счетно как объединение счетного числа счетных множеств. Но в таком множестве будет континуум элементов, которые больше (или равны) некоторого числа $\frac{1}{N}$. А значит, любое счетное подмножество $A_N$ будет с бесконечной суммой. 
+\end{document}
