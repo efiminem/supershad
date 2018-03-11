@@ -1,14 +1,1 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
-<p>Рассмотрим многочлен <span class="math">\(a(x)=a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\ldots+\frac{a_n}{n+1}x^{n+1}\)</span>. Тогда <span class="math">\(a(0)=0\)</span> и <span class="math">\(a(1)=0\)</span>, отсюда можно сделать вывод, что <span class="math">\(a^{`}(x)=a_0+a_1x+\ldots+a_nx^n\)</span> равен нулю для некоторого <span class="math">\(x_0\)</span> из <span class="math">\((0,1)\)</span>.</p>
-</body>
-</html>
+Рассмотрим многочлен<script type="math/tex">a(x)=a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\ldots+\frac{a_n}{n+1}x^{n+1}</script>. Тогда<script type="math/tex">a(0)=0</script> и<script type="math/tex">a(1)=0</script>, отсюда можно сделать вывод, что<script type="math/tex">a^{`}(x)=a_0+a_1x+\ldots+a_nx^n</script> равен нулю для некоторого<script type="math/tex">x_0</script> из<script type="math/tex">(0,1)</script>.

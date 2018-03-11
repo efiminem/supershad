@@ -76,50 +76,20 @@ $(document).ready(function(){
   <h4><center>20 мая 2017</center></h4>
   <ol><li>Верно ли, что если матрица <script type="math/tex">A \in \mathrm{Mat}_n (\mathbb{R})</script> симметрична
 и положительно определена, то квадратичная форма <script type="math/tex">q(X) = \mathrm{tr}(X^\mathrm{T} A X)</script> на пространстве <script type="math/tex">\mathrm{Mat}_n (\mathbb{R})</script>
-будет положительно определенной?<div class="solution" toid = "text1">Решение</div><div class="solution-text" id="text1"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
-<p>Так как <span class="math">\(A\)</span> — симметричная и положительно определена, то она может быть представлена в виде <span class="math">\(A=C^TC\)</span>. Поэтому <span class="math">\[X^TC^TCX=(CX)^TCX=M^TM,\\\]</span> отсюда, учитывая что <span class="math">\(m_{ij}=\sum\limits_{k=1}^{n}c_{ik}x_{ki}\)</span> получаем: <span class="math">\[tr(X^TC^TCX)=\sum\limits_{k=1}^{n}m_{ii}^2=\sum\limits_{k=1}^{n}(\sum\limits_{r=1}^{n}c_{ik}x_{ki})^2,\]</span> то есть <span class="math">\(tr&gt;0\)</span> для любых <span class="math">\(X&gt;0\)</span>.</p>
-</body>
-</html></div></li><li>Известно, что <script type="math/tex">a_0 + \frac{a_1}{2} + \frac{a_2}{3} + \ldots + \frac{a_n}{n+1}=0</script>
-Докажите, что многочлен <script type="math/tex">a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n</script> имеет хотя бы один действительный корень.<div class="solution" toid = "text2">Решение</div><div class="solution-text" id="text2"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
-<p>Рассмотрим многочлен <span class="math">\(a(x)=a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\ldots+\frac{a_n}{n+1}x^{n+1}\)</span>. Тогда <span class="math">\(a(0)=0\)</span> и <span class="math">\(a(1)=0\)</span>, отсюда можно сделать вывод, что <span class="math">\(a^{`}(x)=a_0+a_1x+\ldots+a_nx^n\)</span> равен нулю для некоторого <span class="math">\(x_0\)</span> из <span class="math">\((0,1)\)</span>.</p>
-</body>
-</html></div></li><li>Пусть <script type="math/tex">X_1, \ldots X_n</script> &#8212; независимые одинаково распределенные случайные величины с
+будет положительно определенной?<div class="solution" toid = "text1">Решение</div><div class="solution-text" id="text1">
+Так как<script type="math/tex">A</script> - симметричная и положительно определена, то она может быть представлена в виде<script type="math/tex">A=C^TC</script>. Поэтому<script type="math/tex; mode=display">
+X^TC^TCX=(CX)^TCX=M^TM,\\
+</script>
+отсюда, учитывая что<script type="math/tex">m_{ij}=\sum\limits_{k=1}^{n}c_{ik}x_{ki}</script> получаем:<script type="math/tex; mode=display">
+tr(X^TC^TCX)=\sum\limits_{k=1}^{n}m_{ii}^2=\sum\limits_{k=1}^{n}(\sum\limits_{r=1}^{n}c_{ik}x_{ki})^2,
+</script>
+то есть<script type="math/tex">tr>0</script> для любых<script type="math/tex">X>0</script>.</div></li><li>Известно, что <script type="math/tex">a_0 + \frac{a_1}{2} + \frac{a_2}{3} + \ldots + \frac{a_n}{n+1}=0</script>
+Докажите, что многочлен <script type="math/tex">a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n</script> имеет хотя бы один действительный корень.<div class="solution" toid = "text2">Решение</div><div class="solution-text" id="text2">Рассмотрим многочлен<script type="math/tex">a(x)=a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\ldots+\frac{a_n}{n+1}x^{n+1}</script>. Тогда<script type="math/tex">a(0)=0</script> и<script type="math/tex">a(1)=0</script>, отсюда можно сделать вывод, что<script type="math/tex">a^{`}(x)=a_0+a_1x+\ldots+a_nx^n</script> равен нулю для некоторого<script type="math/tex">x_0</script> из<script type="math/tex">(0,1)</script>.</div></li><li>Пусть <script type="math/tex">X_1, \ldots X_n</script> &#8212; независимые одинаково распределенные случайные величины с
 математическим ожиданием <script type="math/tex">a</script> и дисперсией <script type="math/tex">\sigma^2</script>, принимающие положительные значения. Пусть также 
 <script type="math/tex">m < n</script>. Найдите математическое ожидание отношения:
-<script type="math/tex; mode=display">\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}.</script><div class="solution" toid = "text3">Решение</div><div class="solution-text" id="text3"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-</head>
-<body>
-<p>Обозначим <span class="math">\(\overline{X}=X_1 + \ldots + X_n\)</span>, заметим, что: <span class="math">\[1=E\frac{\overline{X}}{\overline{X}}=E\sum\limits_{i=1}^{n}\frac{X_i}{\overline{X}}=\sum\limits_{i=1}^{n}E\frac{X_i}{\overline{X}}=nE\frac{X_1}{\overline{X}},\]</span> отсюда получим <span class="math">\[E\frac{X_1}{\overline{X}}=\frac{1}{n}.\]</span> Окончательно получим <span class="math">\[E\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}=E\sum_{i=1}^{m}\frac{X_1}{\overline{X}}=\sum_{i=1}^{m}E\frac{X_1}{\overline{X}}=\frac{m}{n}.\]</span></p>
-</body>
-</html></div></li><li>Черный куб покрасили снаружи белой краской, затем разрезали на <script type="math/tex">27</script> одинаковых
+<script type="math/tex; mode=display">\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}.</script><div class="solution" toid = "text3">Решение</div><div class="solution-text" id="text3">Обозначим<script type="math/tex">\overline{X}=X_1 + \ldots + X_n</script>, заметим, что:<script type="math/tex; mode=display">1=E\frac{\overline{X}}{\overline{X}}=E\sum\limits_{i=1}^{n}\frac{X_i}{\overline{X}}=\sum\limits_{i=1}^{n}E\frac{X_i}{\overline{X}}=nE\frac{X_1}{\overline{X}},</script>
+отсюда получим<script type="math/tex; mode=display">E\frac{X_1}{\overline{X}}=\frac{1}{n}.</script>
+Окончательно получим<script type="math/tex; mode=display">E\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}=E\sum_{i=1}^{m}\frac{X_1}{\overline{X}}=\sum_{i=1}^{m}E\frac{X_1}{\overline{X}}=\frac{m}{n}.</script></div></li><li>Черный куб покрасили снаружи белой краской, затем разрезали на <script type="math/tex">27</script> одинаковых
 маленьких кубиков и как попало сложили из них большой куб. С какой вероятностью все грани этого куба будут белыми?</li><li>Придумайте структуру для хранения действительных чисел, которая могла бы выполнять запросы &laquo;добавить элемент&raquo;,
 &laquo;удалить элемент&raquo;, &laquo;удалить максимальный элемент&raquo; и &laquo;удалить минимальный элемент&raquo;, причем последние два выполняла бы за <script type="math/tex">O(1)</script>. Постарайтесь также минимизировать время выполнения первых двух запросов. Можно ли сделать так, чтобы и они тоже выполнялись за <script type="math/tex">O(1)</script>?</li><li>Последовательность <script type="math/tex">a_n</script> задана условиями <script type="math/tex">a_1=1, a_{n+1}=\sin (a_n)</script>.
 Сходится ли ряд <script type="math/tex">\sum_{i=1}^\infty a_i</script>?<div class="solution" toid = "text6">Решение</div><div class="solution-text" id="text6">Докажем по индукции, что <script type="math/tex">a_n \geqslant \frac1n</script>.<br>
