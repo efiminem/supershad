@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Обозначим $\overline{X}=X_1 + \ldots + X_n$, заметим, что:
+$$1=E\frac{\overline{X}}{\overline{X}}=E\sum\limits_{i=1}^{n}\frac{X_i}{\overline{X}}=\sum\limits_{i=1}^{n}E\frac{X_i}{\overline{X}}=nE\frac{X_1}{\overline{X}},$$
+отсюда получим
+$$E\frac{X_1}{\overline{X}}=\frac{1}{n}.$$
+Окончательно получим
+$$E\frac{X_1 + \ldots + X_m}{X_1 + \ldots + X_n}=E\sum_{i=1}^{m}\frac{X_1}{\overline{X}}=\sum_{i=1}^{m}E\frac{X_1}{\overline{X}}=\frac{m}{n}.$$
+\end{document}

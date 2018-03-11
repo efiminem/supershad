@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Так как $A$ --- симметричная и положительно определена, то она может быть представлена в виде $A=C^TC$. Поэтому
+$$
+X^TC^TCX=(CX)^TCX=M^TM,\\
+$$
+отсюда, учитывая что $m_{ij}=\sum\limits_{k=1}^{n}c_{ik}x_{ki}$ получаем:
+$$
+tr(X^TC^TCX)=\sum\limits_{k=1}^{n}m_{ii}^2=\sum\limits_{k=1}^{n}(\sum\limits_{r=1}^{n}c_{ik}x_{ki})^2,
+$$
+то есть $tr>0$ для любых $X>0$.
+
+\end{document}

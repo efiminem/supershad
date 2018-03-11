@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<p>Так как <span class="math">\(A\)</span> — симметричная и положительно определена, то она может быть представлена в виде <span class="math">\(A=C^TC\)</span>. Поэтому <span class="math">\[X^TC^TCX=(CX)^TCX=M^TM,\\\]</span> отсюда, учитывая что <span class="math">\(m_{ij}=\sum\limits_{k=1}^{n}c_{ik}x_{ki}\)</span> получаем: <span class="math">\[tr(X^TC^TCX)=\sum\limits_{k=1}^{n}m_{ii}^2=\sum\limits_{k=1}^{n}(\sum\limits_{r=1}^{n}c_{ik}x_{ki})^2,\]</span> то есть <span class="math">\(tr&gt;0\)</span> для любых <span class="math">\(X&gt;0\)</span>.</p>
+</body>
+</html>

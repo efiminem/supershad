@@ -1,0 +1,2 @@
+pandoc solution\ 1.tex -s --mathjax -o solution\ 1.mjax
+
