@@ -13,4 +13,4 @@
  <li> <script type="math/tex">1</script>. </li>
 </ol>
 Всего возможных комбинаций кубиков равно <script type="math/tex">27!\cdot27!\cdot{24}^{27}</script>: <script type="math/tex">27!</script> - способов выбрать маленький кубик, <script type="math/tex">27!</script> способов его расположения в большом и <script type="math/tex">24</script> способа расположения каждого кубика при его фиксации в большом.
-Таким образом требуемая вероятность равна:<script type="math/tex; mode=display">\frac{24\cdot (8!\cdot3^8) \cdot (12!\cdot2^{12}) \cdot (6!\cdot4^6) \cdot 1}{27!\cdot27!\cdot{24}^{27}}</script>
+Таким образом, требуемая вероятность равна:<script type="math/tex; mode=display">\frac{24\cdot (8!\cdot3^8) \cdot (12!\cdot2^{12}) \cdot (6!\cdot4^6) \cdot 1}{27!\cdot27!\cdot{24}^{27}}</script>
