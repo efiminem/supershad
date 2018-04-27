@@ -1,15 +1,15 @@
-Пространство будет иметь размерность <script type="math/tex">n^2</script>(грубо говоря вытянем все столбцы в один).
+Пространство будет иметь размерность <script type="math/tex">n^2</script> (грубо говоря, вытянем все столбцы в один).
 Выберем базис следующим образом:
 
 <ul>
-<li> <script type="math/tex">n^2-1</script> - матриц, у которых на <script type="math/tex">i,j</script> месте
-1, на остальных 0, <script type="math/tex">i,j \in \overline{1,n}, (i,j)\neq(n,1)</script>;
-<li> одна матрица - матрица из всех едениц.
+<li> <script type="math/tex">n^2-1</script> матриц, у которых на <script type="math/tex">i,j</script> месте
+<script type="math/tex">1</script>, на остальных <script type="math/tex">0</script>, <script type="math/tex">i,j \in \overline{1,n}, (i,j)\neq(n,1)</script>;
+<li> одна матрица &#8212; матрица из всех едениц.
 </ul>
 Занумеруем векторы базиса следующим образом: матрица из всех единиц будет иметь
-номер <script type="math/tex">n^2-n</script>, остальные векторы <script type="math/tex">(i-1)\cdot n+j</script>, где <script type="math/tex">i</script> и <script type="math/tex">j</script> - позиция ненулевого
+номер <script type="math/tex">n^2-n</script>, остальные векторы <script type="math/tex">(i-1)\cdot n+j</script>, где <script type="math/tex">i</script> и <script type="math/tex">j</script> &#8212; позиция ненулевого
 элемента.
 В таком базисе у верхнетреугольных матриц координата c номером <script type="math/tex">n^2-n</script> будет
 всегда нулевой. Из формулы скалярного произведения<script type="math/tex; mode=display"><a,b>=\sum_{i=1}^{n^2}a_ib_i,</script>
-<script type="math/tex">a_i,b_i</script> - координаты в выбранном базисе, следует, что еденичная матрица
+<script type="math/tex">a_i,b_i</script> &#8212; координаты в выбранном базисе, следует, что еденичная матрица
  ортогональна любой верхнетреугольной матрице.

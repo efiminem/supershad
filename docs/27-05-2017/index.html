@@ -107,35 +107,37 @@ $(document).ready(function(){
 \end{matrix}
 </script>
 Построить такую матрицу на удивление нетрудно. Пусть изначально у нас все нули. Идем по матрице справа налево и сверху вниз и ставим <script type="math/tex">1</script>, если мы можем это сделать (то есть если такой пары еще нет; для первой единицы в строке &#8212; если она еще не образует все возможные пары).</div><div class="solution" toid = "answer1">Ответ</div><div class="solution-text" id="answer1"><script type="math/tex">21</script>.</div></li><li>Существует ли скалярное произведение на пространстве матриц <script type="math/tex">n\times n\; (n>1)</script>, относительно которого матрица из всех
-единиц была бы ортогональна любой верхнетреугольной матрице?<div class="solution" toid = "text2">Решение</div><div class="solution-text" id="text2">Пространство будет иметь размерность <script type="math/tex">n^2</script>(грубо говоря вытянем все столбцы в один).
+единиц была бы ортогональна любой верхнетреугольной матрице?<div class="solution" toid = "text2">Решение</div><div class="solution-text" id="text2">Пространство будет иметь размерность <script type="math/tex">n^2</script> (грубо говоря, вытянем все столбцы в один).
 Выберем базис следующим образом:
 
 <ul>
-<li> <script type="math/tex">n^2-1</script> - матриц, у которых на <script type="math/tex">i,j</script> месте
-1, на остальных 0, <script type="math/tex">i,j \in \overline{1,n}, (i,j)\neq(n,1)</script>;
-<li> одна матрица - матрица из всех едениц.
+<li> <script type="math/tex">n^2-1</script> матриц, у которых на <script type="math/tex">i,j</script> месте
+<script type="math/tex">1</script>, на остальных <script type="math/tex">0</script>, <script type="math/tex">i,j \in \overline{1,n}, (i,j)\neq(n,1)</script>;
+<li> одна матрица &#8212; матрица из всех едениц.
 </ul>
 Занумеруем векторы базиса следующим образом: матрица из всех единиц будет иметь
-номер <script type="math/tex">n^2-n</script>, остальные векторы <script type="math/tex">(i-1)\cdot n+j</script>, где <script type="math/tex">i</script> и <script type="math/tex">j</script> - позиция ненулевого
+номер <script type="math/tex">n^2-n</script>, остальные векторы <script type="math/tex">(i-1)\cdot n+j</script>, где <script type="math/tex">i</script> и <script type="math/tex">j</script> &#8212; позиция ненулевого
 элемента.
 В таком базисе у верхнетреугольных матриц координата c номером <script type="math/tex">n^2-n</script> будет
 всегда нулевой. Из формулы скалярного произведения<script type="math/tex; mode=display"><a,b>=\sum_{i=1}^{n^2}a_ib_i,</script>
-<script type="math/tex">a_i,b_i</script> - координаты в выбранном базисе, следует, что еденичная матрица
- ортогональна любой верхнетреугольной матрице.</div><div class="solution" toid = "answer2">Ответ</div><div class="solution-text" id="answer2"><script type="math/tex">Существует</script>.</div></li><li>Найдите сумму <script type="math/tex">\sum\limits_{k=0}^\infty (-1)^k \frac{(k+1)^2}{k!}</script>.<div class="solution" toid = "text3">Решение</div><div class="solution-text" id="text3"><script type="math/tex; mode=display">\sum\limits_{k=0}^\infty (-1)^k \frac{(k+1)^2}{k!}=\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}+\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}+\sum\limits_{k=0}^\infty(-1)^k \frac{1}{k!}=(*)</script>
+<script type="math/tex">a_i,b_i</script> &#8212; координаты в выбранном базисе, следует, что еденичная матрица
+ ортогональна любой верхнетреугольной матрице.</div><div class="solution" toid = "answer2">Ответ</div><div class="solution-text" id="answer2">Существует.</div></li><li>Найдите сумму <script type="math/tex">\sum\limits_{k=0}^\infty (-1)^k \frac{(k+1)^2}{k!}</script>.<div class="solution" toid = "text3">Решение</div><div class="solution-text" id="text3"><script type="math/tex; mode=display">\sum\limits_{k=0}^\infty (-1)^k \frac{(k+1)^2}{k!}=\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}+\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}+\sum\limits_{k=0}^\infty(-1)^k \frac{1}{k!}=(*)</script>
 
 <ol type="a">
 
 <li>
 
-<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k}{(k-1)!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k-1+1}{(k-1)!}=\\\sum\limits_{k=2}^\infty(-1)^k\frac{1}{(k-2)!}+\sum\limits_{k=1}^\infty(-1)^k\frac{1}{(k-1)!}=(-1)^2\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}+(-1)\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}=0</script>
+<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k}{(k-1)!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k-1+1}{(k-1)!}=</script>
+<script type="math/tex; mode=display">=\sum\limits_{k=2}^\infty(-1)^k\frac{1}{(k-2)!}+\sum\limits_{k=1}^\infty(-1)^k\frac{1}{(k-1)!}=</script>
+<script type="math/tex; mode=display">(-1)^2\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}+(-1)\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}=0.</script>
 
 <li>
 
-<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}=2\sum\limits_{k=1}^\infty (-1)^k\frac{1}{(k-1)!}=-2\sum\limits_{l=0}^\infty (-1)^l\frac{1}{l!}=-\frac{2}{e}</script>
+<script type="math/tex; mode=display">=\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}=2\sum\limits_{k=1}^\infty (-1)^k\frac{1}{(k-1)!}=-2\sum\limits_{l=0}^\infty (-1)^l\frac{1}{l!}=-\frac{2}{e}.</script>
 
 </ol>
 
-<script type="math/tex; mode=display">(*)=-\frac{2}{e}+\frac{1}{e}=-\frac{1}{e} </script></div><div class="solution" toid = "answer3">Ответ</div><div class="solution-text" id="answer3"><script type="math/tex">-\frac{1}{e}</script>.</div></li><li>Вася поставил учиться две нейронных сети, каждую на своем GPU, и отправился спать. Времена обучения сетей независимы и равномерно
+<script type="math/tex; mode=display">(*)=-\frac{2}{e}+\frac{1}{e}=-\frac{1}{e}.</script></div><div class="solution" toid = "answer3">Ответ</div><div class="solution-text" id="answer3"><script type="math/tex">-\dfrac{1}{e}</script>.</div></li><li>Вася поставил учиться две нейронных сети, каждую на своем GPU, и отправился спать. Времена обучения сетей независимы и равномерно
 распределены на отрезке <script type="math/tex">[1;3]</script> (часов). Через время <script type="math/tex">t</script> сервер упал и оказалось, что лишь одна сеть успела доучиться.
 С какой вероятностью <script type="math/tex">t \leqslant \frac32</script>? Считайте, что время падения сервера тоже равномерно распределено на отрезке <script type="math/tex">[1;3]</script>.</li><li>Докажите, что для произвольного <script type="math/tex">a_0 \in (0;2\pi)</script> последовательность, заданная условием
 <script type="math/tex; mode=display">a_{n+1} = \int\limits_0^{a_n} \left( 1 + \frac14 \cos^{2n+1} t \right) dt,</script>

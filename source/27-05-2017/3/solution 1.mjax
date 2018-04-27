@@ -4,12 +4,14 @@
 
 <li>
 
-<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k}{(k-1)!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k-1+1}{(k-1)!}=\\\sum\limits_{k=2}^\infty(-1)^k\frac{1}{(k-2)!}+\sum\limits_{k=1}^\infty(-1)^k\frac{1}{(k-1)!}=(-1)^2\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}+(-1)\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}=0</script>
+<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty(-1)^k\frac{k^2}{k!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k}{(k-1)!}=\sum\limits_{k=1}^\infty(-1)^k\frac{k-1+1}{(k-1)!}=</script>
+<script type="math/tex; mode=display">=\sum\limits_{k=2}^\infty(-1)^k\frac{1}{(k-2)!}+\sum\limits_{k=1}^\infty(-1)^k\frac{1}{(k-1)!}=</script>
+<script type="math/tex; mode=display">(-1)^2\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}+(-1)\sum\limits_{l=0}^\infty(-1)^l\frac{1}{l!}=0.</script>
 
 <li>
 
-<script type="math/tex; mode=display">\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}=2\sum\limits_{k=1}^\infty (-1)^k\frac{1}{(k-1)!}=-2\sum\limits_{l=0}^\infty (-1)^l\frac{1}{l!}=-\frac{2}{e}</script>
+<script type="math/tex; mode=display">=\sum\limits_{k=0}^\infty (-1)^k\frac{2k}{k!}=2\sum\limits_{k=1}^\infty (-1)^k\frac{1}{(k-1)!}=-2\sum\limits_{l=0}^\infty (-1)^l\frac{1}{l!}=-\frac{2}{e}.</script>
 
 </ol>
 
-<script type="math/tex; mode=display">(*)=-\frac{2}{e}+\frac{1}{e}=-\frac{1}{e} </script>
+<script type="math/tex; mode=display">(*)=-\frac{2}{e}+\frac{1}{e}=-\frac{1}{e}.</script>
