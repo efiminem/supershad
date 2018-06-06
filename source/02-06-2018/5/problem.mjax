@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">f</script> &#8212; гладкая вещественная функция, причем <script type="math/tex">f(0) = 0</script>, <script type="math/tex">f(1) = 1</script>. Докажите, что найдутся различные <script type="math/tex">x_1, x_2 \in [0,1]</script>, для которых
+<script type="math/tex; mode=display">\frac{1}{f^{'}(x_1)} + \frac{1}{f^{'}(x_2)} = 2.</script>

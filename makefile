@@ -21,3 +21,6 @@ all:
 	bash bash/generate.sh '20-05-2017' '20 мая 2017'
 	bash bash/generate.sh '27-05-2017' '27 мая 2017'
 	bash bash/generate.sh '03-06-2017' '3 июня 2017'
+	bash bash/generate.sh '26-05-2018' '26 мая 2018'
+	bash bash/generate.sh '02-06-2018' '2 июня 2018'
+	bash bash/generate.sh '09-06-2018' '9 июня 2018'

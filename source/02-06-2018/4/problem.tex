@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Подстановка $\sigma$ задана двумя массивами $\text{a[1\,.\,.\,n]}$ и $\text{b[1\,.\,.\,n]}$ состоящими из всех различных чисел от $1$ до $n$ и такими, что $\text{b[i]} = \sigma (\text{a[i]})$ для каждого $i = 1,\ldots,n$ (например, $\text{a} = \text{[2,\,\,3,\,\,1]}$, $\text{b} = \text{[1,\,\,3,\,\,2]}$ кодирует транспозицию $(1,2)$). Придумайте алгоритм, определяющий, содержит ли $\sigma$ цикл длины $k$. Ваш алгоритм может изменять исходные массивы, но должен справляться с задачей за $O(n^2)$ операций с использованием $O(1)$ дополнительной памяти (оценивая эти две асимптотики, можете считать $k$ константой).
+\end{document}

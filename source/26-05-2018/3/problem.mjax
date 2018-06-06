@@ -1,0 +1,3 @@
+Определите, сколько корней имеет уравнение
+<script type="math/tex; mode=display">\int\limits_x^{x+\frac{1}{2}} \cos\, \left( \frac{t^2}{3} \right) dt = 0</script>
+на отрезке <script type="math/tex">[0,3]</script>.

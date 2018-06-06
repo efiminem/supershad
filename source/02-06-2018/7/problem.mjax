@@ -1,0 +1,4 @@
+(a) Для непрерывной функции <script type="math/tex">f(x)</script> найдите
+<script type="math/tex; mode=display">\frac{d}{da} \iint\limits_{-a \leqslant x,y \leqslant a} f \left( \frac{x+y}{2} \right) dx dy.</script>
+(b) Опишите все непрерывные функции <script type="math/tex">f(x)</script>, для которых при всех <script type="math/tex">a \in \mathbb{R}</script> имеет место равенство
+<script type="math/tex; mode=display">\iint\limits_{-a \leqslant x,y \leqslant a} f \left( \frac{x+y}{2} \right) dx dy = \int\limits_{-a}^{a} f(x) dx.</script>

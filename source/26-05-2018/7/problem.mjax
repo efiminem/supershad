@@ -1,0 +1,5 @@
+Для двух квадратных матриц <script type="math/tex">A</script> и <script type="math/tex">B</script> одного и того же размера <script type="math/tex">n</script> обозначим через <script type="math/tex">A \bigstar B</script> матрицу, определяемую следующим образом:
+<script type="math/tex; mode=display">(A \bigstar B)_{ij} = \begin{cases} (AB)_{ij}, & \text{если $i$ нечетно,} \\ b_{ij}, & \text{иначе.} \end{cases}</script>
+Для матрицы <script type="math/tex">A</script> определим оператор <script type="math/tex">\Phi_A : B \mapsto A \bigstar B</script> на пространстве матриц <script type="math/tex">n \times n</script>.<br>
+(a) Может ли этот оператор иметь собственное значение <script type="math/tex">2</script> для какой-либо матрицы <script type="math/tex">A</script>?<br>
+(b) Какое наибольшее число различных собственных значений может иметь такой оператор (при фиксированном <script type="math/tex">n</script>)?

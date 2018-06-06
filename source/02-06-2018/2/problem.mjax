@@ -1,0 +1,4 @@
+(a) Докажите, что функции <script type="math/tex">\det (X)</script>, <script type="math/tex">\det (X+E)</script> и <script type="math/tex">\det (X-E)</script> на пространстве комплексных матриц <script type="math/tex">3 \times 3</script> линейно независимы.<br>
+(b) Докажите, что найдется <script type="math/tex">m \in \mathbb{N}</script>, для которого набор функций
+<script type="math/tex; mode=display">\det (X-mE),\, \det (X-(m-1)E),\, \det (X-(m-2)E),\, \ldots,\, \det (X+mE)</script>
+линейно зависим.

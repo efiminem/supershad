@@ -1,0 +1,1 @@
+Последовательность <script type="math/tex">(a_n)</script> такова, что все <script type="math/tex">a_n \in (0,1)</script> и, кроме того, <script type="math/tex">a_{n+1} < \frac{a_n+a_{n-1}}{2}</script>. Верно ли, что <script type="math/tex">a_n</script> сходится? Найдите множество всех возможных пределов таких последовательностей.

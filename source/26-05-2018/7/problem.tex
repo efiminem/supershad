@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Для двух квадратных матриц $A$ и $B$ одного и того же размера $n$ обозначим через $A \bigstar B$ матрицу, определяемую следующим образом:
+$$(A \bigstar B)_{ij} = \begin{cases} (AB)_{ij}, & \text{если $i$ нечетно,} \\ b_{ij}, & \text{иначе.} \end{cases}$$
+Для матрицы $A$ определим оператор $\Phi_A : B \mapsto A \bigstar B$ на пространстве матриц $n \times n$.\\
+(a) Может ли этот оператор иметь собственное значение $2$ для какой-либо матрицы $A$?\\
+(b) Какое наибольшее число различных собственных значений может иметь такой оператор (при фиксированном $n$)?
+\end{document}
