@@ -17,7 +17,7 @@ $$T_{F} \varphi (\vec{\omega}) = F T F^{-1} \varphi (\vec{\omega}) = \left(1 - \
 где $\varphi (\vec{\omega})$ принадлежит пространству обобщенных функций. Мы получили, что $T_F$ является оператором умножения на гладкую функцию $g(\vec{\omega})$. Найдем нули этой функции:
 $$g(\vec{\omega}) =  1 - \int\limits_{0}^{1} e^{i \vec{\tau} (s) \cdot \vec{\omega}} ds = 1 - \int\limits_{0}^{1} e^{i |\vec{\omega}| (\cos \Phi \cos (2\pi s) +\sin \Phi  \sin (2\pi s)}ds = $$
 $$ = 1 - \int\limits_{0}^{1} e^{i |\vec{\omega}| \cos (\Phi - 2\pi s)}ds = 1 - \int\limits_{0}^{1} e^{i |\vec{\omega}| \cos (2\pi s)}ds = $$
-$$ = 1 - \int\limits_{0}^{1/2} e^{i |\vec{\omega}| \cos (2\pi s)} - \int\limits_{0}^{1/2} e^{-i |\vec{\omega}| \cos (2\pi s)}ds = 1 - 2 \int\limits_{0}^{1/2} \cos(|\vec{\omega}| \cos (2\pi s))ds.$$
+$$ = 1 - \int\limits_{0}^{1/2} e^{i |\vec{\omega}| \cos (2\pi s)} ds - \int\limits_{0}^{1/2} e^{-i |\vec{\omega}| \cos (2\pi s)}ds = 1 - 2 \int\limits_{0}^{1/2} \cos(|\vec{\omega}| \cos (2\pi s))ds.$$
 За $\Phi$ мы обозначили угол между декартовыми компонентами $\vec{\omega}$. В дальнейшем он исчезает, поскольку интеграл берется по всему периоду периодической функции. Произведем замену $u = \cos (2\pi s)$. Тогда
 $$g(\vec{\omega}) = 1 + \frac{1}{\pi} \int\limits_{1}^{-1} \frac{\cos(|\vec{\omega}| u) du}{\sqrt{1 - u^2}} = 1 - \frac{2}{\pi} \int\limits_{0}^{1} \frac{\cos(|\vec{\omega}| u) du}{\sqrt{1 - u^2}} = $$
 $$ = \frac{2}{\pi} \int\limits_0^1 \frac{(1 - \cos(|\vec{\omega}| u) du}{\sqrt{1 - u^2}}.$$
