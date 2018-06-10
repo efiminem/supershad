@@ -1,0 +1,3 @@
+Пусть <script type="math/tex">\{ \xi_n \}_{n \geqslant 1}</script> &#8212; последовательность случайных величин, имеющих стандартное нормальное распределение. Сходится ли ряд
+<script type="math/tex; mode=display">\sum_{n=1}^\infty P \left(\xi_n > \sqrt{2 \ln n + 2\ln \ln n} \right)?</script>
+

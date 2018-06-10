@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">A</script> и <script type="math/tex">B</script> &#8212; ортогональные матрицы (не ортогональные друг другу, а просто ортогональные!). Докажите, что
+<script type="math/tex; mode=display">\det (A^\mathrm{T} B - B^\mathrm{T} A) = \det (A+B) \cdot \det (A- B).</script>

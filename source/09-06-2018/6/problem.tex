@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Назовем элемент прямоугольной матрицы \textit{седлом}, если он является наибольшим в своей строке и наименьшим в своем столбце или наоборот. Придумайте алгоритм, за $O(nm)$ операций находящий все седла в матрице $\text{A[1\,.\,.\,n][1\,.\,.\,m]}$, использующий не более $O(n+m)$ памяти и не более $1$ раза обращающийся к каждому элементу $\text{A}$ (можете считать, что элемент $\text{A[i][j]}$ превращается в $\text{NaN}$ сразу после вызова $\text{A[i][j]}$). Считайте, что все элементы матрицы различны.
+\end{document}

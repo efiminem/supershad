@@ -1,0 +1,1 @@
+Пусть <script type="math/tex">A</script> &#8212; квадратная матрица <script type="math/tex">n \times n</script>. Докажите, что <script type="math/tex">n - \text{rk}A \geqslant \text{rk}A - \text{rk} A^2</script>.
