@@ -1,4 +1,4 @@
-Рассмотрим оператор, который вычисляет среднее значение функции <script type="math/tex">f(\vec{r})</script> на окружности радиуса <script type="math/tex">1</script> и вычитает значение функции в центре данной окружности:
+Рассмотрим оператор, который вычисляет значение функции в некоторой точке <script type="math/tex">\vec{r}</script> и вычитает среднее значение функции <script type="math/tex">f</script> на окружности радиуса <script type="math/tex">1</script>, построенной вокруг этой точки:
 <script type="math/tex; mode=display">(Tf) (\vec{r}) = f(\vec{r}) - \int\limits_{0}^{1} f(\vec{r} + \vec{\tau} (s)) ds,</script>
 где <script type="math/tex">\vec{\tau} (s) = (\begin{array}{cc} \cos (2\pi s) & \sin (2\pi s) \end{array})^\mathrm{T}</script>.
 Найдем, как действует этот оператор при преобразовании Фурье <script type="math/tex">F</script>:
