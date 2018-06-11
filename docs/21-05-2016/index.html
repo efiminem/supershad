@@ -90,7 +90,35 @@ $(document).ready(function(){
 <script type="math/tex; mode=display"> = \frac{2}{\pi} \int\limits_0^1 \frac{(1 - \cos(|\vec{\omega}| u) du}{\sqrt{1 - u^2}}.</script>
 Отсюда видно, что <script type="math/tex">g(\vec{\omega})</script> имеет единственный нуль в точке <script type="math/tex">\vec{\omega} = 0</script>. Найдем порядок этого нуля. Нетрудно разложить <script type="math/tex">g(\vec{\omega})</script> в ряд Маклорена с остаточным членом в форме Пеано:
 <script type="math/tex; mode=display">g(\vec{\omega}) = \frac{2}{\pi} \int\limits_0^1 \left(\frac{\vec{\omega}^2u^2}{2} + O(\vec{\omega}^2u^2) \right) \frac{du}{\sqrt{1 - u^2}} = \frac14 \vec{\omega}^2 + O(\vec{\omega}^2).</script>
-Таким образом, порядок нуля равен двум. Отсюда следует, что <script type="math/tex">\text{ker}\, (T_F)</script> состоит из линейной оболочки <script type="math/tex">\delta(\vec{\omega})</script> и <script type="math/tex">\delta'(\vec{\omega})</script>. При обратном преобразовании Фурье эта оболочка соответствует множеству функций вида <script type="math/tex">f = Ax + By + C</script>. Поскольку только константа из них ограничена, утверждение задачи доказано.</div></li><li>Дана матрица <script type="math/tex">n\times n</script>, каждая строка и каждый столбец которой упорядочены по возрастанию
+Таким образом, порядок нуля равен двум. Отсюда следует, что <script type="math/tex">\text{ker}\, (T_F)</script> состоит из линейной оболочки <script type="math/tex">\delta(\vec{\omega})</script> и <script type="math/tex">\delta'(\vec{\omega})</script>. При обратном преобразовании Фурье эта оболочка соответствует множеству функций вида <script type="math/tex">f = Ax + By + C</script>. Поскольку только константа из них ограничена, утверждение задачи доказано.</div><div class="solution" toid = "text4_2">Решение 2</div><div class="solution-text" id="text4_2">Предположим, что функция <script type="math/tex">f</script> не постоянна. Если <script type="math/tex">f</script> не содержит положительных значений, отразим для удобства <script type="math/tex">f(\vec{r}) \to -f(\vec{r})</script>.
+Рассмотрим два случая.<br>
+1. Функция <script type="math/tex">f</script> удовлетворяет условию Липшица:
+<script type="math/tex; mode=display">\exists L \colon \forall \vec{r}_i, \vec{r}_j \,\, |f(\vec{r}_j) - f(\vec{r}_i)| \leqslant L|\vec{r}_j - \vec{r}_i|.</script>
+Выберем такой вектор <script type="math/tex">\vec{h}</script>, что <script type="math/tex">|\vec{h}| = 1</script>. Рассмотрим функцию <script type="math/tex; mode=display">g(\vec{r}) = f(\vec{r} + \vec{h}) - f(\vec{r}),</script> которая также удовлетворяет условиям задачи и условию Липшица с константой <script type="math/tex">K=2L</script>. Пусть <script type="math/tex">M = \sup g(\vec{r}) > 0</script>. Выберем <script type="math/tex">\varepsilon_0 > 0</script> и <script type="math/tex">\vec{r}_0</script> такими, что
+<script type="math/tex; mode=display">M - \varepsilon_0 < g(\vec{r}_0) \leqslant M.</script>
+Тогда
+<script type="math/tex; mode=display">g(\vec{r_0}) = \int\limits_{0}^{\xi} g(\vec{r_0} + \vec{\tau} (s)) ds + \int\limits_{\xi}^{1} g(\vec{r_0} + \vec{\tau} (s)) ds,</script>
+где <script type="math/tex">\vec{\tau} (s) = (\begin{array}{cc} \cos (2\pi s) & \sin (2\pi s) \end{array})^\mathrm{T}</script>, <script type="math/tex">0 < \xi < 1</script>.
+<br>
+Далее
+<script type="math/tex; mode=display">g(\vec{r_0}) \leqslant \int\limits_{0}^{\xi} (g(\vec{r_0} + \vec{h}) + 2\pi K\xi) ds + \int\limits_{\xi}^{1} M ds = \xi g(\vec{r_0} + \vec{h}) + 2\pi K\xi^2 + M(1-\xi).</script>
+<script type="math/tex; mode=display">g(\vec{r}_0 + \vec{h}) \geqslant M - \frac{1}{\xi} (M - g(\vec{r}_0)) - 2\pi K\xi.</script>
+Выберем <script type="math/tex">\xi = \sqrt{\frac{M - g(\vec{r}_0)}{2\pi K}}</script> (важно только, чтобы <script type="math/tex">\varepsilon_0</script> был достаточно мал для <script type="math/tex">\xi < 1</script>; также заметим, что в случае <script type="math/tex">M = g(\vec{r}_0)</script> мы легко придем к противоречию, поэтому <script type="math/tex">\xi > 0</script>). Отсюда
+<script type="math/tex; mode=display">g(\vec{r}_0 + \vec{h}) \geqslant M - \sqrt{2\pi (M - g(\vec{r}_0))K} = M - \sqrt{2\pi \varepsilon_0 K}.</script>
+Продолжая рассуждения по индукции, получим:
+<script type="math/tex; mode=display">g(\vec{r}_0 + n\vec{h}) \geqslant M - \varepsilon_n,\,\, \varepsilon_{n} = \sqrt{2\pi \varepsilon_{n-1} K}.</script>
+Таким образом,
+<script type="math/tex; mode=display">f(\vec{r}_0 + n\vec{h}) - f(\vec{r}_0) = \sum\limits_{k=1}^{n} g(\vec{r}_0 + k\vec{h}) \geqslant nM - \sum\limits_{k=1}^{n} \varepsilon_k,</script>
+что приводит к противоречию, поскольку <script type="math/tex">\sum\limits_{k=1}^{n} \varepsilon_k</script> мы можем сделать сколь угодно малым уменьшая <script type="math/tex">\varepsilon_0</script> (и при необходимости сдвигая <script type="math/tex">\vec{r}_0</script>), а значит, функция не ограничена.<br>
+2. Функция <script type="math/tex">f</script> не удовлетворяет условию Липшица.<br>
+Рассмотрим функцию:
+<script type="math/tex; mode=display">\tilde{f} (\vec{r}) = \frac{1}{|D_a|} \int\limits_{D_a} f(\vec{r} + \vec{v}) d^2\vec{v},</script>
+где <script type="math/tex">D_a</script> &#8212; диск радиуса <script type="math/tex">a</script>.
+Заметим, что нам достаточно доказать, что <script type="math/tex">\tilde{f} (\vec{r})</script> постоянна для всех конечных <script type="math/tex">a</script>. Тогда в пределе <script type="math/tex">a \to 0</script> мы получим, что и <script type="math/tex">f</script> постоянна. Покажем, что функция <script type="math/tex">\tilde{f}</script> удовлетворяет условиям задачи. Очевидно, что <script type="math/tex">\tilde{f}</script> ограниченная и гладкая. Далее
+<script type="math/tex; mode=display">\int\limits_0^1 \tilde{f} (\vec{r} + \vec{\tau} (s)) ds = \frac{1}{|D_a|} \int\limits_0^1 \int\limits_{D_a} f(\vec{r} + \vec{v} + \vec{\tau} (s)) d^2\vec{v} ds = </script>
+<script type="math/tex; mode=display">= \frac{2\pi}{|D_a|} \int\limits_0^1 \int\limits_{0}^{a} \int\limits_{0}^1 f(\vec{r} + p\vec{\tau} (s') + \vec{\tau} (s)) ds' dp ds = </script>
+<script type="math/tex; mode=display">= \frac{2\pi}{|D_a|} \int\limits_{0}^{a} \int\limits_0^1 f(\vec{r} + p\vec{\tau} (s')) ds' dp = \tilde{f} (\vec{r}).</script>
+Поскольку производные <script type="math/tex">\tilde{f} (\vec{r})</script> ограничены, она удовлетворяет условию Липшица. Тогда по первому пункту решения эта функция постоянна, что доказывает исходное утверждение.</div></li><li>Дана матрица <script type="math/tex">n\times n</script>, каждая строка и каждый столбец которой упорядочены по возрастанию
 (то есть <script type="math/tex">a_{ki} < a_{kj}</script> и <script type="math/tex">a_{it} < a_{jt}</script> при <script type="math/tex">i<j</script>). Предложите алгоритм, находящий два элемента
 этой матрицы, сумма которых наиболее близка к заданному числу <script type="math/tex">q</script>. Ограничение по дополнительной памяти &#8212; <script type="math/tex">O(n)</script>. Изменять 
 исходную матрицу нельзя. Внимание: оценка будет зависеть от эффективности вашего алгоритма.</li><li>Робот движется по клеткам бесконечной шахматной доски. Один его шаг &#8212; это перемещение на случайную из восьми соседних клеток.

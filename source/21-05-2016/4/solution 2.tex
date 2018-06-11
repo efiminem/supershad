@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Предположим, что функция $f$ не постоянна. Если $f$ не содержит положительных значений, отразим для удобства $f(\vec{r}) \to -f(\vec{r})$.
+Рассмотрим два случая.\\
+1. Функция $f$ удовлетворяет условию Липшица:
+$$\exists L \colon \forall \vec{r}_i, \vec{r}_j \,\, |f(\vec{r}_j) - f(\vec{r}_i)| \leqslant L|\vec{r}_j - \vec{r}_i|.$$
+Выберем такой вектор $\vec{h}$, что $|\vec{h}| = 1$. Рассмотрим функцию $$g(\vec{r}) = f(\vec{r} + \vec{h}) - f(\vec{r}),$$ которая также удовлетворяет условиям задачи и условию Липшица с константой $K=2L$. Пусть $M = \sup g(\vec{r}) > 0$. Выберем $\varepsilon_0 > 0$ и $\vec{r}_0$ такими, что
+$$M - \varepsilon_0 < g(\vec{r}_0) \leqslant M.$$
+Тогда
+$$g(\vec{r_0}) = \int\limits_{0}^{\xi} g(\vec{r_0} + \vec{\tau} (s)) ds + \int\limits_{\xi}^{1} g(\vec{r_0} + \vec{\tau} (s)) ds,$$
+где $\vec{\tau} (s) = (\begin{array}{cc} \cos (2\pi s) & \sin (2\pi s) \end{array})^\mathrm{T}$, $0 < \xi < 1$.
+
+Далее
+$$g(\vec{r_0}) \leqslant \int\limits_{0}^{\xi} (g(\vec{r_0} + \vec{h}) + 2\pi K\xi) ds + \int\limits_{\xi}^{1} M ds = \xi g(\vec{r_0} + \vec{h}) + 2\pi K\xi^2 + M(1-\xi).$$
+$$g(\vec{r}_0 + \vec{h}) \geqslant M - \frac{1}{\xi} (M - g(\vec{r}_0)) - 2\pi K\xi.$$
+Выберем $\xi = \sqrt{\frac{M - g(\vec{r}_0)}{2\pi K}}$ (важно только, чтобы $\varepsilon_0$ был достаточно мал для $\xi < 1$; также заметим, что в случае $M = g(\vec{r}_0)$ мы легко придем к противоречию, поэтому $\xi > 0$). Отсюда
+$$g(\vec{r}_0 + \vec{h}) \geqslant M - \sqrt{2\pi (M - g(\vec{r}_0))K} = M - \sqrt{2\pi \varepsilon_0 K}.$$
+Продолжая рассуждения по индукции, получим:
+$$g(\vec{r}_0 + n\vec{h}) \geqslant M - \varepsilon_n,\,\, \varepsilon_{n} = \sqrt{2\pi \varepsilon_{n-1} K}.$$
+Таким образом,
+$$f(\vec{r}_0 + n\vec{h}) - f(\vec{r}_0) = \sum\limits_{k=1}^{n} g(\vec{r}_0 + k\vec{h}) \geqslant nM - \sum\limits_{k=1}^{n} \varepsilon_k,$$
+что приводит к противоречию, поскольку $\sum\limits_{k=1}^{n} \varepsilon_k$ мы можем сделать сколь угодно малым уменьшая $\varepsilon_0$ (и при необходимости сдвигая $\vec{r}_0$), а значит, функция не ограничена.\\
+2. Функция $f$ не удовлетворяет условию Липшица.\\
+Рассмотрим функцию:
+$$\tilde{f} (\vec{r}) = \frac{1}{|D_a|} \int\limits_{D_a} f(\vec{r} + \vec{v}) d^2\vec{v},$$
+где $D_a$ --- диск радиуса $a$.
+Заметим, что нам достаточно доказать, что $\tilde{f} (\vec{r})$ постоянна для всех конечных $a$. Тогда в пределе $a \to 0$ мы получим, что и $f$ постоянна. Покажем, что функция $\tilde{f}$ удовлетворяет условиям задачи. Очевидно, что $\tilde{f}$ ограниченная и гладкая. Далее
+$$\int\limits_0^1 \tilde{f} (\vec{r} + \vec{\tau} (s)) ds = \frac{1}{|D_a|} \int\limits_0^1 \int\limits_{D_a} f(\vec{r} + \vec{v} + \vec{\tau} (s)) d^2\vec{v} ds =$$
+$$= \frac{2\pi}{|D_a|} \int\limits_0^1 \int\limits_{0}^{a} \int\limits_{0}^1 f(\vec{r} + p\vec{\tau} (s') + \vec{\tau} (s)) ds' dp ds = $$
+$$= \frac{2\pi}{|D_a|} \int\limits_{0}^{a} \int\limits_0^1 f(\vec{r} + p\vec{\tau} (s')) ds' dp = \tilde{f} (\vec{r}).$$
+Поскольку производные $\tilde{f} (\vec{r})$ ограничены, она удовлетворяет условию Липшица. Тогда по первому пункту решения эта функция постоянна, что доказывает исходное утверждение.
+\end{document}
