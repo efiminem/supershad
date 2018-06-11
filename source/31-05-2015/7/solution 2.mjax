@@ -1,0 +1,6 @@
+Заметим, что
+<script type="math/tex; mode=display">\left( \begin{array}{cc} E&A\\O&E \end{array} \right) \left( \begin{array}{cc} E-AB&O\\O&E \end{array} \right) \left( \begin{array}{cc} E&O\\B&E \end{array} \right) = \left( \begin{array}{cc} E&O\\B&E \end{array} \right) \left( \begin{array}{cc} E&O\\O&E - BA \end{array} \right) \left( \begin{array}{cc} E&A\\O&E \end{array} \right).</script>
+Поэтому
+<script type="math/tex; mode=display">\det(E - AB) = \det(E - BA).</script>
+
+

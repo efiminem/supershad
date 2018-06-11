@@ -1,0 +1,4 @@
+1. Пусть <script type="math/tex">A</script> обратима. Тогда <script type="math/tex; mode=display">\det (E-AB) = \det (A^{-1}) \det (E-AB) \det A = \det(E - BA).</script>
+2. Пусть <script type="math/tex">A</script> необратима. Тогда рассмотрим полином
+<script type="math/tex; mode=display">P(x) = \det (E - (A - xE)B) - \det(E - B(A - xE)).</script> Если <script type="math/tex">x</script> не является собственным значением <script type="math/tex">A</script>, матрица <script type="math/tex">A-xE</script> обратима, поэтому для таких <script type="math/tex">x</script> <script type="math/tex">P(x) = 0</script>. Получаем, что <script type="math/tex">P(x)</script> &#8212; полином конечной степени, имеющий бесконечное число корней, а значит, <script type="math/tex">P(x) \equiv 0</script>.
+

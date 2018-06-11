@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+1. Пусть $A$ обратима. Тогда $$\det (E-AB) = \det (A^{-1}) \det (E-AB) \det A = \det(E - BA).$$
+2. Пусть $A$ необратима. Тогда рассмотрим полином
+$$P(x) = \det (E - (A - xE)B) - \det(E - B(A - xE)).$$ Если $x$ не является собственным значением $A$, матрица $A-xE$ обратима, поэтому для таких $x$ $P(x) = 0$. Получаем, что $P(x)$ --- полином конечной степени, имеющий бесконечное число корней, а значит, $P(x) \equiv 0$.
+\end{document}
