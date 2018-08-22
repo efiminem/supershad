@@ -1,0 +1,9 @@
+Из <script type="math/tex">P(x) > 0</script> следует, что у многочлена нет вещественных корней. Поскольку коэффициенты многочлена действительные, для любого комплексного корня <script type="math/tex">x_i</script> комплексно-сопряженное число <script type="math/tex">\overline{x_i}</script> также является корнем. Поэтому многочлен можно представить в виде:
+<script type="math/tex; mode=display">P(x) = (x - x_1)(x - \overline{x_1}) \cdots (x-x_k)(x - \overline{x_k}).</script>
+Попарно раскрывая скобки получим следующий вид выражения:
+<script type="math/tex; mode=display">P(x) = (x^2 + b_1x + c_1) \cdots (x^2 + b_kx + c_k).</script>
+Выделим полный квадрат в каждом из квадратичных множителей:
+<script type="math/tex; mode=display">P(x) = ((x + b_1/2)^2 + q_1) \cdots ((x + b_k/2)^2 + q_k).</script>
+Заметим, что <script type="math/tex">q_i > 0</script> для любого <script type="math/tex">i</script>, поскольку иначе у выражения <script type="math/tex">(x + b_i/2)^2 + q_i</script> были бы действительные корни. Значит, мы можем написать <script type="math/tex">q_i = y_i^2</script>, где <script type="math/tex">y_i</script> &#8212; некоторое действительное число. Тогда
+<script type="math/tex; mode=display">P(x) = ((x + b_1/2)^2 + (y_1)^2) \cdots ((x + b_k/2)^2 + (y_k)^2).</script>
+Как видим, при раскрытии скобок мы получим сумму квадратов многочленов с действительными коэффициентами, что и требовалось доказать.
