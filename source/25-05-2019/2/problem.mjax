@@ -1,0 +1,1 @@
+Известно, что <script type="math/tex">\lim_{x \to 0} \frac{f(x)}{\sin x} = 2</script>. Чему равен предел <script type="math/tex">\lim_{x \to 0} \frac{\ln (1+3x)}{f(x)}</script>?

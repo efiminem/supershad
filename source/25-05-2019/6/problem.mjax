@@ -1,0 +1,1 @@
+Матрицы <script type="math/tex">A</script> и <script type="math/tex">B</script> таковы, что <script type="math/tex">A^2 = A</script>, <script type="math/tex">B^2 = B</script> и матрица <script type="math/tex">E - (A+B)</script> обратима. Докажите, что <script type="math/tex">\text{rk}\,A = \text{rk}\,B</script>.

@@ -1,0 +1,3 @@
+Дан массив вещественных чисел <script type="math/tex">\text{A[1:n]}</script>. Предложите алгоритм, находящий для каждого элемента <script type="math/tex">\text{A}</script> индекс ближайшего справа элемента,
+большего его хотя бы в два раза. Если такого элемента нет, то должно возвращаться значение <script type="math/tex">\text{None}</script>. Ограничение по времени <script type="math/tex">O(n \log n)</script>,
+по дополнительной памяти &#8212; <script type="math/tex">O(n)</script>.

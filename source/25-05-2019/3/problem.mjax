@@ -1,0 +1,3 @@
+Верно ли, что для любых линейно-независимых <script type="math/tex">v, w \in \mathbb{R}^n</script> найдётся матрица <script type="math/tex">A</script> размера <script type="math/tex">n \times n</script>, для которой вектор 
+<script type="math/tex">v</script> является собственным с собственным значением <script type="math/tex">5</script>, а вектор <script type="math/tex">w</script> не лежит в образе? Если да, то как найти хотя бы одну такую матрицу?
+Обязательно объясните ответ.

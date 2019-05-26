@@ -1,0 +1,2 @@
+Пусть <script type="math/tex">M</script> &#8212; множество непрерывных убывающих функций на отрезке <script type="math/tex">[0;1]</script>, для которых <script type="math/tex">f(1) = 0</script>. Найдите
+<script type="math/tex; mode=display">\inf_{f \in M} \sup_{x \in [0;1]} \frac{xf(x)}{\int_0^1 f(t) dt}.</script>
