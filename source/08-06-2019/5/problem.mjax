@@ -1,0 +1,4 @@
+Вещественнозначная функция <script type="math/tex">f</script> определена на отрезке <script type="math/tex">[a;b]</script>
+<script type="math/tex">(b-a \geqslant 4)</script> и дифференцируема на нём. Докажите, что 
+найдётся точка <script type="math/tex">x_0 \in (a;b)</script>, для которой
+<script type="math/tex; mode=display">f'(x_0) < 1 + f^2(x_0).</script>

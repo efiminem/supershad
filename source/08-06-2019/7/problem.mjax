@@ -1,0 +1,3 @@
+Дан граф с <script type="math/tex">30</script> вершинами. Известно, что для любых <script type="math/tex">5</script> вершин в графе
+есть цикл длины <script type="math/tex">5</script>, содержащий эти вершины. 
+Докажите, что найдётся <script type="math/tex">10</script> вершин, попарно соединённых рёбрами друг с другом.

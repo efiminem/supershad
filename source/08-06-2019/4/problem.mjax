@@ -1,0 +1,4 @@
+Дан массив <script type="math/tex">\text{A[1:n]}</script> вещественных чисел, отсортированный по возрастанию, а также числа <script type="math/tex">p</script>,
+<script type="math/tex">q</script>, <script type="math/tex">r</script>. Предложите алгоритм, строящий массив <script type="math/tex">\text{B[1:n]}</script>,
+состоящий из чисел <script type="math/tex">px^2 + qx + r</script>, где <script type="math/tex">x \in \text{A}</script>,
+также отсортированный по возрастанию. Ограничение по времени &#8212; <script type="math/tex">O(n)</script>, по дополнительной памяти &#8212; <script type="math/tex">O(n)</script>. 

@@ -1,0 +1,5 @@
+Квадратная вещественная матрица <script type="math/tex">A</script> такова, что <script type="math/tex">A^\text{T} = p(A)</script>,
+где <script type="math/tex">p(x)</script> &#8212; многочлен с ненулевым свободным членом.
+Докажите, что <script type="math/tex">A</script> обратима. Верно ли, что для любого оператора <script type="math/tex">\varphi : \mathbb{R}^n \to \mathbb{R}^n</script>
+найдётся многочлен <script type="math/tex">p(x)</script> и некоторый базис, в котором матрица <script type="math/tex">\varphi</script>
+удовлетворяет условию <script type="math/tex">A^\text{T} = p(A)</script>?
