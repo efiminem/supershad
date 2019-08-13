@@ -1,4 +1,4 @@
 Так как <script type="math/tex">A</script> &#8212; симметричная и положительно определена, то она может быть представлена в виде <script type="math/tex">A=C^{\mathrm{T}}C</script>. Поэтому<script type="math/tex; mode=display">X^{\mathrm{T}}C^{\mathrm{T}}CX=(CX)^{\mathrm{T}}CX=M^{\mathrm{T}}M.</script>
-Отсюда, учитывая что <script type="math/tex">m_{ij}=\sum\limits_{k=1}^{n}c_{ik}x_{kj}</script>, получаем:<script type="math/tex; mode=display">
-\mathrm{tr}(X^{\mathrm{T}}C^{\mathrm{T}}CX)=\sum\limits_{i=1}^{n}m_{ii}^2=\sum\limits_{i=1}^{n}(\sum\limits_{k=1}^{n}c_{ik}x_{ki})^2,</script>
+Отсюда получаем:<script type="math/tex; mode=display">
+\mathrm{tr}(X^{\mathrm{T}}C^{\mathrm{T}}CX)= \mathrm{tr}(M^{\mathrm{T}}M) = \sum\limits_{i=1}^{n} \sum\limits_{j=1}^{n} m_{ij}^2,</script>
 то есть <script type="math/tex">\mathrm{tr}>0</script> для любых <script type="math/tex">X</script>.
