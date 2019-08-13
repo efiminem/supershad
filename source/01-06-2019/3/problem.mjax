@@ -1,0 +1,3 @@
+При каком значении параметра <script type="math/tex">a \in \mathbb{R}</script> матрицы
+<script type="math/tex; mode=display">A = \left( \begin{array}{cc} 1& 4-a-a^2\\ 2&-1 \end{array} \right) \;\;\;\;\; B = \left( \begin{array}{cc} -a-1& 3\\ 3&-5 \end{array} \right)</script>
+могут быть матрицами одной и той же билинейной формы <script type="math/tex">V \times V \to \mathbb{R}</script> в различных базисах?

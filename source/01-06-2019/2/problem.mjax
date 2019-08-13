@@ -1,0 +1,2 @@
+Случайные величины <script type="math/tex">X</script> и <script type="math/tex">Y</script> независимы и экспоненциально распределены, <script type="math/tex">X</script> &#8212; с параметром <script type="math/tex">\lambda = 1</script>, а <script type="math/tex">Y</script> &#8212; с параметром <script type="math/tex">\lambda = 2</script>.
+Пусть <script type="math/tex">Z = \max (X, Y)</script>. Найдите математическое ожидание случайной величины <script type="math/tex">Z</script>.

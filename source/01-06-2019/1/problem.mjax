@@ -1,0 +1,8 @@
+На картинке ниже изображены градиенты бесконечно гладкой функции <script type="math/tex">f(x,y)</script> в узлах решетки с шагом <script type="math/tex">0.5</script> (вектор исходит из той точки, в которой вычисляется градиент).
+<center><img src="gradients.png" width="80%"/></center>
+
+Утверждается, что существуют прямые (более одной), вдоль которых матрица вторых производных
+<script type="math/tex; mode=display">\left( \begin{array}{cc} \frac{\partial^2 f}{\partial x^2}& \frac{\partial^2 f}{\partial x \partial y}\\ \frac{\partial^2 f}{\partial x \partial y}&\frac{\partial^2 f}{\partial y^2} \end{array} \right)</script>
+вырождена.<br>
+(a) Найдите и укажите их количество и угловые коэффициенты (то есть коэффициенты <script type="math/tex">a</script> в уравнении <script type="math/tex">y = ax + b</script>).<br>
+(b) Верно ли, что существуют точки, в которых градиент не равен нулю, но, стартовав из которых, нельзя с помощью градиентного спуска прийти в точку минимума?

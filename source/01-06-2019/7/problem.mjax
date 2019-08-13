@@ -1,0 +1,5 @@
+Для квадратной вещественной матрицы <script type="math/tex">A</script> размера <script type="math/tex">n \times n</script> и вектора <script type="math/tex">v \in \mathbb{R}^n</script> положим:
+<script type="math/tex; mode=display">U(A) = \{ X \in \text{Mat}_n (\mathbb{R}) \;|\; AX = XA \}, \;\;\; W(A, v) = \langle v, Av, A^2v, A^3v, \ldots \rangle</script>
+(a) Пусть матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\text{dim}\, W(A, v) = n</script> для любого <script type="math/tex">v \neq 0</script>. Какова максимально возможная 
+размерность <script type="math/tex">U(A)</script>?<br>
+(b) Пусть матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\text{dim}\, W(A, v) < n</script> для любого <script type="math/tex">v</script>. Какова минимально возможная размерность <script type="math/tex">U(A)</script>?

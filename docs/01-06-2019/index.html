@@ -74,7 +74,36 @@ $(document).ready(function(){
   <article class="post-content">
   
   <h4><center>1 июня 2019</center></h4>
-  <ol></ol>
+  <ol><li>На картинке ниже изображены градиенты бесконечно гладкой функции <script type="math/tex">f(x,y)</script> в узлах решетки с шагом <script type="math/tex">0.5</script> (вектор исходит из той точки, в которой вычисляется градиент).
+<center><img src="gradients.png" width="80%"/></center>
+
+Утверждается, что существуют прямые (более одной), вдоль которых матрица вторых производных
+<script type="math/tex; mode=display">\left( \begin{array}{cc} \frac{\partial^2 f}{\partial x^2}& \frac{\partial^2 f}{\partial x \partial y}\\ \frac{\partial^2 f}{\partial x \partial y}&\frac{\partial^2 f}{\partial y^2} \end{array} \right)</script>
+вырождена.<br>
+(a) Найдите и укажите их количество и угловые коэффициенты (то есть коэффициенты <script type="math/tex">a</script> в уравнении <script type="math/tex">y = ax + b</script>).<br>
+(b) Верно ли, что существуют точки, в которых градиент не равен нулю, но, стартовав из которых, нельзя с помощью градиентного спуска прийти в точку минимума?</li><li>Случайные величины <script type="math/tex">X</script> и <script type="math/tex">Y</script> независимы и экспоненциально распределены, <script type="math/tex">X</script> &#8212; с параметром <script type="math/tex">\lambda = 1</script>, а <script type="math/tex">Y</script> &#8212; с параметром <script type="math/tex">\lambda = 2</script>.
+Пусть <script type="math/tex">Z = \max (X, Y)</script>. Найдите математическое ожидание случайной величины <script type="math/tex">Z</script>.</li><li>При каком значении параметра <script type="math/tex">a \in \mathbb{R}</script> матрицы
+<script type="math/tex; mode=display">A = \left( \begin{array}{cc} 1& 4-a-a^2\\ 2&-1 \end{array} \right) \;\;\;\;\; B = \left( \begin{array}{cc} -a-1& 3\\ 3&-5 \end{array} \right)</script>
+могут быть матрицами одной и той же билинейной формы <script type="math/tex">V \times V \to \mathbb{R}</script> в различных базисах?</li><li>Найдите предел
+<script type="math/tex; mode=display"> \lim_{x \to 0} \int\limits_0^x \frac{\cos(t^3)}{t+x} dt.</script></li><li>В обществе анонимных подарков состоят <script type="math/tex">3n</script> человек. Они готовят подарки друг другу на Новый год. Известно, что ровно <script type="math/tex">n</script> человек хотели бы получить в подарок 
+галстук, <script type="math/tex">n</script> человек &#8212; носки, а <script type="math/tex">n</script> человек &#8212; ручного динозавра. Каждый из членов общества случайно выбирает и покупает подарок среди тех двух, 
+что он сам не хотел бы получить (например, если он хочет получить носки, то купит галстук или динозавра). Собравшись на новогоднюю вечеринку, 
+члены общества сложили свои подарки в общую кучу, а в конце праздника разобрали их случайно. Алиса и Боб входят в общество анонимных подарков. 
+Алиса хотела бы получить в подарок ручного динозавра, а Боб &#8212; носки. Найдите вероятность того, что ни Алиса, ни Боб не получат те подарки, 
+которые хотели.</li><li>В королевстве Грок некоторые города соединены двусторонними магическими порталами, причем из каждого города можно попасть в каждый за несколько телепортаций. 
+Когда из города <script type="math/tex">A</script> в город <script type="math/tex">B</script> отправляют груз, то по закону стоимость пересылки равна <i>кратчайшему расстоянию</i> между <script type="math/tex">A</script> и <script type="math/tex">B</script>: минимально возможному 
+количеству ребер на пути между <script type="math/tex">A</script> и <script type="math/tex">B</script>.<br><br>
+В архиве почтовой службы вы нашли упоминание о диаметре королевства &#8212; то есть о максимально возможном кратчайшем расстоянии между парой вершин, &#8212; а также 
+следующий способ его вычисления. Занумеруем все города числами от <script type="math/tex">1</script> до <script type="math/tex">n</script>. Выберем в качестве <script type="math/tex">A_0</script> город с номером <script type="math/tex">1</script> и найдем кратчайшее расстояние от него 
+до всех остальных городов. Выберем в качестве города <script type="math/tex">A_1</script> наиболее удаленный от <script type="math/tex">A_0</script>, среди всех таких выберем город с минимальным индексом. Теперь найдем 
+кратчайшее расстояние от города <script type="math/tex">A_1</script> до всех остальных городов, и в качестве <script type="math/tex">A_2</script> выберем наиболее удаленный, а среди таковых город с минимальным номером 
+(это может быть снова <script type="math/tex">A_0</script>). Далее аналогично построим <script type="math/tex">A_3</script>, <script type="math/tex">A_4</script> и так далее до <script type="math/tex">A_k</script> для некоторого <script type="math/tex">k</script>. Теперь в качестве диаметра выберем максимальное 
+расстояние между всеми парами <script type="math/tex">(A_i, A_{i+1})</script> для <script type="math/tex">i</script> от <script type="math/tex">0</script> до <script type="math/tex">k-1</script>. Приведите пример, который покажет, что такое решение не сработает, как бы мы ни 
+выбирали значение параметра <script type="math/tex">k</script>. В вашем королевстве должно быть не более <script type="math/tex">10</script> городов, соединенных не более чем <script type="math/tex">100</script> порталами.</li><li>Для квадратной вещественной матрицы <script type="math/tex">A</script> размера <script type="math/tex">n \times n</script> и вектора <script type="math/tex">v \in \mathbb{R}^n</script> положим:
+<script type="math/tex; mode=display">U(A) = \{ X \in \text{Mat}_n (\mathbb{R}) \;|\; AX = XA \}, \;\;\; W(A, v) = \langle v, Av, A^2v, A^3v, \ldots \rangle</script>
+(a) Пусть матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\text{dim}\, W(A, v) = n</script> для любого <script type="math/tex">v \neq 0</script>. Какова максимально возможная 
+размерность <script type="math/tex">U(A)</script>?<br>
+(b) Пусть матрица <script type="math/tex">A</script> такова, что <script type="math/tex">\text{dim}\, W(A, v) < n</script> для любого <script type="math/tex">v</script>. Какова минимально возможная размерность <script type="math/tex">U(A)</script>?</li><li>Верно ли, что почти все (все, кроме конечного числа) натуральные числа представимы в виде <script type="math/tex">n + \tau(n)</script>, где <script type="math/tex">\tau(n)</script> &#8212; количество делителей числа <script type="math/tex">n</script>?</li></ol>
   </article>
 
 </div>
