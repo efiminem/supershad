@@ -1,0 +1,27 @@
+Пусть <script type="math/tex">G(t)</script> &#8212; производящая функция последовательности:
+<script type="math/tex; mode=display">G(t) = \sum_{k=0}^\infty x_k t^k.</script>
+Умножим каждое равенство в условии на <script type="math/tex">t^0, t^1, \ldots, t^k, \ldots</script>:
+\begin{align*}    
+t^0 x_0 &= 0\\
+t^1 x_1 &= t\\
+\cdots&\\
+t^k x_k &= t^k \left( \frac{x_{k-1} + (k-1)x_{k-2}}{k} \right)\\
+\cdots&
+\end{align*}
+
+Просуммируем эти равенства и возьмем производную:
+<script type="math/tex; mode=display">G'(t) = 1 + G(t) + 2tG(t) + t^2G'(t) - tG(t).</script>
+Решаем дифференциальное уравнение на <script type="math/tex">G(t)</script>:
+<script type="math/tex; mode=display">G'(t)(t^2 - 1) + G(t)(t+1) = -1.</script>
+<script type="math/tex; mode=display">[G(t)(t-1)]'(t+1) = -1.</script>
+<script type="math/tex; mode=display">G(t) = \frac{C}{1-t} + \frac{\ln (t+1)}{1-t}.</script>
+Поскольку <script type="math/tex">G(0) = 0</script>:
+<script type="math/tex; mode=display">G(t) = \frac{\ln (t+1)}{1-t}.</script>
+Теперь мы можем найти члены последовательности, посмотрев на разложение <script type="math/tex">G(t)</script> в ряд Тейлора:
+<script type="math/tex; mode=display">G(t) = (t - \frac{t^2}{2} + \frac{t^3}{3} - \cdots)(1 + t + t^2 + \cdots).</script>
+Тогда
+<script type="math/tex; mode=display">x_n = \sum_{k=1}^n \frac{(-1)^{k+1}}{k}.</script>
+Поскольку 
+<script type="math/tex; mode=display">\ln(t + 1) = \sum_{k=1}^\infty \frac{(-1)^{k+1}t^k}{k},</script>
+понятно, что
+<script type="math/tex; mode=display">\lim_{n \to \infty} x_n = \ln 2.</script>

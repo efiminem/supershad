@@ -76,7 +76,20 @@ $(document).ready(function(){
   <h4><center>26 мая 2013</center></h4>
   <ol><li>Последовательность <script type="math/tex">\{x_n\}_{n=0}^\infty</script> задана рекуррентным соотношением:
 <script type="math/tex; mode=display">x_0=0,\; x_1=1,\; x_{n+1}=\frac{x_n + nx_{n-1}}{n+1}.</script>
-Покажите, что данная последовательность сходится и найдите ее предел.<div class="solution" toid = "text1">Решение</div><div class="solution-text" id="text1">Пусть <script type="math/tex">G(t)</script> &#8212; производящая функция последовательности:
+Покажите, что данная последовательность сходится и найдите ее предел.<div class="solution" toid = "text1">Решение</div><div class="solution-text" id="text1">Заметим, что 
+<script type="math/tex; mode=display">x_{k+1} - x_k = \frac{x_k + kx_{k-1}}{k+1} - x_k = \frac{k}{k+1} (x_{k-1} - x_k) = </script>
+<script type="math/tex; mode=display"> = \frac{-k}{k+1} (x_k - x_{k-1}) = \frac{(-1)^k}{k+1} (x_1 - x_0) = \frac{(-1)^k}{k+1}.</script>
+Поскольку
+<script type="math/tex; mode=display">\lim_{k \to \infty} (x_{k+1} - x_k) \to 0,</script>
+ряд сходится.
+<br>
+Найдем теперь члены ряда:
+<script type="math/tex; mode=display">x_n = \sum_{k=1}^n (x_k - x_{k-1}) = \sum_{k=1}^n \frac{(-1)^{k+1}}{k}.</script>
+<br>
+Поскольку 
+<script type="math/tex; mode=display">\ln(t + 1) = \sum_{k=1}^\infty \frac{(-1)^{k+1}t^k}{k},</script>
+находим, что
+<script type="math/tex; mode=display">\lim_{n \to \infty} x_n = \ln 2.</script></div><div class="solution" toid = "text1_2">Решение 2</div><div class="solution-text" id="text1_2">Пусть <script type="math/tex">G(t)</script> &#8212; производящая функция последовательности:
 <script type="math/tex; mode=display">G(t) = \sum_{k=0}^\infty x_k t^k.</script>
 Умножим каждое равенство в условии на <script type="math/tex">t^0, t^1, \ldots, t^k, \ldots</script>:
 \begin{align*}    
