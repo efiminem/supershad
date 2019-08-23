@@ -2,5 +2,5 @@
 <script type="math/tex; mode=display">\lambda^2 = \frac12 (\lambda + 1) \Leftrightarrow (\lambda -1)(\lambda + \frac12) = 0.</script>
 Таким образом, мы нашли решения <script type="math/tex">x_n=1</script> и <script type="math/tex">x_n = \left( -\frac12 \right)^n</script>. Из линейности рекуррентного соотношения общее решение можно записать в виде <script type="math/tex; mode=display">x_n = C_1 + C_2 \left(-\frac12 \right)^n.</script>
 Подставим начальные условия <script type="math/tex">x_1=a</script> и <script type="math/tex">x_2=b</script>. Тогда
-<script type="math/tex; mode=display">x_n = \frac13 (a+2b) + \frac23 (b-a) \left( -\frac12 \right)^n.</script>
+<script type="math/tex; mode=display">x_n = \frac13 (a+2b) + \frac43 (b-a) \left( -\frac12 \right)^n.</script>
 Переходя к пределу <script type="math/tex">n \to \infty</script>, получаем <script type="math/tex">\frac13 (a+2b)</script>.
