@@ -98,7 +98,28 @@ $(document).ready(function(){
 Заметим, что если <script type="math/tex">K_{ij} = 1</script>, то <script type="math/tex">i</script>-ый не может быть знаменитостью, а если <script type="math/tex">K_{ij} = 0</script>, то <script type="math/tex">j</script>-ый не может быть знаменитостью. Таким образом, за одну проверку можно исключить одного человека из кандидатов в знаменитости.<br>
 Сначала пусть <script type="math/tex">s=1</script>, а <script type="math/tex">l</script> пробегает значения от <script type="math/tex">2</script> до <script type="math/tex">n</script>. Если в какой-то момент <script type="math/tex">K_{sl}=1</script>, то приравниваем <script type="math/tex">s=l</script>. Тогда значение 
 <script type="math/tex">s</script> после последней проверки &#8212; номер единственного оставшегося кандидата. Чтобы проверить, является ли этот кандидат знаменитостью, нужно провести еще <script type="math/tex">n-1</script> проверок, знают ли его остальные, и <script type="math/tex">n-1</script> проверок, знает ли он остальных. Всего будет проведено <script type="math/tex">3(n-1)</script> проверок, следовательно, сложность по времени &#8212; <script type="math/tex">O(n)</script>. 
-Поскольку мы использовали только <script type="math/tex">2</script> переменные, сложность по памяти &#8212; <script type="math/tex">O(1)</script>.</div></li><li>Рассмотрим случайную перестановку на <script type="math/tex">n</script> элементах. Докажите, что данные <script type="math/tex">k</script> элементов окажутся в одном цикле с вероятностью <script type="math/tex">\frac1k</script>.</li><li>Есть неизвестная нам квадратичная форма <script type="math/tex">Q</script> в <script type="math/tex">n</script>-мерном пространстве. Разрешается задавать вопрос вида &laquo;Чему равно <script type="math/tex">Q(v)</script>?&raquo;. 
+Поскольку мы использовали только <script type="math/tex">2</script> переменные, сложность по памяти &#8212; <script type="math/tex">O(1)</script>.</div></li><li>Рассмотрим случайную перестановку на <script type="math/tex">n</script> элементах. Докажите, что данные <script type="math/tex">k</script> элементов окажутся в одном цикле с вероятностью <script type="math/tex">\frac1k</script>.<div class="solution" toid = "text6">Решение</div><div class="solution-text" id="text6">Будем генерировать случайную подстановку немного нестандартным образом. Сначала равновероятно выберем случайную перестановку, а затем 
+сопоставим ей циклы, заканчивающиеся на элементах в порядке тривиальной перестановки. Например, для перестановок из <script type="math/tex">9</script> элементов
+<script type="math/tex; mode=display">
+\begin{align*}
+172598346 &\to (1)(72)(5983)(4)(6)\\
+592613478 &\to (59261)(3)(4)(7)(8)\\
+641982735 &\to (641)(982)(73)(5)
+\end{align*}
+</script>
+Рассмотрим самый правый элемент из элементов под номерами <script type="math/tex">1\ldots k</script> в такой записи. Любой из этих элементов может с одинаковой 
+вероятностью быть самым правым. Чтобы данные <script type="math/tex">k</script> элементов лежали в одном цикле, самым правым из них может быть только элемент 
+под номером <script type="math/tex">1</script>. Поэтому искомая вероятность равна <script type="math/tex">1/k</script>. </div><div class="solution" toid = "text6_2">Решение 2</div><div class="solution-text" id="text6_2">Посчитаем, для начала, вероятность того, что данные <script type="math/tex">k</script> элементов окажутся в цикле длины <script type="math/tex">k</script>. Всего перестановок <script type="math/tex">n!</script>, 
+циклов <script type="math/tex">(k-1)!</script>, перестановок из оставшихся элементов <script type="math/tex">(n - k)!</script>. Тогда такая вероятность равна
+<script type="math/tex; mode=display">p_k = \frac{1}{n!} (k-1)! (n-k)!</script>
+Пусть теперь они оказались в цикле длины <script type="math/tex">k+m</script>. Тогда мы дополнительно выбираем <script type="math/tex">m</script> элементов из <script type="math/tex">n-k</script> и вероятность становится
+<script type="math/tex; mode=display">p_{k+m} = \frac{1}{n!} C^m_{n-k} (k+m-1)! (n-k-m)!</script>
+Полная вероятность равна сумме
+<script type="math/tex; mode=display">\sum_{m=0}^{n-k} p_{k+m} = \frac{1}{n!} \sum_{m=0}^{n-k} C^m_{n-k} (k+m-1)! (n-k-m)! = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{n!} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = \frac{(n-k)!}{n!} \frac{k+m-m}{k} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \sum_{m=0}^{n-k} \left( \frac{(k+m)!}{m!} - \frac{m(k+m-1)!}{m!} \right) = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \left( \sum_{m=1}^{n-k+1} \frac{m(k+m-1)!}{m!} - \sum_{m=0}^{n-k} \frac{m(k+m-1)!}{m!} \right) = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \frac{(n-k+1)n!}{(n-k+1)!} = \frac{1}{k}.</script></div></li><li>Есть неизвестная нам квадратичная форма <script type="math/tex">Q</script> в <script type="math/tex">n</script>-мерном пространстве. Разрешается задавать вопрос вида &laquo;Чему равно <script type="math/tex">Q(v)</script>?&raquo;. 
 Какое минимальное число вопросов надо задать, чтобы определить, является ли форма <script type="math/tex">Q</script> положительно определенной?</li></ol>
   </article>
 

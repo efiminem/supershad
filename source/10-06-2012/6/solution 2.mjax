@@ -1,0 +1,11 @@
+Посчитаем, для начала, вероятность того, что данные <script type="math/tex">k</script> элементов окажутся в цикле длины <script type="math/tex">k</script>. Всего перестановок <script type="math/tex">n!</script>, 
+циклов <script type="math/tex">(k-1)!</script>, перестановок из оставшихся элементов <script type="math/tex">(n - k)!</script>. Тогда такая вероятность равна
+<script type="math/tex; mode=display">p_k = \frac{1}{n!} (k-1)! (n-k)!</script>
+Пусть теперь они оказались в цикле длины <script type="math/tex">k+m</script>. Тогда мы дополнительно выбираем <script type="math/tex">m</script> элементов из <script type="math/tex">n-k</script> и вероятность становится
+<script type="math/tex; mode=display">p_{k+m} = \frac{1}{n!} C^m_{n-k} (k+m-1)! (n-k-m)!</script>
+Полная вероятность равна сумме
+<script type="math/tex; mode=display">\sum_{m=0}^{n-k} p_{k+m} = \frac{1}{n!} \sum_{m=0}^{n-k} C^m_{n-k} (k+m-1)! (n-k-m)! = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{n!} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = \frac{(n-k)!}{n!} \frac{k+m-m}{k} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \sum_{m=0}^{n-k} \left( \frac{(k+m)!}{m!} - \frac{m(k+m-1)!}{m!} \right) = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \left( \sum_{m=1}^{n-k+1} \frac{m(k+m-1)!}{m!} - \sum_{m=0}^{n-k} \frac{m(k+m-1)!}{m!} \right) = </script>
+<script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \frac{(n-k+1)n!}{(n-k+1)!} = \frac{1}{k}.</script>

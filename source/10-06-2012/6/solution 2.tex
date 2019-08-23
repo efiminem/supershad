@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Посчитаем, для начала, вероятность того, что данные $k$ элементов окажутся в цикле длины $k$. Всего перестановок $n!$, 
+циклов $(k-1)!$, перестановок из оставшихся элементов $(n - k)!$. Тогда такая вероятность равна
+$$p_k = \frac{1}{n!} (k-1)! (n-k)!$$
+Пусть теперь они оказались в цикле длины $k+m$. Тогда мы дополнительно выбираем $m$ элементов из $n-k$ и вероятность становится
+$$p_{k+m} = \frac{1}{n!} C^m_{n-k} (k+m-1)! (n-k-m)!$$
+Полная вероятность равна сумме
+$$\sum_{m=0}^{n-k} p_{k+m} = \frac{1}{n!} \sum_{m=0}^{n-k} C^m_{n-k} (k+m-1)! (n-k-m)! = $$
+$$ = \frac{(n-k)!}{n!} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = \frac{(n-k)!}{n!} \frac{k+m-m}{k} \sum_{m=0}^{n-k} \frac{(k+m-1)!}{m!} = $$
+$$= \frac{(n-k)!}{kn!} \sum_{m=0}^{n-k} \left( \frac{(k+m)!}{m!} - \frac{m(k+m-1)!}{m!} \right) = $$
+$$ = \frac{(n-k)!}{kn!} \left( \sum_{m=1}^{n-k+1} \frac{m(k+m-1)!}{m!} - \sum_{m=0}^{n-k} \frac{m(k+m-1)!}{m!} \right) = $$
+$$ = \frac{(n-k)!}{kn!} \frac{(n-k+1)n!}{(n-k+1)!} = \frac{1}{k}.$$
+\end{document}
