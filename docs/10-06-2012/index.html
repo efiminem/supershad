@@ -120,7 +120,14 @@ $(document).ready(function(){
 <script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \sum_{m=0}^{n-k} \left( \frac{(k+m)!}{m!} - \frac{m(k+m-1)!}{m!} \right) = </script>
 <script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \left( \sum_{m=1}^{n-k+1} \frac{m(k+m-1)!}{m!} - \sum_{m=0}^{n-k} \frac{m(k+m-1)!}{m!} \right) = </script>
 <script type="math/tex; mode=display"> = \frac{(n-k)!}{kn!} \frac{(n-k+1)n!}{(n-k+1)!} = \frac{1}{k}.</script></div></li><li>Есть неизвестная нам квадратичная форма <script type="math/tex">Q</script> в <script type="math/tex">n</script>-мерном пространстве. Разрешается задавать вопрос вида &laquo;Чему равно <script type="math/tex">Q(v)</script>?&raquo;. 
-Какое минимальное число вопросов надо задать, чтобы определить, является ли форма <script type="math/tex">Q</script> положительно определенной?</li></ol>
+Какое минимальное число вопросов надо задать, чтобы определить, является ли форма <script type="math/tex">Q</script> положительно определенной?<div class="solution" toid = "text7">Решение</div><div class="solution-text" id="text7">Пусть квадратичная форма записана в базисе <script type="math/tex">e_1, e_2, \ldots e_n</script>. Понятно, что если ответ на какой-то вопрос будет неположительным, то форма не положительно определенная. 
+Задав <script type="math/tex">\frac{n(n+1)}{2}</script> вопросов можно найти все коэффициенты (например, сначала находим диагональные, затем все остальные) и определить, является ли форма положительно определенная. Докажем, что 
+за меньшее число вопросов сделать мы этого не сможем.<br><br>
+
+Каждый вопрос дает нам линейное уравнение на коэффициенты. Если мы задали вопросов меньше, чем число коэффициентов, какие-то 
+коэффициенты будет неопределены. Пусть неопределен диагональный коэффициент <script type="math/tex">a_{jj}</script>. Тогда ответ на вопрос <script type="math/tex">Q(e_{j}) = a_{jj}</script> может 
+быть отрицательным, а значит мы не можем быть уверены в положительной определенности. Пусть теперь все диагональные коэффициенты известны и положительны, а 
+некоторый недиагональный коэффициент <script type="math/tex">a_{ij}</script> неопределен. Тогда ответ на вопрос <script type="math/tex">Q(e_i + e_j) = a_{ii} + a_{ij} + a_{jj}</script> может быть отрицательным.</div><div class="solution" toid = "answer7">Ответ</div><div class="solution-text" id="answer7"><script type="math/tex">\dfrac{n(n+1)}{2}.</script></div></li></ol>
   </article>
 
 </div>
