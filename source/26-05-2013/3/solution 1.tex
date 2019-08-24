@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Заметим, что для того, чтобы прямоугольник лежал в единичном круге, нужно, чтобы точка $Q$ попала в прямоугольник, образованный точкой $P$ и ее отражениями относительно осей. 
+Пусть точка $P$ задается углом $\varphi \in [0, \pi/2]$ (остальные случаи симметричны). Тогда ее плотность вероятности равна $\rho(\varphi) = \frac{2}{\pi}$.
+Условная вероятность попадания в прямоугольник равна площади прямоугольника $2\sin(2\varphi)$, деленной на площадь круга $\pi$. Тогда искомая вероятность равна интегралу
+$$\frac{4}{\pi^2} \int_0^{\pi/2} \sin(2\varphi) d\varphi = \frac{4}{\pi^2}.$$ 
+\end{document}
