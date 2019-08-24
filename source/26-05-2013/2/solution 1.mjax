@@ -1,0 +1,15 @@
+Будем решать задачу от противного. Предположим, что у любой пары подмножеств из условия мощность симметрической разности больше двух. 
+Возьмем тогда некоторую пару различных подмножеств <script type="math/tex">A</script> и <script type="math/tex">B</script>. Назовем <script type="math/tex">f(A)</script> и <script type="math/tex">f(B)</script> все возможные подмножества, у 
+которых мощность симметрической разности с ними равна одному (эти подмножества не входят в <script type="math/tex">100</script>). Ясно, что <script type="math/tex">|f(A)| = |f(B)| = 10</script>.
+Докажем, что <script type="math/tex">f(A)</script> и <script type="math/tex">f(B)</script> не пересекаются. 
+В самом деле, пусть есть некоторое подмножество <script type="math/tex">C</script>, которое принадлежит <script type="math/tex">f(A)</script> и <script type="math/tex">f(B)</script> одновременно, то есть
+<script type="math/tex">|C \bigtriangleup A| = 1</script> и <script type="math/tex">|C \bigtriangleup B| = 1</script>. Но тогда <script type="math/tex">|A \bigtriangleup B| = 2</script>, чего быть не может.
+Далее, поскольку для любой пары множеств <script type="math/tex">f(A)</script> и <script type="math/tex">f(B)</script> не пересекаются, то каждому множеству (из <script type="math/tex">100</script>) можно поставить в соответствие 
+<script type="math/tex">10</script> других множеств (не из <script type="math/tex">100</script>). Таким образом, общее число подмножеств должно быть как минимум <script type="math/tex">11 \times 100 = 1100</script>. 
+Но а нас есть только <script type="math/tex">2^{10} = 1024</script> подмножества.<br>
+<i>Примечание.</i> Данное решение можно сформулировать более красиво, если рассмотреть представления подмножеств в <script type="math/tex">10</script>-мерном бинарном 
+пространстве <script type="math/tex">\{0, 1\}^{10}</script>, где стоит <script type="math/tex">1</script> если элемент принадлежит подмножеству и <script type="math/tex">0</script> в противном случае. Расстоянием между 
+элементами пространства назовем расстояние Хэмминга, то есть число позиций, в которых соответствующие символы различны. 
+Тогда единичная сфера в таком пространстве состоит из <script type="math/tex">10</script> точек, а если мы поместим в это пространство <script type="math/tex">100</script> точек, какие-то 
+две сферы вокруг них должны пересечься. Центры таких сфер соответствуют подмножествам, у которых симметрическая разность имеет мощность не более 
+двух.
