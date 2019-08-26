@@ -142,7 +142,19 @@ t^k x_k &= t^k \left( \frac{x_{k-1} + (k-1)x_{k-2}}{k} \right)\\
 <script type="math/tex">u u^{\mathrm{T}}</script> с собственными значениями <script type="math/tex">u^{\mathrm{T}} u = \sum\limits_{i=1}^n a_i^2</script> и <script type="math/tex">0</script>. Отсюда окончательно получим
 <script type="math/tex; mode=display">\textrm{det}\, M = k^{n-1} \left( k + \sum_{i=1}^n a_i^2 \right).</script></div><div class="solution" toid = "answer5">Ответ</div><div class="solution-text" id="answer5"><script type="math/tex">k^{n-1} \left( k + \sum\limits_{i=1}^n a_i^2 \right).</script></div></li><li>Задана битовая матрица <script type="math/tex">n\times n</script> с элементами <script type="math/tex">0</script> и <script type="math/tex">1</script> (каждый элемент матрицы занимает один бит памяти). 
 Назовем строку (столбец) исходной матрицы плохой (плохим), если в нем встречается хотя бы один ноль. Необходимо в исходной матрице занулить все плохие строки и столбцы. 
-Предложите алгоритм, решающий эту задачу за <script type="math/tex">O(1)</script> дополнительной памяти и оцените его временную стоимость.</li><li>Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
+Предложите алгоритм, решающий эту задачу за <script type="math/tex">O(1)</script> дополнительной памяти и оцените его временную стоимость.<div class="solution" toid = "text6">Решение</div><div class="solution-text" id="text6">1) Посмотрим на первую строку и первый столбец матрицы. Запомним, хорошие они или плохие. На это потребуется <script type="math/tex">O(n)</script> времени и <script type="math/tex">2</script> бита 
+дополнительной памяти.<br>
+
+2) Пройдемся по оставшейся части матрицы <script type="math/tex">i=2\ldots n</script>, <script type="math/tex">j=2\ldots n</script>. Если <script type="math/tex">a_{ij} = 0</script>, занулим <script type="math/tex">a_{i1}</script> и <script type="math/tex">a_{1j}</script>. Таким образом, 
+в первой строке (столбце) будут стоять единицы, если вся строка (столбец) хорошие и наоборот. Этот шаг занимает <script type="math/tex">O(n^2)</script> по времени, 
+дополнительной памяти не требуется.<br>
+
+3) Пройдемся по этой же матрице еще раз. Если <script type="math/tex">a_{i1} = 0</script> либо <script type="math/tex">a_{1j} = 0</script>, занулим <script type="math/tex">a_{ij}</script>. В результате этих манипуляций мы 
+выполнили условия задачи для всей матрицы, кроме, возможно, первой строки (столбца). Этот шаг также занимает <script type="math/tex">O(n^2)</script> по времени.<br>
+
+4) Используя результат пункта 1 приведем первую строку (столбец) в соответствии с условиями задачи. Это займет <script type="math/tex">O(n)</script> по времени.<br>
+
+Таким образом, мы решили задачу за <script type="math/tex">O(n^2)</script> по времени и за <script type="math/tex">O(1)</script> дополнительной памяти.</div></li><li>Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
 Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.<div class="solution" toid = "text7">Решение</div><div class="solution-text" id="text7">Запишем многочлен от двух переменных в общем случае:
 <script type="math/tex; mode=display">f(x, y) = \sum a_{nm} x^n y^m</script>
 Распишем интеграл по окружности:
