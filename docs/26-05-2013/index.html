@@ -143,7 +143,60 @@ t^k x_k &= t^k \left( \frac{x_{k-1} + (k-1)x_{k-2}}{k} \right)\\
 <script type="math/tex; mode=display">\textrm{det}\, M = k^{n-1} \left( k + \sum_{i=1}^n a_i^2 \right).</script></div><div class="solution" toid = "answer5">Ответ</div><div class="solution-text" id="answer5"><script type="math/tex">k^{n-1} \left( k + \sum\limits_{i=1}^n a_i^2 \right).</script></div></li><li>Задана битовая матрица <script type="math/tex">n\times n</script> с элементами <script type="math/tex">0</script> и <script type="math/tex">1</script> (каждый элемент матрицы занимает один бит памяти). 
 Назовем строку (столбец) исходной матрицы плохой (плохим), если в нем встречается хотя бы один ноль. Необходимо в исходной матрице занулить все плохие строки и столбцы. 
 Предложите алгоритм, решающий эту задачу за <script type="math/tex">O(1)</script> дополнительной памяти и оцените его временную стоимость.</li><li>Рассмотрим линейное пространство многочленов над <script type="math/tex">\mathbb{R}</script> от двух переменных степени не выше <script type="math/tex">2013</script>. 
-Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.</li></ol>
+Рассмотрим его подпространство <script type="math/tex">V</script>, образованное всеми многочленами <script type="math/tex">f</script>, для которых криволинейный интеграл первого рода <script type="math/tex">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = 0</script>, причем для любого <script type="math/tex">R</script>. Найдите размерность подпространства <script type="math/tex">V</script>.<div class="solution" toid = "text7">Решение</div><div class="solution-text" id="text7">Запишем многочлен от двух переменных в общем случае:
+<script type="math/tex; mode=display">f(x, y) = \sum a_{nm} x^n y^m</script>
+Распишем интеграл по окружности:
+<script type="math/tex; mode=display">\oint\limits_{\{x^2+y^2=R^2\}} f(x,y) ds = \int\limits_0^{2\pi} \sum a_{nm} (R\cos \varphi)^n (R\sin \varphi)^m d\varphi = </script>
+<script type="math/tex; mode=display"> = \sum a_{nm} R^{n+m} \int\limits_0^{2\pi} (\cos \varphi)^n (\sin \varphi)^m d\varphi = 0.</script>
+Если мы хотим, чтобы это равенство было выполнено для любого <script type="math/tex">R</script>, коэффициенты при различных степенях <script type="math/tex">R</script> должны быть равны нулю.
+Рассмотрим более подробно интеграл 
+<script type="math/tex; mode=display">c_{nm} = \int\limits_0^{2\pi} (\cos \varphi)^n (\sin \varphi)^m d\varphi.</script>
+
+Заметим, что <script type="math/tex">c_{nm} = c_{mn}</script>, поскольку нам не важно в какой точке окружности мы начнем интегрировать (более формально: сделаем замену <script type="math/tex">\varphi = \frac{\pi}{2} - \alpha</script> 
+и прибавим <script type="math/tex">\frac{3\pi}{2}</script> к каждому пределу интегрирования).<br><br>
+
+У нас есть три случая:<br>
+1) <script type="math/tex">n</script> и <script type="math/tex">m</script> четные. Тогда подынтегральное выражение всегда неотрицательно, поэтому <script type="math/tex">c_{nm} > 0</script>.<br>
+2) <script type="math/tex">n</script> и <script type="math/tex">m</script> имеют разную четность. Поскольку <script type="math/tex">c_{nm} = c_{mn}</script>, достаточно рассмотреть случай, в котором <script type="math/tex">n</script> &#8212; четное, а <script type="math/tex">m</script> &#8212; нечетное. Тогда 
+подыинтегральное выражение антисимметрично относительно точки <script type="math/tex">\pi</script>, поэтому <script type="math/tex">c_{nm} = 0</script>.<br>
+3) <script type="math/tex">n</script> и <script type="math/tex">m</script> нечетные. Тогда интеграл можно разбить на два участка: от <script type="math/tex">0</script> до <script type="math/tex">\pi</script> и от <script type="math/tex">\pi</script> до <script type="math/tex">2\pi</script>. На каждом из этих участков подынтегральное выражение антисимметрично 
+относительно центра (<script type="math/tex">\frac{\pi}{2}</script> и <script type="math/tex">\frac{3\pi}{2}</script> соответственно), поэтому <script type="math/tex">c_{nm} = 0</script>.<br>
+(Если эти рассуждения не совсем понятны, попробуйте нарисовать графики <script type="math/tex">\sin x</script>, <script type="math/tex">\cos x</script>, <script type="math/tex">\sin^2 x</script> и <script type="math/tex">\cos^2 x</script>. Более старшие степени только деформируют эти графики, 
+не меняя указанных симметрий. Попробуйте понять, как выглядят графики их произведений.)<br><br>
+Таким образом, <script type="math/tex">c_{nm}</script> не равен нулю только когда <script type="math/tex">n</script> и <script type="math/tex">m</script> четные. Тогда в базисный набор мы сразу можем включить все одночлены <script type="math/tex">x^n y^m</script>, у которых 
+<script type="math/tex">n</script> и <script type="math/tex">m</script> имеют разную четность либо оба нечетные. Но это еще не все возможные базисы. Несмотря на то, что для четных <script type="math/tex">n</script> и <script type="math/tex">m</script> коэффициенты <script type="math/tex">c_{nm}</script> 
+больше нуля, их линейная комбинация при одинаковой степени все равно может дать нуль. Это соответствует линейному ограничению на коэффициенты для 
+четных степеней <script type="math/tex">R</script>, а значит уменьшает число базисных одночленов на <script type="math/tex">1</script> от всех возможных для каждой такой степени.<br><br>
+Посчитаем число одночленов от двух переменных степени не выше <script type="math/tex">s</script>. Есть <script type="math/tex">1</script> одночлен степени <script type="math/tex">0</script>, <script type="math/tex">2</script> одночлена степени <script type="math/tex">1</script> и так далее. Общее число 
+одночленов равно 
+<script type="math/tex; mode=display">1 + 2 + \cdots + (s+1) = \frac{(s+1)(s+2)}{2}.</script>
+Число возможных четных степеней <script type="math/tex">R</script> равно <script type="math/tex">\lfloor \frac{s}{2} \rfloor + 1</script>. Таким образом, размерность подпространства <script type="math/tex">V</script> равна:
+<script type="math/tex; mode=display">\text{dim}\, V = \frac{(s+1)(s+2)}{2} - \lfloor \frac{s}{2} \rfloor - 1 = \frac{s(s+3)}{2} - \lfloor \frac{s}{2} \rfloor.</script>
+
+Для случая <script type="math/tex">s = 2013</script> получим <script type="math/tex">\text{dim}\, V = 2\,028\,098</script>.<br><br>
+<i>Примечение.</i> Выпишем явно базисные одночлены для первых <script type="math/tex">s</script>. Поскольку для очередного <script type="math/tex">s</script> можно использовать предыдущий базис, будем выписывать 
+только новые одночлены:
+<table border="1">
+<tr><td><script type="math/tex">s</script></td><td>Размерность <script type="math/tex">V</script></td><td>С разной четностью и нечетные</td><td>Четные</td></tr>
+<tr><td><script type="math/tex">1</script></td><td><script type="math/tex">2</script></td><td><script type="math/tex">x</script>, <script type="math/tex">y</script></td><td></td></tr>
+<tr><td><script type="math/tex">2</script></td><td><script type="math/tex">4</script></td><td><script type="math/tex">xy</script></td><td><script type="math/tex">x^2 - y^2</script></td></tr>
+<tr><td><script type="math/tex">3</script></td><td><script type="math/tex">8</script></td><td><script type="math/tex">x^3</script>, <script type="math/tex">y^3</script>, <script type="math/tex">x^2y</script>, <script type="math/tex">xy^2</script></td><td></td></tr>
+<tr><td><script type="math/tex">4</script></td><td><script type="math/tex">12</script></td><td><script type="math/tex">x^3y</script>, <script type="math/tex">xy^3</script></td><td><script type="math/tex">x^4 - 3x^2y^2</script>, <script type="math/tex">y^4 - 3x^2y^2</script></td></tr>
+<tr><td><script type="math/tex">5</script></td><td><script type="math/tex">18</script></td><td><script type="math/tex">x^5</script>, <script type="math/tex">y^5</script>, <script type="math/tex">x^4y</script>, <script type="math/tex">xy^4</script>, <script type="math/tex">x^2y^3</script>, <script type="math/tex">x^3y^2</script></td><td></td></tr>
+</table>
+<br>
+Покажем, как получился, например, базис для <script type="math/tex">n=4</script>. При <script type="math/tex">R^4</script> в разложении интеграла от произвольного многочлена стоит следующее выражение:
+<script type="math/tex; mode=display">a_{40} c_{40} + a_{04} c_{04} + a_{31} c_{31} + a_{13} c_{13} + a_{22} c_{22} = a_{40} c_{40} + a_{04} c_{04} + a_{22} c_{22}.</script>
+Условие на коэффициенты:
+<script type="math/tex; mode=display">a_{40} c_{40} + a_{04} c_{04} + a_{22} c_{22} = 0.</script>
+Подставим в разложение
+<script type="math/tex; mode=display">a_{40} x^4 + a_{04} y^4 + a_{22} x^2 y^2</script>
+получившееся условие:
+<script type="math/tex; mode=display">a_{40} \left( x^4 -  \frac{c_{40}}{c_{22}} x^2y^2 \right) + a_{04} \left( y^4 - \frac{c_{04}}{c_{22}} x^2y^2 \right).</script>
+Нетрудно посчитать
+<script type="math/tex; mode=display">c_{40} = c_{04} = \frac{3\pi}{4}, \;\;\; c_{22} = \frac{\pi}{4}.</script>
+Поэтому выражение превращается в
+<script type="math/tex; mode=display">a_{40} (x^4 - 3x^2y^2) + a_{04} (y^4 - 3x^2y^2).</script></div><div class="solution" toid = "answer7">Ответ</div><div class="solution-text" id="answer7"><script type="math/tex">2\,028\,098.</script></div></li></ol>
   </article>
 
 </div>
