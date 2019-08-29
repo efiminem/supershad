@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\setlength\parindent{0pt}
+\usepackage[parfill]{parskip}
+\pagenumbering{gobble}
+
+\begin{document}
+Используем формулу двойного угла:
+$$\cos (x2^{-k}) = \frac12 \frac{\sin (x2^{1-k})}{\sin (x2^{-k})}.$$
+Тогда
+$$\prod\limits_{k=1}^\infty \cos (x2^{-k}) = \prod\limits_{k=1}^\infty \frac12 \frac{\sin (x2^{1-k})}{\sin (x2^{-k})} = $$
+$$= \lim_{k \to \infty} \frac{1}{2^k} \frac{\sin x}{\sin (x2^{-k})} = \frac{\sin x}{x}.$$
+\end{document}
